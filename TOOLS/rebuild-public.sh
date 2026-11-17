@@ -55,9 +55,11 @@ sanitize() {
 # relative path.
 source_for() {
   case "$1" in
-    README.md|RESTORE.md|.gitignore|TOOLS/*|AGENT-AMD/qwen-loop.sh) printf '%s/%s' "$ROOT" "$1" ;;
+    README.md|RESTORE.md|EXCLUDED-FILES.tsv|.gitignore|TOOLS/*|AGENT-AMD/qwen-loop.sh) printf '%s/%s' "$ROOT" "$1" ;;
     # one evidence filename carried the donor volume identifier; renamed here
     AGENT-AMD/evidence/r185/vol_donor-volume.tsv) printf '%s/AGENT-AMD/.tmp/r185/vol_msu-target-X87eLfva.tsv' "$SRC" ;;
+    # authored tooling that lived in .tmp in the private tree
+    AGENT-AMD/scan_iokit_calls.py) printf '%s/AGENT-AMD/.tmp/scan_iokit_calls.py' "$SRC" ;;
     AGENT-AMD/evidence/*) printf '%s/AGENT-AMD/.tmp/%s' "$SRC" "${1#AGENT-AMD/evidence/}" ;;
     *) printf '%s/%s' "$SRC" "$1" ;;
   esac
@@ -80,7 +82,7 @@ while IFS= read -r line; do
 
   mkdir -p "$OUT/$(dirname "$path")"
   case "$path" in
-    README.md|RESTORE.md|.gitignore|TOOLS/*|AGENT-AMD/qwen-loop.sh) cp "$src" "$OUT/$path" ;;
+    README.md|RESTORE.md|EXCLUDED-FILES.tsv|.gitignore|TOOLS/*|AGENT-AMD/qwen-loop.sh) cp "$src" "$OUT/$path" ;;
     *) sanitize "$src" > "$OUT/$path" ;;
   esac
 

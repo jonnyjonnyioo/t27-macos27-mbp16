@@ -53,7 +53,9 @@ Included: every T27 report, worklog, matrix, blocklist, script and manifest
 (231 artifacts), plus 100 raw analysis tables — export lists, `unresolved`
 lists, symbol and path tables — under `AGENT-AMD/evidence/`. Those tables are
 the data behind the one-symbol claim, so anyone can re-check it without owning
-the Apple binaries.
+the Apple binaries. `EXCLUDED-FILES.tsv` inventories the 164 files that were
+withheld — path, size, SHA-256 and category — so the record of what existed
+survives even if the private tree is deleted.
 
 Not included, by design:
 

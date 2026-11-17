@@ -15,7 +15,7 @@ The immediate blocker is narrow and testable: the AMD X6000 stack resolves stati
 
 ## What is included
 
-This archive contains **231 T27 text artifacts**: reports, worklogs, dependency matrices, blocklists, symbol tables, hashes and helper scripts. `AGENT-AMD/evidence/` adds **100 raw analysis tables** — export lists, `unresolved` lists, symbol and path tables — so the one-symbol result can be re-checked without owning the Apple binaries. With this README, `RESTORE.md`, two helper scripts, `.gitignore` and the public checksum manifest, the repository has 337 files.
+This archive contains **231 T27 text artifacts**: reports, worklogs, dependency matrices, blocklists, symbol tables, hashes and helper scripts. `AGENT-AMD/evidence/` adds **100 raw analysis tables** — export lists, `unresolved` lists, symbol and path tables — so the one-symbol result can be re-checked without owning the Apple binaries. With this README, `RESTORE.md`, the `TOOLS/` scripts, `.gitignore`, `EXCLUDED-FILES.tsv` and the public checksum manifest, the repository has 339 files.
 
 Start with:
 
@@ -27,6 +27,8 @@ Start with:
 - `AGENT-AMD/T27-REDEFINITION.md` — why the read-only phase was closed
 - `AGENT-AMD/evidence/` — raw export/unresolved/symbol tables behind the result
 - `RESTORE.md` — how to restore this archive and what a rebuild can and cannot recover
+- `EXCLUDED-FILES.tsv` — inventory (path, size, SHA-256, reason) of the 164 files withheld from publication
+- `AGENT-AMD/scan_iokit_calls.py` — the read-only IOKit call-site scanner used for the dyld-cache analysis
 
 ## Result in one screen
 
