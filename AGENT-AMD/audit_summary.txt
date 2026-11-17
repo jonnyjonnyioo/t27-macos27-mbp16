@@ -1,0 +1,26 @@
+T27-OOB-AGDC-DISPATCH-179.md:**Conclusione statica:** il percorso `CGXUpdateDesktop -> *0xe8` è chiuso. Non esiste un percorso statico da `CGXUpdateDesktop` ad AGDC selector 3 nei binari esaminati. Resta **UNPROVEN** solo una modifica runtime della function pointer non rappresentata nella tabella statica.
+T27-OOB-AGDC-DISPATCH-179.md:**Impatto sul compatibility layer:** il layer client-only non può usare `CGXUpdateDesktop` come ponte verso AGDC selector 3. Il percorso Apple disponibile resta un aggiornamento desktop e non un invio del comando `LoadHWServices` con bit `0x2`. La conclusione del Report 178 è quindi rafforzata, non indebolita.
+T27-OOB-AGDC-DISPATCH-179.md:## 13. Spazio e STOP
+T27-OOB-AGDC-DISPATCH-179.md:**STOP rispettato:** nessun boot, trace, modifica ai file di sistema, build o download. Nessuna cancellazione. Nessun file eliminabile proposto.
+T27-OOB-AGDC-CLOSURE-181.md:5. formulare la conclusione motivata sul filone statico AMD/AGDC.
+T27-OOB-AGDC-CLOSURE-181.md:**Esito:** nessuna contraddizione. Il BLOCKED del Report 177 è **superato** dal Report 178. La conclusione del 177 ("non verificabile") era corretta rispetto ai file allora disponibili; il 178 ha rimosso il limite.
+T27-OOB-AGDC-CLOSURE-181.md:## 7. Conclusione sul filone statico AMD/AGDC
+T27-OOB-AGDC-CLOSURE-181.md:**Conclusione:** il filone statico AMD/AGDC è **chiuso** per i componenti Apple esaminati. Non esiste un client Apple noto che invii AGDC selector 3 con il buffer richiesto; l'unico wrapper AGDC disponibile, `WSAGDCSetDebugOptions`, termina in un aggiornamento desktop e non in un comando AGDC. WindowServer è un loader minimale e non un client IOKit.
+T27-OOB-AGDC-CLOSURE-181.md:Questa conclusione **non chiude T27**: chiude solo la ricerca statica sul selettore 3. T27 resta OPEN al 94% engineering / 32% first boot / 8% desktop, perché il primo boot e il desktop dipendono da DCP, RTKit, DART, interrupt e dal comportamento runtime del guest, non dalla presenza di un call site AGDC.
+T27-OOB-AGDC-CLOSURE-181.md:5. Qualsiasi conclusione sul desktop che non sia stata verificata con boot o trace.
+T27-OOB-AGDC-CLOSURE-181.md:## 11. Spazio e STOP
+T27-OOB-AGDC-CLOSURE-181.md:**STOP rispettato:** nessun boot, trace, modifica ai file di sistema, build o download. Nessuna cancellazione. Nessun file eliminabile proposto.
+T27-OOB-AGDC-WINDOWSERVER-180.md:**Conclusione statica:** WindowServer non può inviare direttamente AGDC selector 3. Non ha né i simboli IOKit né un resolver dinamico per ottenerli. Tutto il percorso grafico passa per `_SLXServer`, già analizzato nei Report 178 e 179.
+T27-OOB-AGDC-WINDOWSERVER-180.md:**Impatto sul filone AMD/AGDC:** con WindowServer escluso come client diretto, non resta alcun attore Apple noto, nei componenti esaminati, che invii AGDC selector 3. Il compatibility layer client-only non può usare WindowServer come ponte AGDC. La conclusione statica del Report 179 è definitiva per l'eseguibile; resta solo l'incertezza runtime non osservata.
+T27-OOB-AGDC-WINDOWSERVER-180.md:## 11. Spazio e STOP
+T27-OOB-AGDC-WINDOWSERVER-180.md:**STOP rispettato:** nessun boot, trace, modifica ai file di sistema, build o download. Nessuna cancellazione. Nessun file eliminabile proposto.
+T27-OOB-STUB-10180.md:## 9. Conclusione
+T27-OOB-STUB-10180.md:**Spazio:** **≈12,23 GiB** > **10 GiB**. Nessuna cancellazione; nessun file eliminabile proposto. **STOP rispettato:** sola lettura, nessun boot/trace/modifica/build/download.
+T27-QEMU-DARWIN-ARTIFACTS-182.md:## 8. INFERRED — il fork citato dalla sintesi di progetto
+T27-QEMU-DARWIN-ARTIFACTS-182.md:La sintesi di progetto riportata nella sessione Qwen afferma che T27 avrebbe usato:
+T27-QEMU-DARWIN-ARTIFACTS-182.md:## 11. Conclusione
+T27-QEMU-DARWIN-ARTIFACTS-182.md:## 14. STOP
+T27-QEMU-DARWIN-LOCALIZATION-183.md:## 7. Conclusione
+T27-QEMU-DISPLAY-CLOSURE-184.md:# T27 — Chiusura definitiva filone QEMU/Display — Report 184
+T27-QEMU-DISPLAY-CLOSURE-184.md:## 6. Conclusione
+T27-QEMU-DISPLAY-CLOSURE-184.md:## 9. STOP

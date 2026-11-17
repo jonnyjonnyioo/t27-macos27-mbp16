@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "session": "T27",
+  "title": "Multi-agent parallel engineering sprint",
+  "date": "2026-11-16",
+  "status": "OPEN",
+  "no_go_issued": false,
+  "project_closed": false,
+  "target": {
+    "os": "macOS 27.2.1 Golden Gate",
+    "build": "26B131",
+    "darwin": "27.2.0",
+    "machine": "MacBookPro16,1",
+    "cpu": "i7-9750H x86_64",
+    "gpu": "Radeon Pro 5300M Navi14 + UHD630",
+    "security": "Apple T2"
+  },
+  "parallelism": {
+    "workstreams": 8,
+    "agent_directories": [
+      "AGENT-01",
+      "AGENT-02",
+      "AGENT-03",
+      "AGENT-04",
+      "AGENT-05",
+      "AGENT-06",
+      "AGENT-07",
+      "AGENT-08"
+    ],
+    "agent_documents": 7,
+    "integrator_document": "T27-INTEGRATION.md",
+    "actual_llm_processes": 1,
+    "note": "Otto workspace indipendenti; non vengono dichiarati otto processi LLM separati."
+  },
+  "percentages": {
+    "engineering": 94,
+    "first_boot": 32,
+    "desktop": 8,
+    "baseline_t26": {
+      "engineering": 94,
+      "first_boot": 32,
+      "desktop": 8
+    },
+    "delta": {
+      "engineering": 0,
+      "first_boot": 0,
+      "desktop": 0
+    },
+    "basis": "Integrazione e controllo incrociato; nessun nuovo artefatto avviabile. Non probabilita."
+  },
+  "operational_progress": false,
+  "answers": {
+    "A_BootKC": "BLOCKED",
+    "B_SystemKC": "BLOCKED",
+    "C_KernelBoot": "UNPROVEN",
+    "D_Launchd": "BLOCKED",
+    "E_InternalDisplay": "BLOCKED",
+    "F_KeyboardTrackpad": "BLOCKED",
+    "G_WindowServer": "BLOCKED",
+    "H_Desktop": "BLOCKED"
+  },
+  "immutables": {
+    "T16_T26_unchanged": true,
+    "no_deletion": true,
+    "no_host_modification": true,
+    "no_kextload": true,
+    "no_boot": true,
+    "no_install": true,
+    "no_efi_nvram_t2_sip_amfi": true,
+    "no_stela512_write": true,
+    "downloads_bytes": 0
+  },
+  "space": {
+    "free_kib": 12526492,
+    "free_gib": 11.95,
+    "minimum_kib": 10485760,
+    "minimum_preserved": true,
+    "hao_size_bytes": 85899345920,
+    "hao_workspace_bytes": 171798691840,
+    "hao_space_available": false
+  },
+  "matrix_rows": 50,
+  "blockers": 23,
+  "key_evidence": {
+    "kernel_26B131": {
+      "path": "<TARGET_ROOT>/System/Library/Kernels/kernel",
+      "sha256": "3c9317518535791503970fbec322b9bba70e91f3a233536205ccd77b047ffc83",
+      "build": "26B131",
+      "arch": "x86_64"
+    },
+    "bootkc_t3": {
+      "path": "<DESKTOP>/BootKernelExtensions-T3-V.kc",
+      "sha256": "b3cb72d125c078bdb2becab6dbbbe03746acb356d08ed36cd5a81b1966a24ad4",
+      "size_bytes": 18055168,
+      "extensions": 0
+    },
+    "systemkc_26B131": "ABSENT",
+    "bootkc_25G342": {
+      "sha256": "9bb053cf695957c13ce4b5497490b1f24ab69fea1cdeed57138580a8235ba840",
+      "size_bytes": 67600384
+    },
+    "systemkc_25G342": {
+      "sha256": "b4b618bfb835fc761cf59f00904e4ef865a0d2a6dad3cd76dd827f91c1d8b5a7",
+      "size_bytes": 369213440
+    },
+    "installer_25G342": "ABSENT",
+    "kdk_26B131": {
+      "kc_files": 0,
+      "top_level_bundles": 706,
+      "platform_build": "26B116"
+    }
+  },
+  "deliverables": {
+    "tracked": 14,
+    "manifest": 1,
+    "total": 15,
+    "names": [
+      "T27-REPORT.md",
+      "T27-AGENT-01-KC.md",
+      "T27-AGENT-02-DONOR.md",
+      "T27-AGENT-03-ACPI-BOOT.md",
+      "T27-AGENT-04-AMD.md",
+      "T27-AGENT-05-T2-HID.md",
+      "T27-AGENT-06-EFI.md",
+      "T27-AGENT-07-DESKTOP.md",
+      "T27-INTEGRATION.md",
+      "T27-DEPENDENCY-MATRIX.csv",
+      "T27-INSTALLATION-ROADMAP.md",
+      "T27-BLOCKERS.csv",
+      "T27-PROGRESS.json",
+      "T27-AUDIT.json"
+    ]
+  },
+  "conclusion": "Nessun GO; la catena non e installabile con i materiali attuali. Il progetto resta OPEN."
+}

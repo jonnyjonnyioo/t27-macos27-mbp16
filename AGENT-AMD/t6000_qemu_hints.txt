@@ -1,0 +1,9 @@
+2009/apple-darwin
+@(#)VERSION: Darwin Kernel Version 27.2.0: Thu Oct 15 00:02:46 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T6000
+Darwin
+Darwin Kernel Version 27.2.0: Thu Oct 15 00:02:46 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T6000
+Disable INTCOPROC ifioctl restrictions (DEBUG/DEVELOPMENT-writable; exists so darwintests can briefly clear INTCOPROC subfamily on a synthetic feth long enough to destroy it during T_ATEND cleanup)
+SFI_CLASS_DARWIN_BG
+darwin-init
+darwin-init-system
+darwinos-ramdisk

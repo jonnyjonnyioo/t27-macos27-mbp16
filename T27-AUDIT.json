@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "session": "T27",
+  "title": "Multi-agent parallel engineering sprint",
+  "date": "2026-11-16",
+  "status": "OPEN",
+  "mode": "READ_ONLY",
+  "target": {
+    "os": "macOS 27.2.1 Golden Gate",
+    "build": "26B131",
+    "darwin": "27.2.0",
+    "machine": "MacBookPro16,1",
+    "cpu": "i7-9750H x86_64",
+    "gpu": "Radeon Pro 5300M Navi14 + UHD630",
+    "security": "Apple T2"
+  },
+  "agents": {
+    "directories": 8,
+    "documents": 7,
+    "integrator": "T27-INTEGRATION.md",
+    "actual_llm_processes": 1,
+    "note": "Workstream indipendenti in directory separate; non 8 processi LLM."
+  },
+  "immutables": {
+    "T16_T26_unchanged": true,
+    "no_deletion": true,
+    "no_overwrite_outside_T27": true,
+    "STELA_512_not_written": true,
+    "source_volumes_read_only": true,
+    "host_read_only": true
+  },
+  "constraints": {
+    "kextload": false,
+    "boot": false,
+    "install": false,
+    "kernel_collection_build": false,
+    "efi_nvram_t2_sip_amfi": false,
+    "download": false,
+    "download_over_2gb": false,
+    "deletion": false,
+    "destructive_script": false
+  },
+  "space": {
+    "free_kib": 12526492,
+    "free_gib": 11.95,
+    "minimum_kib": 10485760,
+    "minimum_preserved": true,
+    "hao_size_bytes": 85899345920,
+    "hao_workspace_bytes": 171798691840,
+    "hao_space_available": false
+  },
+  "checks": {
+    "eight_agent_dirs": "PASS",
+    "seven_agent_docs": "PASS",
+    "integrator_crosscheck": "PASS",
+    "matrix_shape": "PASS_50_ROWS",
+    "blockers_shape": "PASS_23_ROWS",
+    "answers_complete": "PASS_A_H",
+    "no_go": "PASS_NOT_ISSUED",
+    "no_forbidden_action": true,
+    "no_hardware_claim": true,
+    "no_compatibility_claim": true,
+    "no_operational_progress_claimed": true
+  },
+  "contradictions": [
+    {
+      "id": "C-01",
+      "topic": "root2 primary count",
+      "values": "T26 text 865; T25 audit 875",
+      "resolution": "875",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C-02",
+      "topic": "AppleHIDTransport slices",
+      "values": "T25 arm64e-only; T26 arm64/arm64e",
+      "resolution": "no x86_64; ARCHITETTURA ERRATA",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C-03",
+      "topic": "TopCase presence",
+      "values": "present root2; absent target",
+      "resolution": "donor vs target; not contradiction",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C-04",
+      "topic": "KDK 26B123 vs 26B131",
+      "values": "26B123 KC built; 26B131 0 KC",
+      "resolution": "different build/pipeline",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C-05",
+      "topic": "first boot percentage",
+      "values": "T25 30; T26 32",
+      "resolution": "documentary index; no boot",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "C-06",
+      "topic": "AMD present vs compatible",
+      "values": "root2 code; target absent",
+      "resolution": "BLOCKED for target",
+      "status": "RESOLVED"
+    }
+  ],
+  "deliverables": {
+    "tracked": 14,
+    "manifest": 1,
+    "total": 15,
+    "names": [
+      "T27-REPORT.md",
+      "T27-AGENT-01-KC.md",
+      "T27-AGENT-02-DONOR.md",
+      "T27-AGENT-03-ACPI-BOOT.md",
+      "T27-AGENT-04-AMD.md",
+      "T27-AGENT-05-T2-HID.md",
+      "T27-AGENT-06-EFI.md",
+      "T27-AGENT-07-DESKTOP.md",
+      "T27-INTEGRATION.md",
+      "T27-DEPENDENCY-MATRIX.csv",
+      "T27-INSTALLATION-ROADMAP.md",
+      "T27-BLOCKERS.csv",
+      "T27-PROGRESS.json",
+      "T27-AUDIT.json"
+    ]
+  },
+  "limitations": [
+    "Nessun boot, kextload, installazione o download.",
+    "Nessuna KC creata; kmutil create non eseguito.",
+    "Nessuna modifica EFI/NVRAM/T2/SIP/AMFI o STELA-512.",
+    "Il confronto ABI e basato su nomi/versioni, non runtime.",
+    "Il target 26B131 e un catalogo/estrazione, non un sistema completo.",
+    "Root2/KDK hanno Authority Apple ma sigillo strict non verificato.",
+    "AppleHIDTransport e ARM-only; non usabile su Intel.",
+    "OpenCore/SMBIOS/T2 Secure Boot/NVRAM non sono stati testati.",
+    "Non esiste una prova hardware MacBookPro16,1 per macOS 27.2.1.",
+    "Otto workstream, non otto processi LLM separati."
+  ],
+  "no_go_issued": false,
+  "project_closed": false
+}

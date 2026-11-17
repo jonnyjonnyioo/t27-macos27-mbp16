@@ -1,0 +1,2023 @@
+       readRingBufferAddr : (DART):      0x%08llx 
+       writeRingBufferAddr: (DART):      0x%08llx 
+    readRingBufferAddr : (DART):      0x%08llx 
+    writeRingBufferAddr: (DART):      0x%08llx 
+   ANEHWDevice:readRingBufferAddr : (DART):      0x%08llx 
+   ANEHWDevice:writeRingBufferAddr: (DART):      0x%08llx 
+  %4d: size=%llu, dartMapBase=0x%llX, usage='%c%c%c%c', cacheMode=0x%08X
+  %4d: surface-id=0x%08X, size=%llu, dartMapBase=0x%008X, usage='%c%c%c%c', cacheMode=0x%08X
+  %4d: surface-id=0x%08X, size=%llu, dartMapBase=0x%llX, usage='%c%c%c%c', cacheMode=0x%08X
+  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX
+  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX (EarlyBoot)
+  dart %p (%s): invalid SID %u TTBR access: level %u table_index %#x page_offset %#x
+  skip activateDART_gatedContext %d-%d: %d/%d
+  t8110dart %p (%s): invalid SID %u TTBR access: level %u table_index %#x page_offset %#x
+ 2019 Apple, Inc. All rights reserved.</string>
+ 2022 Apple, Inc. All rights reserved.</string>
+ DRM CHECK not done for fDefaultFramebufferSurface 
+ Phy %p Kernel %p DART %s
+!(static_cast<bool>(_dartMapper) && static_cast<bool>(_channelECProxy))
+!os_add_overflow( _dartCapability->vmBase, dva_offset_page, &dva)
+"%s (%p): Max spurious DART interrupts: interrupt index %d" @%s:%d
+"%s DCP standalone on this platform is not supported\n" @%s:%d
+"%s missing DCP_CONTROLS mapping\n" @%s:%d
+"%s missing DCP_FORCE_WAKEUP value\n" @%s:%d
+"%s missing DCP_FORCE_WAKEUP values\n" @%s:%d
+"%s, fDartActiveCount is zero when disable is specified" @%s:%d
+"%s: Dropped request dcp_reset notification!\n" @%s:%d
+"%s: Incompatible DART interface: expected 0x%016llx actual 0x%016llx" @%s:%d
+"%s: PIO mapping is not supported by this class of DART" @%s:%d
+"%s: Unable to request dcp reset since notify queue empty!\n" @%s:%d
+"%s: Unsupported DART version %x" @%s:%d
+"%s::%s(0x%llx): deactivate() incomplete %u seconds after displayRelease()! (check DCPEXT)\n" @%s:%d
+"%s::%s: " "%s::%s(0x%llx): deactivate() incomplete %u seconds after displayRelease()! (check DCPEXT)\n" "\n" @%s:%d
+"'arm-io' EDT node not found." @%s:%d
+"(ACE_DART::GetMappedAddr(m_psaDARTEntry[id]) & (ACE_DART_HW_PAGE_SIZE - 1)) == 0" @%s:%d
+"APCIeC DART left enabled on sleep entry. Please file a radar to AppleEmbeddedPCIE | all." @%s:%d
+"AppleH16CamIn::H16ISPSharedMemorySurfaces::%s - Failed to map shared memory descriptor (IOSurface size: %llu, DART address: %#08X)\n" @%s:%d
+"AppleThunderboltNHIDARTVMAllocator::init - slide cannot be non-zero (found %d)" @%s:%d
+"IOMFB: %u DCP resets within %llu seconds - reset loop detected\n" @%s:%d
+"IOMFB: Failed to map LPR buffer %u into DCP DART: 0x%x\n" @%s:%d
+"IOMFB: Failed to map LPR buffer %u into DispDART: 0x%x\n" @%s:%d
+"IOMFB: LPR buffer %u surface_map_dcp succeeded but dcpDva=0!\n" @%s:%d
+"IOMFB: fMapper (DispDART) is NULL - cannot map LPR buffers\n" @%s:%d
+"RTBuddy(%s)::%s " "DART provided a 0 DVA" "\n%s" @%s:%d
+"[AppleDCPExpert:0x%llx] GAPF Error (0x%x): Master ID %u, Address 0x%llx, CMD %s\n" @%s:%d
+"[AppleDCPExpert:0x%llx] GAPF Error (0x%x): failed to find violated GAPF\n" @%s:%d
+"[AppleDCPExpert:0x%llx] GAPF error with empty assertion mask\n" @%s:%d
+"dart %p (%s): invalid SID %u TTBR access: level %u table_index %#x page_offset %#x" @%s:%d
+"dart %p (%s): invalid SID %u" @%s:%d
+"dart %s): segment protection mismatch at %zu prot %#x expected %#x" @%s:%d
+"dart (%s): Invalid TTE found in page table walk in mapping request " "at level %hhu ppnum(%u) tte(%p)=%#llx table(%p) table_pa(%#llx)" @%s:%d
+"dart (%s): in_iova %#lx + in_nbytes %#lx wraps around" @%s:%d
+"dart (%s): invalid SID %u translation level: %u" @%s:%d
+"dart (%s): invalid SID %u" @%s:%d
+"dart (%s): iova %#lx len %#lx out of range" @%s:%d
+"dart (%s): iova %#lx len %#lx wraps around" @%s:%d
+"dart (%s): map_idx oob %zu" @%s:%d
+"dart (%s): out of range IOVA (%#lx) max is (%#llx)" @%s:%d
+"dart (%s): pa %#llx len %#lx out of range" @%s:%d
+"dart (%s): pa %#llx len %#lx wraps around" @%s:%d
+"dart (%s): remapping allowed only for read-only mapping, iova %#lx old PA %#llx new PA %#llx pte %#llx prot %#x" @%s:%d
+"dart (%s): scratch page not acquired, nbytes_map %#lx iova %#lx last_iova %#lx" @%s:%d
+"fFramebuffer is too small for this console spec" @%s:%d
+"link version mismatch: AP is %u, DCP is %u" @%s:%d
+"txm-secure-channel-base not available with a SEP DART" @%s:%d
+"using TXM-SEP secure channel with fixed DVA without DART" @%s:%d
+%06llu.%06llu IOHDCP[%llu] %s %s
+%lld %d AVE %s: %s:%d %s | failed to DART map external surfaces %p %d %p %lld %d
+%lld %d AVE %s: %s:%d %s | failed to DART map internal surfaces %p %d %p %lld %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s %d %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to DART map surface %s x%llx %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to allocate DART Pool %d
+%lld %d AVE %s: %s:%d %s | failed to dart map external surfaces %p %llu %d %d
+%lld %d AVE %s: %s:%d %s | failed to dart map internal surfaces %p %llu %d %d
+%lld %d AVE %s: %s:%d %s | failed to dart map surfaces %p %lld %p %d %d %p %p %d
+%lld %d AVE %s: %s:%d %s | failed to get GGM Refs buffer DART addresses %p %d %lld %p %lld | %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to get GGM output buffer DART address %p %d %lld %p %lld | %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to get GGM stats buffer DART address %p %d %lld %p %lld | %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to get MCTF Ref buffer DART addresses %p %d %lld %p %lld | %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to get MCTF output buffer DART addresses %p %d %lld %p %lld | %d %d %d
+%lld %d AVE %s: %s:%d %s | failed to get Recon buffer dart addresses %p %d %lld %p %lld | %d %d
+%lld %d AVE %s: %s:%d %s | invalid DART map %p %d %d
+%lld %d AVE %s: %s::%s:%d %p kIODARTMapperEarlyReclaimKey failed %p %d %d %d 0x%x
+%lld %d AVE %s: %s::%s:%d %s | failed to DART map external surfaces %p %llu %p %lld %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to DART map external surfaces %p %llu %p %lld %d %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to DART map internal surfaces %p %lld %p %lld %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to DART map internal surfaces %p %lld %p %lld %d %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to activate DART %p %d 0x%llx %d
+%lld %d AVE %s: %s::%s:%d %s | failed to create DART %p %d
+%lld %d AVE %s: %s::%s:%d %s | failed to create DART pool %p %d %d %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to create DART pool %p %d %d %d %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to destroy DART pool %p %d %d %p %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %lld %s %d %p %p 0x%llx 0x%llx %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %p %d %p %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %p %lld %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %p %lld %d %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART unmapping %p %lld %d %d
+%lld %d AVE %s: %s::%s:%d %s | failed to do DART unmapping %p %lld %s %d %p 0x%llx 0x%llx %d
+%lld %d AVE %s: %s::%s:%d %s | failed to initialize DART %p %d %p %d
+%lld %d AVE %s: %s::%s:%d %s | failed to retrieving VMLimits from DART %p %d 0x%x
+%lld %d AVE %s: %s::%s:%d %s | failed to set DART attribute %p %d %d %p %d %s 0x%x
+%lld %d AVE %s: %s::%s:%d %s | failed to set DART in surface manager %p %d %p %p %d
+%lld %d AVE %s: DART %s | %p %d | %p %p %p
+%lld %d AVE %s: DART Error %p %d %d | Panic Count: %d
+%lld %d AVE %s: FwLog %p %d | Phy %p Kernel %p DART %p | %d %d %d | %d %d
+%lld %d AVE %s: HwC %s | %p %d | Surface Manager: %p PMGR: %p DART: %p Reg: %p SVECtrl: %p AXI2AF: %p DPE: %p MCC: %p
+%lld %d AVE %s: Surface %s | Name: %s %p %lld Surf %p ID %d Desc %p Map %p Fence %p Size %d DARTCfg 0x%llx OpFlag 0x%llx DARTOpFlag 0x%llx Protect 0x%llx Cnt %d %d Fmt %s 
+%lld %d AVE %s: Surface Manager %s | %p | Total DART Size: [%s]bytes
+%lldus %s function-dart_force_active found.
+%lldus %s: function-dart_force_active is missing.
+%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to set DART allocator for RX hop ID %d
+%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to set DART allocator for TX hop ID %d
+%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: invalid SID partitioning scheme! fDartSIDPartitioning = %d
+%lldus AppleThunderboltHALGenericACIO::poweredStart - fDartSIDPartitioning = 0x%08x
+%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR null mapper passed
+%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR: failed to create DARTVMAllocator
+%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR: failed to set DARTVMAllocator
+%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - bypass DART
+%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - disable DART
+%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable = %d fDARTEnabled = %d
+%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable DART
+%lldus AppleThunderboltNHIDARTVMAllocator::forMapper
+%lldus AppleThunderboltNHIDARTVMAllocator::init
+%lldus AppleThunderboltNHIDARTVMAllocator::init - DART reported minDVA %p and maxDVA %p and page size %p and thus fSupportsFixedAllocations = %d
+%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric could not fetch DART capability
+%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric failed to initialize
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: IOMemoryDescriptor asked for a fixed DART offset but did not supply one via setContext
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: IOMemoryDescriptor asked for a fixed DART offset, but fixed DART offsets are not supported on this device
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: cannot make requested allocation at 0x%08x/%d
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: failed to get VM space for allocation at page 0x%08x and DVA %p
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: requested DVA %p not between minDVA %p and maxDVA %p
+%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: tailPadding %d not supported when allocating at a specific offset
+%lldus AppleThunderboltNHIGenericACIO(%d)::destroyEmbeddedCPU
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (1) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (2) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (3) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - CPU already disabled.
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - CPU already enabled.
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - ERROR: Failed to start embedded CPU.
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - ERROR: Failed to stop embedded CPU.
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - IOMappedWrite32( 0x%08llx, 0x1 ) before = 0x%08x after 0x%08x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - fw_state = 0x%x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - opening FW_READY took %lld milliseconds
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - sleep lstx_level = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - timed out waiting for FW READY after %lld milliseconds
+%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU
+%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p
+%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p name = %s
+%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU not found!
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output high
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output low
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - USB4+ connection, skipping FW Ready delay
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(off,4) status = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(on,4) status = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - cable connected, set LSTX GPIO to output high
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - enable = %d
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(off) status = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(on) status = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPUEnabled = %d
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - no cable connected, set LSTX GPIO to output low
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - set LSTX GPIO to default
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(off, ATC_CIO) status = 0x%08x
+%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(on, ATC_CIO) status = 0x%08x
+%s %d: could not fetch the DART capability object
+%s %s: Processed HDCP packet successfully
+%s %s: dropped HDCP packet notification
+%s SoC Vmax for dcp index %u
+%s [%p] %s: no hdcp reply available while not pending
+%s [%p] upstreamConnectionGetMessage: hdcpFlags=0x%x
+%s [%p] upstreamConnectionGetMessage: hhdcp_get_reply failed with return code %d
+%s [%p] upstreamConnectionGetStatusFromAULFlags flags: 0x%08x; digitalTransmitting: %d; hdcpUp: %d; supportsHDCP: %d
+%s [%p]::%s: Call to LocalAULRcvRspMsg: protocolType=%d, hdcpFlags = 0x%X, err = %d. header->status = %d
+%s [%p]::%s: Call to hdcp_send_request:  r = %X.
+%s [%p]::%s: DTT & !hdcpUp, returning kUpstreamConnectionStatus_UnsupportedInterface
+%s [%p]::%s: DTT & !supportsHDCP, returning DownNotCapable
+%s [%p]::%s: DTT & supportsHDCP & hdcpUp
+%s [%p]::%s: HDCP reply was never collected
+%s [%p]::%s: hdcp reply is not ready
+%s failed to get AppleDCPExpert
+%s: %s: %4d: surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx, usage='%c%c%c%c', refCnt: %d
+%s: %s: /arm-io/isp or /arm-io/isp0 IORegistryEntry present, enable ISP<->ANE IPC
+%s: %s: ANEProgram: Entered %s state with event %s [programHandle: 0x%llx] wireCount: %u dartMapCount: %u
+%s: %s: ANEProgram: Exiting %s state with event %s [programHandle: 0x%llx] wireCount: %u dartMapCount: %u
+%s: %s: ANEUnionResource release original memoryDescriptor size: 0x%llx  memoryDescriptor: %p dartAddress[%u]: 0x%llx 
+%s: %s: Acquire dartMapLock
+%s: %s: Allocating from sharedMalloc DART Region
+%s: %s: Could not register DART exception handler (res=0x%08X)
+%s: %s: DART map for ISP tx buffer status = 0x%08x
+%s: %s: Dart page size program initi:%llu
+%s: %s: DartDeviceMemoryManager: No Memory
+%s: %s: DartErrorHandlerInProgress
+%s: %s: DartMap: DVA: 0x%llx, descrSize: %llu
+%s: %s: DartMapMemoryDescriptor for ANE Interrupt Register status = 0x%08x
+%s: %s: DartMapMemoryDescriptor for ISP rx buffer status = 0x%08x
+%s: %s: Dartmap expires. unmap ResourceID: 0x%llx activeRequestCount: %u
+%s: %s: Dartmap fIOVMAddr address: 0x%llx
+%s: %s: Dartmap fIOVMAddr address: 0x%llx *pVisibleMemory %p size: 0x%llx
+%s: %s: Dartmap timeout detected. Adding ResourceID: 0x%llx to unmap candidates
+%s: %s: ERROR: ISP surface-id:0x%x had already been mapped, surface address: %p, size:0x%llx, dartMapBase:%p
+%s: %s: ERROR: Kernel split [%u] file_offset: %lu not DART page size aligned
+%s: %s: ERROR: dartMapMemoryDescriptor failed to remap ISP surface-id:0x%x
+%s: %s: ERROR: dartMapMemoryDescriptor failed, result: 0x%x
+%s: %s: ERROR: mutable memory not dart mapped for mutableIndex: %d
+%s: %s: Error: Couldn't dart map ANE sub-block power registers
+%s: %s: Error: Unable to map memory descriptor for the ANE_LLT_DART_DART_DART_BUILD_PARAMS Registers
+%s: %s: Error: couldn't create pDartDeviceMemoryManager for SharedMallocSize
+%s: %s: Error: couldn't dart map shared event table
+%s: %s: Error: dartMapMemoryDescriptor failed, res = 0x%x
+%s: %s: Firmware timeout, indicate dirty shutdown to DART driver
+%s: %s: Freed mapped FD networks ISP surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%08X
+%s: %s: Freed mapped ISP surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx
+%s: %s: Freed mapped ISP surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%08X
+%s: %s: Freed non-persistent shared surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx usage='%c%c%c%c'
+%s: %s: Freed persistent shared surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx usage='%c%c%c%c'
+%s: %s: Freeing DVA: 0x%llx, size: %lu in sharedMalloc Dart Region
+%s: %s: ISP peer surface %4d: surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%08X
+%s: %s: Platform doesn't have /arm-io/isp or /arm-io/isp0 IORegistryEntry, disable ISP<->ANE IPC
+%s: %s: Remap ISP memeory surface: Shared memory region mapped at DART translated address:%p
+%s: %s: Remapp FD network surface: Shared memory  region mapped at DART translated address: 0x%08X
+%s: %s: Shared memory region mapped at DART translated address: 0x%016llx, requireMap: %d
+%s: %s: Successfully allocated surface. surface-id=0x%x, size=0x%llx, dartMapBase=0x%llx
+%s: %s: Successfully remap ISP surface. surface-id=0x%08X, surface address: %p, size=0x%016llx, dartMapBase=%p
+%s: %s: Successfully remapped ISP surface. surface-id:0x%x, surface address:%p, size:0x%llx, dartMapBase:%p
+%s: %s: Timed out waiting for the dartErrorHandler to complete
+%s: %s: WARN: took %llu us bufSize: %llu surfaceCreateTime: %llu us, prepareTime: %llu us, dartMapTime: %llu us
+%s: %s: Wire only, skip dartMap and Prepare
+%s: %s: dart map for aneId:%u
+%s: %s: dartMap failed request retries: %u
+%s: %s: dartMap[aneId=%u surfaceID=%u usageType=%u]: dartAddress=0x%llx offset=0x%llx finalAddr=0x%llx
+%s: %s: dartUnMapMemoryDescriptorSharedMallocRegion failed
+%s: %s: dartUnMapMemoryDescriptorSharedMallocRegion failed. error: 0x%x
+%s: %s: fANEMaxDartMemSize: 0x%llx fANEMaxSystemMemSize: 0x%llx fANEMaxMachoSize: 0x%llx isDeviceWithLimitedDartSpace: %d
+%s: %s: fDartSharedMallocBaseAddress: 0x%llx, fDartSharedMallocRegionSize: %llu
+%s: %s: fDartSharedMallocRegionSize: %llu
+%s: %s: fMapper: %p kIODARTFunctionSetActive -> true
+%s: %s: kIODARTFunctionCacheFlushInactive returned: 0x%08X
+%s: %s: kIODARTFunctionSetActive -> false
+%s: %s: kIODARTFunctionSetActive -> true
+%s: %s: remap for surface-id:0x%X from firmware shared malloc dart region failed, falling back to normal dart region
+%s: %s: setupDartRemap failed
+%s: %s: usage[%u] surface[0x%x] plane[%u] dart[0x%llx] offset[%llu] size[%llu]
+%s: %s::%s::%d: ADMAC revision being driven: 0x%08x. Assigned DART SID = %02u.
+%s: %s::%s::%d: _channelECProxy = %p _dartMapperSID = %u
+%s: %s::%s::%d: _dartMapper = %p
+%s: Couldn't create DCP Power Manager
+%s: DCP map_memory failed with 0x%x
+%s: DisplayWall applied framebuffers for a display wall:
+%s: DisplayWall available framebuffer are:
+%s: ERROR: more than %d current instances of IOMobileFramebuffer!
+%s: Failed to update default FB on DCP
+%s: HDCP reply was never collected
+%s: [%p] %s:IOMobileFramebuffer not found.
+%s: [%p] HDCPGetSecureStatusForDisplay: displayType = %u, status = %u, type = %u, isDetermined = %s
+%s: [%p] In HDCPGetSecureStatusForDisplay
+%s: dropped HDCP packet notification
+%s: failed to allocate fHDCPContext.lock
+%s: hdcp reply is not ready
+%s: hdcp-hoover-protocol set!!!!!!!.
+%s: hdcp_client_will_stop failed with 0x%x
+%s: hdcp_get_reply failed with 0x%x
+%s: more than %d current instances of IOMobileFramebuffer!
+%s: no hdcp reply available while not pending
+%s: setting 2nd external display state %d in DCP 
+%s: trying to display default transaction when default framebuffer has not been allocated
+%s:%s() failed to activate dartManager
+%s:%s() failed to create dartManager
+%s:%s() failed to init dartManager at index=%d, re-trying with default
+%s:%s() failed to init dartManager with defaults
+%s::%d:Found (%s) provider with DART, returning score %d
+%s::%s Could not activate DART mapper.
+%s::%s Could not obtain an instance of the DART mapper and no EC proxy service data object seen.
+%s::%s Could not read the DART's SID.
+%s::%s(0x%llx): deactivate() incomplete %u seconds after displayRelease()! (check DCPEXT)
+%s::%s:  - framebuffer OFF (skip changing level)
+%s::%s: ALS: AppleARMBacklight::handleMessageGated - framebufferState -> %d
+%s::%s: Unable to obtain DCP pwr assertion ARMfn: %s! 
+%s::%s: Using DCP passthrough architecture %d
+%s::%s: provider %p is not a DART
+%s::%s:%d kIODARTMapperEarlyReclaimKey failed %p %d 0x%x
+( 0 != fDARTMapper )
+(%s) %s::%s:  trans-idle-timeout property doesn't apply to this DART, ignoring
+(%s) %s::%s: %s: failed to attach nub %p to DART %p
+(%s) %s::%s: DART interrupt while dirty shutdown is in progress
+(%s) %s::%s: DART interrupt while disabled by the client
+(%s) %s::%s: DART state capture %p
+(%s) %s::%s: DART(%s) perf interrupt asserted after shutdown 0x%08x
+(%s) %s::%s: DART(%s) return from _handleFatalException after shutdown: interruptState %p
+(%s) %s::%s: Spurious DART/SMMU interrupt: interrupt index %d
+(%s) %s::%s: allocation request for inactive DART: %d pages IODC %p
+(%s) %s::%s: passed object %p is not IODARTVMAllocator
+(%s) %s::%s: pio allocation request for inactive DART: %d pages IODC %p
+(ACE_DART::GetMappedAddr(m_psaDARTEntry[id]) & (ACE_DART_HW_PAGE_SIZE - 1)) == 0
+(m_iDARTOpFlag & (1ULL<<((euID)*2 + (mapperID)))) != 0
+(status == kIOReturnSuccess) && (dart != nullptr) && (_maxSIDs > 1) && (_maxSIDs <= _maxRIDs)
+/AppleGen3DART.cpp
+/AppleGen3DART.h
+/AppleHxDARTSPTM.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugAmULpdtI_W_2nm_7XRtMRMgmUCn8Hzl-w/Library/Caches/com.apple.xbs/TemporaryDirectory.Zo0lQ1/Sources/DPDK_uio/AppleUIO/AppleUIOPCIDARTVMAllocator.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugBW4_zXcu-BNUp-iU7LBtomMpe-dcHZUR8/Library/Caches/com.apple.xbs/TemporaryDirectory.zQUaCn/Sources/AppleThunderboltNHI/AppleThunderboltNHIDARTVMAllocator.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCP2AuthSession.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCP2DPTransmitterAuthSession.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCP2LocalMessageTransport.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCP2ReceiverAuthSession.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCP2TransmitterAuthSession.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCPAuthSession.cpp
+/AppleInternal/Library/BuildRoots/4~Cax3ugCy0pVjup6l9tOl4SuzEQX_JAtz-56jf_k/Library/Caches/com.apple.xbs/TemporaryDirectory.MYVaZk/Sources/IOHDCPFamily/IOHDCPInterface.cpp
+/AppleInternal/Library/BuildRoots/4~Cax4ugC-fas4Sn7ByoX8BrpwPWn7WO9KHdReV40/Library/Caches/com.apple.xbs/TemporaryDirectory.WlOE62/Sources/IONVMeFamily/Embedded/AppleANS2DARTNVMeController.cpp
+/AppleInternal/Library/BuildRoots/4~Cax4ugD2ynaOGNKG-Bn3LIwLlxNrUrQcqWr6k5o/Library/Caches/com.apple.xbs/TemporaryDirectory.CWNVQo/Sources/ExclavesAudioDrivers/SharedDARTMapper/Proxy/Source/SharedDARTMapperProxy.cpp
+/IODART.cpp
+/IODARTClient.cpp
+/IODARTMapper.cpp
+/IODARTMapperClient.cpp
+/IODARTPrivate.h
+/IODARTVMAllocator.cpp
+/IODARTVMSpace.cpp
+/arm-io
+/arm-io/ane
+/arm-io/ane%d
+/arm-io/ane0
+/arm-io/ane1
+/arm-io/ane2
+/arm-io/ane3
+/arm-io/apr
+/arm-io/apr0
+/arm-io/apr1
+/arm-io/apr2
+/arm-io/apr3
+/arm-io/avd
+/arm-io/avd0
+/arm-io/avd1
+/arm-io/ave
+/arm-io/dart-ave%d/mapper-ave%d
+/arm-io/dart-ave%d/mapper-ave-dma%d
+/arm-io/dart-ave/mapper-ave
+/arm-io/dart-ave/mapper-ave-dma
+/arm-io/dart-sep
+/arm-io/disp0
+/arm-io/gfx-asc
+/arm-io/isp
+/arm-io/isp-exclave-proxy
+/arm-io/isp0
+/arm-io/scdc1
+/arm-io/sep
+/arm-io/sep/iop-sep-nub/InvalidateHmac
+/arm-io/sep/iop-sep-nub/Sandcat
+/arm-io/sep/iop-sep-nub/xART
+/arm-io/sgx
+/arm-io/wdt
+: set_gain_map_cap_buffer: calling dcp with dva=0x%llx len=%llu
+: set_gain_map_cap_buffer: dcp returned %d
+::%s failed to create DART error handler %p %d
+::%s failed to create DART pool %p %d %d %d
+::%s failed to install DART error handler %p %d 0x%x
+::%s failed to set DART attribute %p %d %p %d %s 0x%x
+::%s get a wrong DART pool %p %d
+<key>AppleANS2DARTNVMeController</key>
+<key>AppleDCPDPTXRemoteHDCPAuthSessionProxy</key>
+<key>AppleDCPDPTXRemoteHDCPInterfaceProxy</key>
+<key>AppleDCPDPTXRemotePortProxy</key>
+<key>AppleDCPExpert</key>
+<key>AppleDCPLPDPTXPortProxy</key>
+<key>AppleDCPLinkServiceSoC</key>
+<key>AppleDCPTCON</key>
+<key>AppleGen3DART</key>
+<key>AppleSEPHDCPManager</key>
+<key>AppleSPUDCPDriver</key>
+<key>BoraDCPEndpoints</key>
+<key>DCPAVAudioDMADelegate</key>
+<key>DCPAVAudioDriver</key>
+<key>DCPAVAudioInterfaceProxy</key>
+<key>DCPAVCECController</key>
+<key>DCPAVCECInterfaceProxy</key>
+<key>DCPAVControllerProxy</key>
+<key>DCPAVDeviceProxy</key>
+<key>DCPAVPowerControllerProxy</key>
+<key>DCPAVRemoteSACControllerProxy</key>
+<key>DCPAVSACController</key>
+<key>DCPAVServiceProxy</key>
+<key>DCPAVVideoInterfaceProxy</key>
+<key>DCPDPControllerProxy</key>
+<key>DCPDPDeviceProxy</key>
+<key>DCPDPServiceProxy</key>
+<key>DCPEndpointsV2</key>
+<key>DCPFirmwareService</key>
+<key>DCPFirmwareServiceEXT</key>
+<key>IODARTMapper</key>
+<key>com.apple.driver.AppleDCP</key>
+<key>com.apple.driver.AudioSharedDARTMapperProxy</key>
+<key>com.apple.driver.DCPAVFamilyProxy</key>
+<key>com.apple.driver.DCPDPFamilyProxy</key>
+<key>com.apple.driver.IODARTFamily</key>
+<key>com.apple.iokit.IOHDCPFamily</key>
+<key>com.apple.iokit.IOMobileGraphicsFamily-DCP</key>
+<key>dcp-ep</key>
+<rdar://problem/67769074> Re-enable DCPDPControllerProxy::setMaxLaneCount() (fix `displayPort -maxlc`)
+<string>/System/Library/Extensions/AppleDCP.kext</string>
+<string>/System/Library/Extensions/AppleDCPDPTXProxy.kext</string>
+<string>/System/Library/Extensions/AppleGen3DART.kext</string>
+<string>/System/Library/Extensions/AppleMobileDispH18G-DCP.kext</string>
+<string>/System/Library/Extensions/AppleSEPHDCPManager.kext</string>
+<string>/System/Library/Extensions/DCPAVFamilyProxy.kext</string>
+<string>/System/Library/Extensions/DCPDPFamilyProxy.kext</string>
+<string>/System/Library/Extensions/IODARTFamily.kext</string>
+<string>/System/Library/Extensions/IOHDCPFamily.kext</string>
+<string>/System/Library/Extensions/IOMobileGraphicsFamily-DCP.kext</string>
+<string>/System/Library/Extensions/SharedDARTMapperProxy.kext</string>
+<string>AppleANS2DARTNVMeController</string>
+<string>AppleDCP</string>
+<string>AppleDCPDPTXProxy</string>
+<string>AppleDCPDPTXRemoteHDCPAuthSessionProxy</string>
+<string>AppleDCPDPTXRemoteHDCPInterfaceProxy</string>
+<string>AppleDCPDPTXRemotePortProxy</string>
+<string>AppleDCPExpert</string>
+<string>AppleDCPLPDPTXPortProxy</string>
+<string>AppleDCPLinkServiceSoC</string>
+<string>AppleDCPTCON</string>
+<string>AppleGen3DART</string>
+<string>AppleMobileDispH18G-DCP</string>
+<string>AppleSEPHDCPManager</string>
+<string>AppleSPUDCPDriver</string>
+<string>Contents/MacOS/AppleDCP</string>
+<string>Contents/MacOS/AppleDCPDPTXProxy</string>
+<string>Contents/MacOS/AppleGen3DART</string>
+<string>Contents/MacOS/AppleMobileDispH18G-DCP</string>
+<string>Contents/MacOS/AppleSEPHDCPManager</string>
+<string>Contents/MacOS/DCPAVFamilyProxy</string>
+<string>Contents/MacOS/DCPDPFamilyProxy</string>
+<string>Contents/MacOS/IODARTFamily</string>
+<string>Contents/MacOS/IOHDCPFamily</string>
+<string>Contents/MacOS/IOMobileGraphicsFamily-DCP</string>
+<string>Contents/MacOS/SharedDARTMapperProxy</string>
+<string>DCP0Endpoint10</string>
+<string>DCP0Endpoint11</string>
+<string>DCP0Endpoint12</string>
+<string>DCP0Endpoint13</string>
+<string>DCP0Endpoint14</string>
+<string>DCP0Endpoint15</string>
+<string>DCP0Endpoint16</string>
+<string>DCP0Endpoint17</string>
+<string>DCP0Endpoint18</string>
+<string>DCP0Endpoint19</string>
+<string>DCP0Endpoint1</string>
+<string>DCP0Endpoint20</string>
+<string>DCP0Endpoint21</string>
+<string>DCP0Endpoint22</string>
+<string>DCP0Endpoint23</string>
+<string>DCP0Endpoint2</string>
+<string>DCP0Endpoint3</string>
+<string>DCP0Endpoint4</string>
+<string>DCP0Endpoint5</string>
+<string>DCP0Endpoint6</string>
+<string>DCP0Endpoint7</string>
+<string>DCP0Endpoint8</string>
+<string>DCP0Endpoint9</string>
+<string>DCP</string>
+<string>DCPAVAudioDMADelegate</string>
+<string>DCPAVAudioDriver</string>
+<string>DCPAVAudioInterfaceProxy</string>
+<string>DCPAVCECController</string>
+<string>DCPAVCECInterfaceProxy</string>
+<string>DCPAVControllerProxy</string>
+<string>DCPAVDeviceProxy</string>
+<string>DCPAVFamilyProxy</string>
+<string>DCPAVPowerControllerProxy</string>
+<string>DCPAVRemoteSACControllerProxy</string>
+<string>DCPAVSACController</string>
+<string>DCPAVServiceProxy</string>
+<string>DCPAVVideoInterfaceProxy</string>
+<string>DCPDPControllerProxy</string>
+<string>DCPDPDeviceProxy</string>
+<string>DCPDPFamilyProxy</string>
+<string>DCPDPServiceProxy</string>
+<string>DCPEXT0Endpoint10</string>
+<string>DCPEXT0Endpoint11</string>
+<string>DCPEXT0Endpoint12</string>
+<string>DCPEXT0Endpoint13</string>
+<string>DCPEXT0Endpoint14</string>
+<string>DCPEXT0Endpoint15</string>
+<string>DCPEXT0Endpoint16</string>
+<string>DCPEXT0Endpoint17</string>
+<string>DCPEXT0Endpoint18</string>
+<string>DCPEXT0Endpoint19</string>
+<string>DCPEXT0Endpoint1</string>
+<string>DCPEXT0Endpoint20</string>
+<string>DCPEXT0Endpoint21</string>
+<string>DCPEXT0Endpoint22</string>
+<string>DCPEXT0Endpoint23</string>
+<string>DCPEXT0Endpoint24</string>
+<string>DCPEXT0Endpoint2</string>
+<string>DCPEXT0Endpoint3</string>
+<string>DCPEXT0Endpoint4</string>
+<string>DCPEXT0Endpoint5</string>
+<string>DCPEXT0Endpoint6</string>
+<string>DCPEXT0Endpoint7</string>
+<string>DCPEXT0Endpoint8</string>
+<string>DCPEXT0Endpoint9</string>
+<string>DCPEXT1Endpoint10</string>
+<string>DCPEXT1Endpoint11</string>
+<string>DCPEXT1Endpoint12</string>
+<string>DCPEXT1Endpoint13</string>
+<string>DCPEXT1Endpoint14</string>
+<string>DCPEXT1Endpoint15</string>
+<string>DCPEXT1Endpoint16</string>
+<string>DCPEXT1Endpoint17</string>
+<string>DCPEXT1Endpoint18</string>
+<string>DCPEXT1Endpoint19</string>
+<string>DCPEXT1Endpoint1</string>
+<string>DCPEXT1Endpoint20</string>
+<string>DCPEXT1Endpoint21</string>
+<string>DCPEXT1Endpoint22</string>
+<string>DCPEXT1Endpoint23</string>
+<string>DCPEXT1Endpoint24</string>
+<string>DCPEXT1Endpoint2</string>
+<string>DCPEXT1Endpoint3</string>
+<string>DCPEXT1Endpoint4</string>
+<string>DCPEXT1Endpoint5</string>
+<string>DCPEXT1Endpoint6</string>
+<string>DCPEXT1Endpoint7</string>
+<string>DCPEXT1Endpoint8</string>
+<string>DCPEXT1Endpoint9</string>
+<string>DCPEXT2Endpoint10</string>
+<string>DCPEXT2Endpoint11</string>
+<string>DCPEXT2Endpoint12</string>
+<string>DCPEXT2Endpoint13</string>
+<string>DCPEXT2Endpoint14</string>
+<string>DCPEXT2Endpoint15</string>
+<string>DCPEXT2Endpoint16</string>
+<string>DCPEXT2Endpoint17</string>
+<string>DCPEXT2Endpoint18</string>
+<string>DCPEXT2Endpoint19</string>
+<string>DCPEXT2Endpoint1</string>
+<string>DCPEXT2Endpoint20</string>
+<string>DCPEXT2Endpoint21</string>
+<string>DCPEXT2Endpoint22</string>
+<string>DCPEXT2Endpoint23</string>
+<string>DCPEXT2Endpoint2</string>
+<string>DCPEXT2Endpoint3</string>
+<string>DCPEXT2Endpoint4</string>
+<string>DCPEXT2Endpoint5</string>
+<string>DCPEXT2Endpoint6</string>
+<string>DCPEXT2Endpoint7</string>
+<string>DCPEXT2Endpoint8</string>
+<string>DCPEXT2Endpoint9</string>
+<string>DCPEXT3Endpoint10</string>
+<string>DCPEXT3Endpoint11</string>
+<string>DCPEXT3Endpoint12</string>
+<string>DCPEXT3Endpoint13</string>
+<string>DCPEXT3Endpoint14</string>
+<string>DCPEXT3Endpoint15</string>
+<string>DCPEXT3Endpoint16</string>
+<string>DCPEXT3Endpoint17</string>
+<string>DCPEXT3Endpoint18</string>
+<string>DCPEXT3Endpoint19</string>
+<string>DCPEXT3Endpoint1</string>
+<string>DCPEXT3Endpoint20</string>
+<string>DCPEXT3Endpoint21</string>
+<string>DCPEXT3Endpoint22</string>
+<string>DCPEXT3Endpoint23</string>
+<string>DCPEXT3Endpoint2</string>
+<string>DCPEXT3Endpoint3</string>
+<string>DCPEXT3Endpoint4</string>
+<string>DCPEXT3Endpoint5</string>
+<string>DCPEXT3Endpoint6</string>
+<string>DCPEXT3Endpoint7</string>
+<string>DCPEXT3Endpoint8</string>
+<string>DCPEXT3Endpoint9</string>
+<string>DCPEXT4Endpoint10</string>
+<string>DCPEXT4Endpoint11</string>
+<string>DCPEXT4Endpoint12</string>
+<string>DCPEXT4Endpoint13</string>
+<string>DCPEXT4Endpoint14</string>
+<string>DCPEXT4Endpoint15</string>
+<string>DCPEXT4Endpoint16</string>
+<string>DCPEXT4Endpoint17</string>
+<string>DCPEXT4Endpoint18</string>
+<string>DCPEXT4Endpoint19</string>
+<string>DCPEXT4Endpoint1</string>
+<string>DCPEXT4Endpoint20</string>
+<string>DCPEXT4Endpoint21</string>
+<string>DCPEXT4Endpoint22</string>
+<string>DCPEXT4Endpoint23</string>
+<string>DCPEXT4Endpoint2</string>
+<string>DCPEXT4Endpoint3</string>
+<string>DCPEXT4Endpoint4</string>
+<string>DCPEXT4Endpoint5</string>
+<string>DCPEXT4Endpoint6</string>
+<string>DCPEXT4Endpoint7</string>
+<string>DCPEXT4Endpoint8</string>
+<string>DCPEXT4Endpoint9</string>
+<string>DCPEXT5Endpoint10</string>
+<string>DCPEXT5Endpoint11</string>
+<string>DCPEXT5Endpoint12</string>
+<string>DCPEXT5Endpoint13</string>
+<string>DCPEXT5Endpoint14</string>
+<string>DCPEXT5Endpoint15</string>
+<string>DCPEXT5Endpoint16</string>
+<string>DCPEXT5Endpoint17</string>
+<string>DCPEXT5Endpoint18</string>
+<string>DCPEXT5Endpoint19</string>
+<string>DCPEXT5Endpoint1</string>
+<string>DCPEXT5Endpoint20</string>
+<string>DCPEXT5Endpoint21</string>
+<string>DCPEXT5Endpoint22</string>
+<string>DCPEXT5Endpoint23</string>
+<string>DCPEXT5Endpoint2</string>
+<string>DCPEXT5Endpoint3</string>
+<string>DCPEXT5Endpoint4</string>
+<string>DCPEXT5Endpoint5</string>
+<string>DCPEXT5Endpoint6</string>
+<string>DCPEXT5Endpoint7</string>
+<string>DCPEXT5Endpoint8</string>
+<string>DCPEXT5Endpoint9</string>
+<string>DCPEXT6Endpoint10</string>
+<string>DCPEXT6Endpoint11</string>
+<string>DCPEXT6Endpoint12</string>
+<string>DCPEXT6Endpoint13</string>
+<string>DCPEXT6Endpoint14</string>
+<string>DCPEXT6Endpoint15</string>
+<string>DCPEXT6Endpoint16</string>
+<string>DCPEXT6Endpoint17</string>
+<string>DCPEXT6Endpoint18</string>
+<string>DCPEXT6Endpoint19</string>
+<string>DCPEXT6Endpoint1</string>
+<string>DCPEXT6Endpoint20</string>
+<string>DCPEXT6Endpoint21</string>
+<string>DCPEXT6Endpoint22</string>
+<string>DCPEXT6Endpoint23</string>
+<string>DCPEXT6Endpoint2</string>
+<string>DCPEXT6Endpoint3</string>
+<string>DCPEXT6Endpoint4</string>
+<string>DCPEXT6Endpoint5</string>
+<string>DCPEXT6Endpoint6</string>
+<string>DCPEXT6Endpoint7</string>
+<string>DCPEXT6Endpoint8</string>
+<string>DCPEXT6Endpoint9</string>
+<string>DCPEXT7Endpoint10</string>
+<string>DCPEXT7Endpoint11</string>
+<string>DCPEXT7Endpoint12</string>
+<string>DCPEXT7Endpoint13</string>
+<string>DCPEXT7Endpoint14</string>
+<string>DCPEXT7Endpoint15</string>
+<string>DCPEXT7Endpoint16</string>
+<string>DCPEXT7Endpoint17</string>
+<string>DCPEXT7Endpoint18</string>
+<string>DCPEXT7Endpoint19</string>
+<string>DCPEXT7Endpoint1</string>
+<string>DCPEXT7Endpoint20</string>
+<string>DCPEXT7Endpoint21</string>
+<string>DCPEXT7Endpoint22</string>
+<string>DCPEXT7Endpoint23</string>
+<string>DCPEXT7Endpoint2</string>
+<string>DCPEXT7Endpoint3</string>
+<string>DCPEXT7Endpoint4</string>
+<string>DCPEXT7Endpoint5</string>
+<string>DCPEXT7Endpoint6</string>
+<string>DCPEXT7Endpoint7</string>
+<string>DCPEXT7Endpoint8</string>
+<string>DCPEXT7Endpoint9</string>
+<string>DCPEXT</string>
+<string>DCPEXTEndpoint10</string>
+<string>DCPEXTEndpoint11</string>
+<string>DCPEXTEndpoint12</string>
+<string>DCPEXTEndpoint13</string>
+<string>DCPEXTEndpoint14</string>
+<string>DCPEXTEndpoint15</string>
+<string>DCPEXTEndpoint16</string>
+<string>DCPEXTEndpoint17</string>
+<string>DCPEXTEndpoint18</string>
+<string>DCPEXTEndpoint19</string>
+<string>DCPEXTEndpoint1</string>
+<string>DCPEXTEndpoint20</string>
+<string>DCPEXTEndpoint21</string>
+<string>DCPEXTEndpoint22</string>
+<string>DCPEXTEndpoint23</string>
+<string>DCPEXTEndpoint2</string>
+<string>DCPEXTEndpoint3</string>
+<string>DCPEXTEndpoint4</string>
+<string>DCPEXTEndpoint5</string>
+<string>DCPEXTEndpoint6</string>
+<string>DCPEXTEndpoint7</string>
+<string>DCPEXTEndpoint8</string>
+<string>DCPEXTEndpoint9</string>
+<string>DCPEndpoint10</string>
+<string>DCPEndpoint11</string>
+<string>DCPEndpoint12</string>
+<string>DCPEndpoint13</string>
+<string>DCPEndpoint14</string>
+<string>DCPEndpoint15</string>
+<string>DCPEndpoint16</string>
+<string>DCPEndpoint17</string>
+<string>DCPEndpoint18</string>
+<string>DCPEndpoint19</string>
+<string>DCPEndpoint1</string>
+<string>DCPEndpoint20</string>
+<string>DCPEndpoint21</string>
+<string>DCPEndpoint22</string>
+<string>DCPEndpoint23</string>
+<string>DCPEndpoint24</string>
+<string>DCPEndpoint2</string>
+<string>DCPEndpoint3</string>
+<string>DCPEndpoint4</string>
+<string>DCPEndpoint5</string>
+<string>DCPEndpoint6</string>
+<string>DCPEndpoint7</string>
+<string>DCPEndpoint8</string>
+<string>DCPEndpoint9</string>
+<string>DCPEndpointV2</string>
+<string>DCPSECEndpoint10</string>
+<string>DCPSECEndpoint11</string>
+<string>DCPSECEndpoint12</string>
+<string>DCPSECEndpoint13</string>
+<string>DCPSECEndpoint14</string>
+<string>DCPSECEndpoint15</string>
+<string>DCPSECEndpoint16</string>
+<string>DCPSECEndpoint17</string>
+<string>DCPSECEndpoint18</string>
+<string>DCPSECEndpoint19</string>
+<string>DCPSECEndpoint1</string>
+<string>DCPSECEndpoint20</string>
+<string>DCPSECEndpoint21</string>
+<string>DCPSECEndpoint22</string>
+<string>DCPSECEndpoint23</string>
+<string>DCPSECEndpoint2</string>
+<string>DCPSECEndpoint3</string>
+<string>DCPSECEndpoint4</string>
+<string>DCPSECEndpoint5</string>
+<string>DCPSECEndpoint6</string>
+<string>DCPSECEndpoint7</string>
+<string>DCPSECEndpoint8</string>
+<string>DCPSECEndpoint9</string>
+<string>IODARTFamily</string>
+<string>IODARTMapper</string>
+<string>IODARTMapperNub</string>
+<string>IOFramebuffer</string>
+<string>IOHDCPFamily</string>
+<string>IOMobileFramebufferShim</string>
+<string>IOMobileGraphicsFamily-DCP</string>
+<string>SharedDARTMapperProxy</string>
+<string>arm-io,t8152</string>
+<string>audio-shared-dart-proxy</string>
+<string>bora-dcplEndpoint10</string>
+<string>bora-dcplEndpoint11</string>
+<string>bora-dcplEndpoint12</string>
+<string>bora-dcplEndpoint13</string>
+<string>bora-dcplEndpoint14</string>
+<string>bora-dcplEndpoint15</string>
+<string>bora-dcplEndpoint16</string>
+<string>bora-dcplEndpoint17</string>
+<string>bora-dcplEndpoint18</string>
+<string>bora-dcplEndpoint19</string>
+<string>bora-dcplEndpoint1</string>
+<string>bora-dcplEndpoint20</string>
+<string>bora-dcplEndpoint21</string>
+<string>bora-dcplEndpoint22</string>
+<string>bora-dcplEndpoint23</string>
+<string>bora-dcplEndpoint2</string>
+<string>bora-dcplEndpoint3</string>
+<string>bora-dcplEndpoint4</string>
+<string>bora-dcplEndpoint5</string>
+<string>bora-dcplEndpoint6</string>
+<string>bora-dcplEndpoint7</string>
+<string>bora-dcplEndpoint8</string>
+<string>bora-dcplEndpoint9</string>
+<string>bora-dcprEndpoint10</string>
+<string>bora-dcprEndpoint11</string>
+<string>bora-dcprEndpoint12</string>
+<string>bora-dcprEndpoint13</string>
+<string>bora-dcprEndpoint14</string>
+<string>bora-dcprEndpoint15</string>
+<string>bora-dcprEndpoint16</string>
+<string>bora-dcprEndpoint17</string>
+<string>bora-dcprEndpoint18</string>
+<string>bora-dcprEndpoint19</string>
+<string>bora-dcprEndpoint1</string>
+<string>bora-dcprEndpoint20</string>
+<string>bora-dcprEndpoint21</string>
+<string>bora-dcprEndpoint22</string>
+<string>bora-dcprEndpoint23</string>
+<string>bora-dcprEndpoint2</string>
+<string>bora-dcprEndpoint3</string>
+<string>bora-dcprEndpoint4</string>
+<string>bora-dcprEndpoint5</string>
+<string>bora-dcprEndpoint6</string>
+<string>bora-dcprEndpoint7</string>
+<string>bora-dcprEndpoint8</string>
+<string>bora-dcprEndpoint9</string>
+<string>bora-dcpsEndpoint10</string>
+<string>bora-dcpsEndpoint11</string>
+<string>bora-dcpsEndpoint12</string>
+<string>bora-dcpsEndpoint13</string>
+<string>bora-dcpsEndpoint14</string>
+<string>bora-dcpsEndpoint15</string>
+<string>bora-dcpsEndpoint16</string>
+<string>bora-dcpsEndpoint17</string>
+<string>bora-dcpsEndpoint18</string>
+<string>bora-dcpsEndpoint19</string>
+<string>bora-dcpsEndpoint1</string>
+<string>bora-dcpsEndpoint20</string>
+<string>bora-dcpsEndpoint21</string>
+<string>bora-dcpsEndpoint22</string>
+<string>bora-dcpsEndpoint23</string>
+<string>bora-dcpsEndpoint2</string>
+<string>bora-dcpsEndpoint3</string>
+<string>bora-dcpsEndpoint4</string>
+<string>bora-dcpsEndpoint5</string>
+<string>bora-dcpsEndpoint6</string>
+<string>bora-dcpsEndpoint7</string>
+<string>bora-dcpsEndpoint8</string>
+<string>bora-dcpsEndpoint9</string>
+<string>com.apple.driver.AppleDCP</string>
+<string>com.apple.driver.AppleDCPDPTXProxy</string>
+<string>com.apple.driver.AppleGen3DART</string>
+<string>com.apple.driver.AppleMobileDispH18G-DCP</string>
+<string>com.apple.driver.AppleSEPHDCPManager</string>
+<string>com.apple.driver.AudioSharedDARTMapperProxy</string>
+<string>com.apple.driver.DCPAVFamilyProxy</string>
+<string>com.apple.driver.DCPDPFamilyProxy</string>
+<string>com.apple.driver.IODARTFamily</string>
+<string>com.apple.iokit.IOHDCPFamily</string>
+<string>com.apple.iokit.IOMobileGraphicsFamily-DCP</string>
+<string>dart,gen3</string>
+<string>dcp-control</string>
+<string>dcp-expert-v1</string>
+<string>dcp-lpdptx-port-epic</string>
+<string>dcp-sac-controller</string>
+<string>dcp0-sac-controller</string>
+<string>dcp1-sac-controller</string>
+<string>dcpav-audio-interface-epic</string>
+<string>dcpav-cec-interface-epic</string>
+<string>dcpav-controller-epic</string>
+<string>dcpav-device-epic</string>
+<string>dcpav-power-epic</string>
+<string>dcpav-sac-epic</string>
+<string>dcpav-service-epic</string>
+<string>dcpav-video-interface-epic</string>
+<string>dcpdp-controller-epic</string>
+<string>dcpdp-device-epic</string>
+<string>dcpdp-service-epic</string>
+<string>dcpdptx-hdcp-auth-session</string>
+<string>dcpdptx-hdcp-interface</string>
+<string>dcpdptx-port-epic</string>
+<string>sep-endpoint,hdcp</string>
+A0_Determine_Rx_HDCP_Capable
+ACE_DART
+ACE_DART.cpp
+ACE_DART_Pool_Create
+ACE_DART_Pool_Destroy
+ACE_DART_Pool_GetEntry
+ANEHWDevice - DART Exception - End Logging
+ANE_FlushInactiveDARTMappings_gated
+AVE_CHM_DARTMapInInput
+AVE_CHM_DARTMapInReady
+AVE_CHM_DARTMapSurfaces
+AVE_Client_DARTMapDataSurfaces
+AVE_Client_DARTUnmapDataSurfaces
+AVE_DART
+AVE_DARTMapDataSurfaces
+AVE_DARTMapExternalSurfaces
+AVE_DARTMapInternalSurfaces
+AVE_DARTUnmapDataSurfaces
+AVE_DARTUnmapExternalSurfaces
+AVE_DARTUnmapInternalSurfaces
+ActiveDartEndTime
+ActiveDartStartTime
+AggressorUserClient::start failed to attach %s to arm-io
+AggressorUserClient::start found %d nodes with name arm-io, this should not happen
+Apple, Inc.1
+Apple, Inc.1/0-
+AppleA7IOP(%s):WARNING: dart-map-firmware-debug-only is a debug only setting and should not be set in a normal build
+AppleANS2DARTNVMeController
+AppleAVD: ERROR: %s(): DART Mapping failed! status: 0x%x - AVDVAddr: %llu
+AppleAVD: ERROR: %s(): DART VAddr Mapping Failed! ClientID: %d - status: 0x%x - FrameNum: %d
+AppleAVD: ERROR: %s(): Dart Error AXIId = 0x%x
+AppleAVD: ERROR: %s(): Dart Error AXIId = null
+AppleAVD: ERROR: %s(): Failed for wait for DART mapper to become active (status 0x%x)
+AppleAVD: ERROR: %s(): NULL pAVDDart or invalid SID
+AppleAVD: ERROR: %s(): No Dart Error expected
+AppleAVD: ERROR: %s(): Timed out waiting for DART to become enabled! loopCount: %u
+AppleAVD: ERROR: %s(): [Core %u] DART initialization failed!
+AppleAVD: ERROR: %s(): [Core %u] NULL AVDDart obj!
+AppleAVD: ERROR: %s(): fatal_error = %d, dart_error = %d
+AppleAVD: INFO: %s(): AVDDart ERROR: DARTErrorHandler install failed 0x%08x
+AppleAVD: INFO: %s(): AVDDart ERROR: DVA not safe to truncate! RAW-DVA: 0x%llx - numDvaBits: %d - dvaValidBitMask: 0x%llx 
+AppleAVD: INFO: %s(): AVDDart ERROR: FlushInactiveDARTMappings with fMapper == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: SetActive with fMapper == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: cannot get the dma command
+AppleAVD: INFO: %s(): AVDDart ERROR: command == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: desc == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: destDMACommand == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: fCommandPools[%d] == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: fMapper[%d] == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: failed to gen segments: 0x%08x
+AppleAVD: INFO: %s(): AVDDart ERROR: gOffset == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: kIODARTFunctionSetParameter kIODARTIOMDCacheSizeKey failed
+AppleAVD: INFO: %s(): AVDDart ERROR: m_Provider == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: m_WorkLoop == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: m_numDvaBits < %d
+AppleAVD: INFO: %s(): AVDDart ERROR: m_numDvaBits >= %d
+AppleAVD: INFO: %s(): AVDDart ERROR: m_pDartPowerLock == NULL
+AppleAVD: INFO: %s(): AVDDart ERROR: m_pUnmapDeferralList init failed
+AppleAVD: INFO: %s(): AVDDart ERROR: m_pUnmapDeferralList malloc failed
+AppleAVD: INFO: %s(): AVDDart ERROR: mapToDART failed
+AppleAVD: INFO: %s(): AVDDart ERROR: mapperIndex >= MAX_DART_SIDS
+AppleAVD: INFO: %s(): AVD_DART_ERR_CONFIG = %08x
+AppleAVD: INFO: %s(): AvdDart ERROR: m_clientInfo == NULL
+AppleAVD: INFO: %s(): Forcing panic due to DART error
+AppleAVD: INFO: %s(): KDGetRequiredHDCPType returned %d
+AppleAVD: INFO: %s(): Received multiple DART panic for a single pair!
+AppleAVD: INFO: %s(): cryptScheme %d - Required HDCP Type is %llx %d %p
+AppleAVD: INFO: %s(): dartStatus 0x%x dartAddr 0x%x isWrPanic=%d
+AppleAVD: INFO: %s(): dartStatus 0x%x dartAddrMsb 0x%x dartAddrLsb 0x%x isWrPanic=%d
+AppleAVD: INFO: %s(): for kEncryptionScheme_Fairplay, Required HDCP Type is %llx %d %p
+AppleAVD: INFO: %s(): mapper/DART is inactive!
+AppleAVD: INFO: %s(): mapperIndex >= MAX_DART_SIDS
+AppleDCPDPTXRemoteHDCPAuthSessionProxy
+AppleDCPDPTXRemoteHDCPInterfaceProxy
+AppleDCPDPTXRemotePortProxy
+AppleDCPDPTXRemotePortUFP
+AppleDCPExpert
+AppleDCPExpert.cpp
+AppleDCPExpert::%s epic unavailable
+AppleDCPExpert::%s unexpected response size of %u: %u
+AppleDCPExpert::%s unexpected response size of %u: %zu
+AppleDCPLPDPTXPortProxy
+AppleDCPLinkService
+AppleDCPLinkService.cpp
+AppleDCPLinkService: %s: failed with 0x%x [%u, %u]
+AppleDCPLinkService: %s: link_cond_wait_priv failed with 0x%x
+AppleDCPLinkService: %s: link_send_message failed with 0x%x
+AppleDCPLinkService: %s: overflow detected, payload too big: (%zu + %u + %u)
+AppleDCPLinkService: %s: payload too big: %u bytes
+AppleDCPLinkService: %s: ptr_to_shared_memcpy failed with 0x%x
+AppleDCPLinkService: %s: shared buffer overflow [%u]
+AppleDCPLinkService: %s: shared buffer underflow [%u]
+AppleDCPLinkService: %s: shared_to_ptr_memcpy failed with 0x%x
+AppleDCPLinkService: %s:%u REQUIRE failed: %s
+AppleDCPLinkService: default_ack failed with 0x%x
+AppleDCPLinkService: driver_signal failed with 0x%x
+AppleDCPLinkService: endpoint power-down entered with driver_power set, this wait cannot complete: this=%p power2=%d
+AppleDCPLinkService: failed to allocate memory descriptor relay
+AppleDCPLinkService: hibernate-resume re-start of link service failed
+AppleDCPLinkService: link_handle_message failed with 0x%x
+AppleDCPLinkService: link_init_ack_callback failed with 0x%x
+AppleDCPLinkService: link_init_callback failed with 0x%x
+AppleDCPLinkService: link_init_ready_callback failed with 0x%x
+AppleDCPLinkService: link_state_init failed with 0x%x
+AppleDCPLinkService: power_state_handler failed with 0x%x
+AppleDCPLinkService::check_firmware_hash_crc32() 0x%08X
+AppleDCPLinkServiceSoC
+AppleDCPTCON
+AppleDPTXHDCP1Controller
+AppleDPTXHDCP2Controller
+AppleDPTXHDCPController
+AppleDisplayManager: AppleDCPDPTXRemotePortUFP is not currently registered.
+AppleDisplayManager: failed to create matching service dictionary: IOMobileFramebufferShim
+AppleDisplayManager: found AppleDCPDPTXRemotePortUFP: %s
+AppleGen3DART
+AppleGen3DART.cpp
+AppleH16CamIn:%s - Could not register DART exception handler (result=0x%08X)
+AppleH16CamIn:%s - DartErrorHandlerInProgress
+AppleH16CamIn:%s - FW Timed out, ignoring DART exceptions till the next hardware power on
+AppleH16CamIn:%s - Firmware timeout: %d, type: %d, cmdID: %#x, res: %#x, isISPCPUNotInWFI: %d indicate dirty shutdown to DART driver
+AppleH16CamIn:%s - ISP-ANE networks, no DART remapping for ISP side during poweron
+AppleH16CamIn:%s - LogDARTErrorInfo - Begin Logging
+AppleH16CamIn:%s - LogDARTErrorInfo - End Logging
+AppleH16CamIn:%s - Notify firmware about dart error
+AppleH16CamIn:%s - Remap missing DART address for persistent shared memory
+AppleH16CamIn:%s - Shared memory  region mapped at DART translated address: 0x%08X
+AppleH16CamIn:%s - Timed out waiting for the dartErrorHandler to complete
+AppleH16CamIn:%s - could not fetch the DART capability object
+AppleH16CamIn:%s - h2tBuf: pool=%d, tag=%#llx, addr0=%#llx, len0=%d, addr1=%#llx, len1=%d, DART=%#llx
+AppleH16CamIn:%s - h2tBuf: pool=%d, tag=%#llx, addr=%#llx, len=%d, DART=%#llx
+AppleH16CamIn:%s - ret=%#x, surfaceID=%u, size=%llu, dartMapBase=%#llx
+AppleH16CamIn:%s - surfaceID=%u, size=%llu, dartMapBase=%#llx %s
+AppleH16CamIn:%s - wired client surface-id:0x%08X, w=%-4u, h=%-4u, fmt=%-3u, poolID=%-4u, dartMapBase=%#llX
+AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - %s%sfreeing %s shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX, fSystemSleepInProgress=%d, fIsDartActive=%d
+AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - Shared memory region mapped at DART translated address: %#llX, visible memory: %p
+AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - Successfully allocated surface. surface-id=%#08X, surface address: 0x%p, size=%llu, dartMapBase=%#llX
+AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - freed deletionPending shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX
+AppleH16CamInFrameReceiverBufferPool:%s - PearlCam Pool Buffer (free):   surface-id:%#08x, DART:%#llx, size:%u
+AppleH16CamInFrameReceiverBufferPool:%s - PearlCam Pool Buffer (in-use): surface-id:%#08x, DART:%#llx, size:%u
+AppleHDCPInterface
+AppleHDCPManager
+AppleHDCPManager failed in super::start
+AppleHDCPManager requires valid endpoint to start
+AppleHDCPManager@%p::start(provider %p)
+AppleHPMInterface::resolvePHandle - failed after apple,phandle
+AppleHxDARTSPTM.cpp
+AppleHxDARTSPTM.h
+AppleJPEGDriver: %s : dartAXIId = 0x%x
+AppleJPEGDriver: %s : dartAXIId NULL
+AppleJPEGDriver: %s : dartAddress = 0x%llx
+AppleJPEGDriver: %s : dartAddress NULL
+AppleJPEGDriver: %s : dartHwError = %s
+AppleJPEGDriver: %s : dartHwError NULL
+AppleJPEGDriver: %s : dartHwStatus = 0x%x
+AppleJPEGDriver: %s : dartHwStatus NULL
+AppleJPEGDriver: %s : dartIsWrite = 0x%x
+AppleJPEGDriver: %s(): DART registerMapper() failed with %d!
+AppleJPEGDriver: %s(): NULL mJpegDart!
+AppleJPEGDriver: ** %s : ERROR, dart fail to gen segments with error code 0x%x
+AppleJPEGDriver: ** %s : ERROR, mMapper IODARTErrorHandler fail with code %d
+AppleJPEGDriver: ** %s : ERROR, mMapper kIODARTIOMDCacheSizeKey fail with code %d
+AppleJPEGDriver: ** %s : ERROR, mMapper kIODARTIOMDCacheTTLKey fail with code %d
+AppleJPEGDriver: ** %s: too many dart exceptions from malicious file in 1sec, total exception open %lld, close %lld
+AppleProResHW (0x%x): %s(): Enable DART 
+AppleProResHW (0x%x): %s(): EncodeYCbCr cmd: fid=%d fstpss=%d Int=%d enc=%d a=%d cmp=%d nPass=%d cfmt=%d bd=%d. Program Output DartVA %p Address=%08x.%08x MaxSize=%u Input OffsetH,V=%u,%u SizeH,V=%u,%u Width=%u Height=%u cmd-word %08x
+AppleProResHW (0x%x): %s(): [%d] dart: %p base 0x%x Size %d  PlaneBpRow %d stride %d
+AppleProResHW (0x%x): %s(): [%d] dart: %p base 0x%x Size %d W %d H %d PlaneBpRow %d TileDataOffs %d TileHdrOffs %d tileDataBpRow %d tileHdrBpRow %d
+AppleProResHW (0x%x): %s(): frameId=%d intEn=%d encMode=%d cmpGaEn=%d passes=%d fastPass=%d bitDepth=%d. Output DartVA=%p Address=%08x.%08x Size=%u Input OffsetH,V=%u,%u SizeH,V=%u,%u Width,Height=%u,%u cmd-word %08x cmdX-word %08x Pkd=%d Ivd=%d Cmpd=%d FO=%d Fld=%d
+AppleProResHW (0x%x): %s(): m_DescRingMemInfo[%d] size %d kAddr %llx DartVM %llx
+AppleProResHW (0x%x): %s(): m_StatsBuffer[%d] size %d kAddr %llx DartVM %llx
+AppleProResHW:%s(): DART error info %s %s %s sts 0x%08X isWR %d SID 0x%08X adr 0x%08X AXI 0x%08X TTBRx 0x%08X L2 0x%08X L3 0x%08X inst %s 0x%0llX | AXIREQ 0x%08X 0x%08X 0x%08X 0x%08X | AXIID  0x%08X 0x%08X 0x%08X 0x%08X | AXIUSR 0x%08X 0x%08X 0x%08X 0x%08X 0x%08X 0x%08X 0x%08X 0x%08X 
+AppleS8000AES::start: using DART Mapper: %p
+AppleSEPHDCPEndpoint
+AppleSEPHDCPEndpoint.cpp
+AppleSEPHDCPManager
+AppleSEPHDCPManager failed in super::start
+AppleSEPHDCPManager failed to get provider
+AppleSPUDCPDriver
+AppleTCController::resolvePHandle - failed after apple,phandle
+AppleThunderboltNHIDARTVMAllocator
+AppleThunderboltNHIDARTVMAllocator.cpp
+AppleUIOPCIDARTVMAllocator
+AppleUIOPCIDARTVMAllocator.cpp
+AppleUSBEHCIDARTDMACommand
+AppleUSBEHCIDARTDMACommand: bouncing isochronous transfer
+AppleUSBHostDARTDMACommand
+CA Framebuffer
+CP_IRQ received--unexpected HDCP protocol (%u)
+CheckDartStatus
+DART
+DART %s | %p %d | %p %p %p
+DART Error
+DART Exception @ 0x%08X
+DART error handler registeration mapper failed!, ret: 0x%08x
+DART error handler registration failed: ret: 0x%08x
+DART error handler registration skipped: fMapper is NULL
+DART error handler unregister in recovery_complete: ret: 0x%08x
+DART error handler unregister: fMapper is null
+DART error set mapper %d parameter failed!, ret: 0x%08x
+DART in %s:%d | %p %d %d | 0x%llx 0x%llx | %d %d %d %d | %d %lld
+DART2KernelAddr
+DARTErrorHandler
+DARTErrorHandlerCallback
+DARTFlush
+DARTHwException
+DARTMap
+DARTMapExternalSurfaces
+DARTMapInternalSurfaces
+DARTMapSurface
+DARTMapSurfaces
+DARTUnmap
+DARTUnmapExternalSurfaces
+DARTUnmapInternalSurfaces
+DARTUnmapSurface
+DARTUnmapSurfaces
+DCPAVAudioDMADelegate
+DCPAVAudioDriver
+DCPAVAudioInterfaceProxy
+DCPAVAudioInterfaceProxyUserClient
+DCPAVCECController
+DCPAVCECInterfaceProxy
+DCPAVControllerProxy
+DCPAVControllerProxyUserClient
+DCPAVDeviceProxy
+DCPAVDeviceProxyUserClient
+DCPAVPowerControllerProxy
+DCPAVProxy
+DCPAVRemotePowerController
+DCPAVRemotePowerController.cpp
+DCPAVRemoteSACControllerProxy
+DCPAVRemoteSACControllerProxy failed to start
+DCPAVRemoteSACControllerProxy.cpp
+DCPAVSACController
+DCPAVSACController.cpp
+DCPAVServiceProxy
+DCPAVServiceProxyUserClient
+DCPAVVideoInterfaceProxy
+DCPAVVideoInterfaceProxyUserClient
+DCPDPControllerProxy
+DCPDPControllerProxyUserClient
+DCPDPDeviceProxy
+DCPDPDeviceProxyUserClient
+DCPDPServiceProxy
+DCPDPServiceProxyUserClient
+DCPEXT
+DCPEXT0
+DCPEXT1
+DCPEXT2
+DCPEXT3
+DCPEXT4
+DCPEXT5
+DCPEXT6
+DCPEXT7
+DCPEndpointV2
+DCPEndpointV2.cpp
+DCPExpertPowerState
+DCPIndex
+DCPLink
+DCPPowerAssertionCount
+DCPPowerCallback
+DCPPowerManager
+DCPPowerManager.cpp
+DCPPowerRetained
+DCPPowerState
+DCPResetLoopMaxCount
+DCPResetLoopWindowSec
+DCPSEC
+DCPUtils.cpp
+DW_LOG::%s:%d: DisplayWall framebuffers in the setup do not correlate to requested grid. DW_ID %u FB count is %u requested grid %u x %u
+Dart      
+Dart Error req %d, %s plane %d.
+Dart Error req %d, DartAddrType %d.
+Dart Error req %d, NC column buffer.
+Dart Error req %d, NC row buffer.
+Dart Error req %d, RegStream blocks.
+Dart Error req %d, Spill buffer.
+DartMap
+DartMapped
+DartUnmap
+Defer reset (MSR Dart Ganging) %d: %d, %d
+DisplayWall invalid input, only 2, 3 or 4 framebuffers can be selected
+ERROR AppleProResHW (0x%x): %d: %s(): AppleProRes ERROR: Failed to map decoder output buffer with DART. ret = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Could not map bitstream buffer with DART for Ring Descriptor Memory. mapRet = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Could not map bitstream buffer with DART for Statistics buffer. mapRet = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Failed to map decoder input buffer with DART. ret = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Failed to map encoder input buffer with DART. ret = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Failed to map encoder output buffer with DART. ret = 0x%x.
+ERROR AppleProResHW (0x%x): %d: %s(): Failed to map encoder statistics buffer with DART. ret = 0x%x.
+ERROR AppleProResHW: %d: %s(): kIODARTFunctionRegisterErrorHandler failed 0x%x
+ERROR AppleProResHW: %d: %s(): kIODARTMapperEarlyReclaimKey failed 0x%x
+ERROR: AppleProResHW: %d: %s(): Disable DART with Dirty Shutdown
+ERROR: AppleProResHW: %d: %s(): kIODARTFunctionCacheFlushInactive Failed ret=0x%x
+ERROR: AppleProResHW: %d: %s(): kIODARTFunctionSetActive with Dirty Shutdown Failed ret=0x%x
+Encryption off - HDCP Status: 0x%02X.
+Encryption on - HDCP Status: 0x%02X
+F0_Determine_Rx_HDCP_Capable
+Failed to initialize Dart Flush interrupts!
+FwLog %p %d | Phy %p Kernel %p DART %p | %d %d %d | %d %d
+GetDARTAddr
+GetDARTBuf
+GetDARTCompressedBuf
+GetDARTLinearBuf
+H11ANEIn - DART Exception @ 0x%08X
+HDCP
+HDCP 1.x capable found
+HDCP 2.x capable found
+HDCP Capable
+HDCP Startup Failed. ret=0x%08x
+HDCP attach failed
+HDCP detaching
+HDCP init failed
+HDCP start failed
+HDCP status after protectLink: 0x%02X
+HDCP status before protectLink: 0x%02X
+HDCP suppressed per -restore
+HDCP suppressed per disable-av-content-protection
+HDCP suppressed per ramrod_disable_sep_load
+HDCP suppressed per rd=md0
+HDCP1
+HDCP1 controller initHDCP failure
+HDCP1 is required, but SoC is not HDCP1 fused!
+HDCP2
+HDCP2 controller initHDCP failure
+HDCP2 is required, but SoC is not HDCP2 fused!
+HDCPCapabilityMask
+HDCPChannel
+HDCPInterface detaching
+HDCPLinkIntegrityFailures
+HDCPMessageTransportType
+HDCPProtocolType
+HDCPRXCapabilities
+HDCPReauthRequests
+HDCPRole
+HDCPTXCapabilities
+HDCPTXVersion
+HDCPTopology
+HDCPTransport
+HDCP_CRC_ERR
+HwC %s | %p %d | Surface Manager: %p PMGR: %p DART: %p Reg: %p SVECtrl: %p AXI2AF: %p DPE: %p MCC: %p
+HxDARTSPTMInterface
+I24@?0{shareddartmapperservice_shareddartmapperservice_resume__result_s=C(?={exclavesaudiodrivers_exadresult_s=Q})}8
+I24@?0{shareddartmapperservice_shareddartmapperservice_suspend__result_s=C(?={exclavesaudiodrivers_exadresult_s=Q})}8
+I32@?0{shareddartmapperservice_shareddartmapperservice_setupusecase__result_s=C(?={exclavesaudiodrivers_exadresult_s=Q}{exclavesaudiodrivers_audiodmabufferspectb_s=QQ})}8
+IOAV[%d] %s<0x%llx>::%s: %s SoC Vmax for dcp index %u
+IOAV[%d] %s<0x%llx>::%s: %s::%s(0x%llx): deactivate() incomplete %u seconds after displayRelease()! (check DCPEXT)
+IOAV[%d] %s<0x%llx>::%s: <rdar://problem/67769074> Re-enable DCPDPControllerProxy::setMaxLaneCount() (fix `displayPort -maxlc`)
+IOAV[%d] %s<0x%llx>::%s: CP_IRQ received--unexpected HDCP protocol (%u)
+IOAV[%d] %s<0x%llx>::%s: Encryption off - HDCP Status: 0x%02X.
+IOAV[%d] %s<0x%llx>::%s: Encryption on - HDCP Status: 0x%02X
+IOAV[%d] %s<0x%llx>::%s: HDCP 1.x capable found
+IOAV[%d] %s<0x%llx>::%s: HDCP 2.x capable found
+IOAV[%d] %s<0x%llx>::%s: HDCP Startup Failed. ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: HDCP attach failed
+IOAV[%d] %s<0x%llx>::%s: HDCP detaching
+IOAV[%d] %s<0x%llx>::%s: HDCP init failed
+IOAV[%d] %s<0x%llx>::%s: HDCP start failed
+IOAV[%d] %s<0x%llx>::%s: HDCP status after protectLink: 0x%02X
+IOAV[%d] %s<0x%llx>::%s: HDCP status before protectLink: 0x%02X
+IOAV[%d] %s<0x%llx>::%s: HDCP suppressed per -restore
+IOAV[%d] %s<0x%llx>::%s: HDCP suppressed per disable-av-content-protection
+IOAV[%d] %s<0x%llx>::%s: HDCP suppressed per ramrod_disable_sep_load
+IOAV[%d] %s<0x%llx>::%s: HDCP suppressed per rd=md0
+IOAV[%d] %s<0x%llx>::%s: HDCP1 controller initHDCP failure
+IOAV[%d] %s<0x%llx>::%s: HDCP1 is required, but SoC is not HDCP1 fused!
+IOAV[%d] %s<0x%llx>::%s: HDCP2 controller initHDCP failure
+IOAV[%d] %s<0x%llx>::%s: HDCP2 is required, but SoC is not HDCP2 fused!
+IOAV[%d] %s<0x%llx>::%s: Negotiating HDCP1 with %s.
+IOAV[%d] %s<0x%llx>::%s: No active HDCP controller
+IOAV[%d] %s<0x%llx>::%s: _cpCapabilties.hdcp.protocolMask=0x%x
+IOAV[%d] %s<0x%llx>::%s: _hdcpInitMask=0x%x cpTypesMask=0x%x hdcp.protocolMask=0x%x hdcp.authPolicy=%d
+IOAV[%d] %s<0x%llx>::%s: abortHDCPNegotiation
+IOAV[%d] %s<0x%llx>::%s: abortHDCPNegotiation ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: authenticated=%d negotiating=%d maxHDCPContentType=%d state=%s(%d)
+IOAV[%d] %s<0x%llx>::%s: cpTypesMask=0x%x hdcp.protocolMask=0x%x
+IOAV[%d] %s<0x%llx>::%s: createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveChannelLayoutElements) ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveEDIDUUID) ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveElements) ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveProductAttributes) ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: error reading Bcaps (0x%08x); assuming not HDCP 1.x capable
+IOAV[%d] %s<0x%llx>::%s: error reading RxCaps (0x%08x); assuming not HDCP 2.2 capable
+IOAV[%d] %s<0x%llx>::%s: error: HDCP1 is required, but SoC is not HDCP1 fused!
+IOAV[%d] %s<0x%llx>::%s: error: HDCP2 is required, but SoC is not HDCP2 fused!
+IOAV[%d] %s<0x%llx>::%s: error: no HDCP protocol bit _cpCapabilities
+IOAV[%d] %s<0x%llx>::%s: hdcp2ReceiverIDListAvailable ret=0x%08x: Reprotecting.
+IOAV[%d] %s<0x%llx>::%s: initHDCP
+IOAV[%d] %s<0x%llx>::%s: negotiateHDCP_Software ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: shutdownHDCPBlock
+IOAV[%d] %s<0x%llx>::%s: shutdownHDCPBlock ret=0x%08x
+IOAV[%d] %s<0x%llx>::%s: startupHDCPBlock
+IOAV[%d] %s<0x%llx>::%s: unexpected type returned from DCPAVAudioInterfaceProxy::retrieveChannelLayoutElements(): %s
+IOAV[%d] %s<0x%llx>::%s: unexpected type returned from DCPAVAudioInterfaceProxy::retrieveEDIDUUID(): %s
+IOAV[%d] %s<0x%llx>::%s: unexpected type returned from DCPAVAudioInterfaceProxy::retrieveElements(): %s
+IOAV[%d] %s<0x%llx>::%s: unexpected type returned from DCPAVAudioInterfaceProxy::retrieveProductAttributes(): %s
+IOBootFramebuffer
+IODART
+IODART.cpp
+IODARTClient
+IODARTMapper
+IODARTMapper.cpp
+IODARTMapperClient
+IODARTMapperNub
+IODARTPIOAllocatorGeneric
+IODARTVMAllocator
+IODARTVMAllocatorGeneric
+IODARTVMAllocatorMPM
+IODARTVMSpace
+IODMACommand *AppleA7IOP::_dartMapMemoryDescriptor(IOMapper *, IOMemoryDescriptor *, IOPhysicalAddress *)
+IODPHDCPMessageTransport
+IODPHDCPMessageTransportDelayContentType
+IODeviceTree:/arm-io
+IODeviceTree:/arm-io/ane0
+IODeviceTree:/arm-io/ane1
+IODeviceTree:/arm-io/ans
+IODeviceTree:/arm-io/apcie/pci-bridge0/s3e
+IODeviceTree:/arm-io/mcc
+IODeviceTree:/arm-io/pmgr
+IODeviceTree:/arm-io/pmgr-child
+IODeviceTree:/arm-io/pmp/iop-pmp-nub
+IODeviceTree:/arm-io/pmp0/iop-pmp0-nub
+IODeviceTree:/arm-io/ptd
+IOFMB: %s: setDCPAVPropStart not called or failed
+IOFramebuffer
+IOFramebuffer.cpp
+IOFramebufferI2CInterface
+IOFramebufferLockedSerialize
+IOFramebufferOpenGLIndex
+IOFramebufferParameterHandler
+IOFramebufferSharedUserClient
+IOFramebufferUserClient
+IOHDCP1TransmitterAuthSession
+IOHDCP2AuthSession
+IOHDCP2AuthSession.cpp
+IOHDCP2AuthSession::cancelTimeout %p reached %llu already reached or cancelled
+IOHDCP2AuthSession::disable
+IOHDCP2AuthSession::enable
+IOHDCP2AuthSession::init(owner, action, transport, interface)
+IOHDCP2AuthSession::setTimeoutMS %p started %llu %ums
+IOHDCP2AuthSession::timeout %p reached %llu already reached or cancelled
+IOHDCP2DPTransmitterAuthSession
+IOHDCP2LocalMessageTransport
+IOHDCP2ReceiverAuthSession
+IOHDCP2ReceiverAuthSession::timeout %p started %llu state %d
+IOHDCP2TransmitterAuthSession
+IOHDCP2TransmitterAuthSession::init(owner, action, transport, interface)
+IOHDCPAuthSession
+IOHDCPAuthSession(%p)::init owner %p action %p transport %p interface %p
+IOHDCPAuthSession::free: destroying...
+IOHDCPAuthSession::init(owner, action, transport, interface)
+IOHDCPAuthSession::validateIsOpen: <%s>
+IOHDCPInterface
+IOHDCPInterface::open(kHDCPInterfacePowerStateOff) called while in kHDCPInterfacePowerStateOff
+IOHDCPMessageTransport
+IOHDCPMessageTransport::init(refCon)
+IOMFB AP: use_psd_dcp_power2: %d
+IOMFB ERROR: dcp_expert not initialized, incorrect use_psd_dcp_power2 value
+IOMFB: AppleDCPLinkService heap size increment: 0x%x
+IOMFB: DCPLink::start failed with 0x%x (pipe:%u)
+IOMFB: DCPPowerManager::start failed with 0x%x
+IOMFB: Failed to map LPR buffer %u into DCP DART: 0x%x
+IOMFB: Failed to map LPR buffer %u into DispDART: 0x%x
+IOMFB: Failed to set LPR buffers on DCP
+IOMFB: LPR buffer %u: dispDva=0x%llx dcpDva=0x%llx size=%llu
+IOMFB: TTR buffer allocated and DART-mapped, dva=0x%llx
+IOMFB: TTR ttr_allocate_and_map: DART-map failed 0x%x
+IOMFB: dcp_reset_notify() called - DCP reset triggered
+IOMFB: dcp_reset_recovery_complete
+IOMFB: dropped apt mode switch message from DCP
+IOMFB: dropped prox sensing needed message from DCP
+IOMFB: dropped release buffer info message from DCP for swapID = 0x%x
+IOMFB: failed to alloc DART paniclog lock
+IOMFB: failed to alloc dcp_reset_lock
+IOMFB: failed to create DART extensible panic log
+IOMFB: mapDeviceMemoryWithIndex DCP memory descriptor allocation failed (0x%x)
+IOMFB: powerUpDART_impl_gated(%d) callPlatformFunction setActive failed: 0x%x dart_ref=%d
+IOMFB: update HDCP protection status 0x%llx
+IOMFB:: DCPExpert::setPowerAssertion returned 0x%x
+IOMFBIntDcpUsedForExtWhenLidClose
+IOMFBStatus IOMobileFramebufferAP::updateBufferMappingCount_gated(bool)
+IOMFB_DART_STATE
+IOMFB_POWER_DART: powerUpDART enable=%d dcp_power_off=%d dartRef=%d activeCount=%d
+IOMFB_POWER_DART: powerUpDART_impl_gated done enable=%d mapper=%p dartRef=%d ret=%x
+IOMFB_POWER_DART: powerUpDART_impl_gated start enable=%d mapper=%p dartRef=%d activeCount=%d
+IOMFB_POWER_DART: powerUpDART_v2_assertion enable=%d globalIdx=%u refCount=%d activeCount=%d
+IOMFB_POWER_DART: set_device_power on=%d kernelAssertCount=%u ret=%x
+IOMFB_POWER_DART: set_power_state done powerState=%lu state=%d ret=%x earlyReturn=0
+IOMFB_POWER_DART: set_power_state done powerState=%lu state=%d ret=%x earlyReturn=1
+IOMFB_POWER_DART: set_power_state powerState=%lu powerCallbackDcp=%d
+IOMobileFramebuffer
+IOMobileFramebufferAP
+IOMobileFramebufferAP.cpp
+IOMobileFramebufferLegacy
+IOMobileFramebufferLegacy.cpp
+IOMobileFramebufferRuntimeProperties.cpp
+IOMobileFramebufferService
+IOMobileFramebufferShim
+IOMobileFramebufferTilingMgr
+IOMobileFramebufferUserClient
+IOMobileFramebufferUserClient.cpp
+IOReturn APCIECPort::_relocateDartMapper(IOPCIBridge *, IOPCIDevice *, UInt32)
+IOReturn AUC::hdcp_send_request_gated(const uint8_t *, size_t, ConnectionWatchdog *)
+IOReturn AppleANS2DARTNVMeController::SendOSBuildStrToDevice()
+IOReturn AppleANS2NVMeController::CreatePCIeUPDARTMapping()
+IOReturn AppleANS2NVMeController::PublishPCIUpDARTMapping()
+IOReturn AppleDCPExpert::_changeDCPPowerStateInternal(DCPPowerState)
+IOReturn AppleJPEGCoreAnalyzer::checkFrameBufferFormat(uint32_t, uint32_t)
+IOReturn AppleJPEGDart::mapMemoryDescriptor(IOMemoryDescriptor *, uint32_t, IODMACommand **, IOPhysicalAddress *, s_debug_info *)
+IOReturn AppleJPEGDart::registerMapper(uint32_t, uint32_t, IOService *)
+IOReturn AppleJPEGDart::unmapMemoryDescriptor(IOMemoryDescriptor *, uint32_t, IODMACommand *, uint32_t)
+IOReturn DCPAVRemotePowerController::_setRemoteDevicePower(DCPAVPowerControllerProxy *, UInt32, UInt32)
+IOReturn DCPAVRemoteSACControllerProxy::bootCompleteGated()
+IOReturn DCPAVRemoteSACControllerProxy::selectSACAggressorIndexGated(UInt32 * _Nonnull, UInt32 * _Nonnull)
+IOReturn DCPAVSACController::_registerSACAggressor(DCPAVRemoteSACControllerProxy *, UInt32, UInt32, const UInt64 *, const UInt32 *)
+IOReturn IOMobileFramebufferAP::spinner_surface_alloc(IOSurface **, uint32_t, uint32_t, bool)
+IOReturn IOMobileFramebufferAP::surface_map_dcp(IOSurface *, IODMACommand **, dva_t *, bool)
+IOReturn IOMobileFramebufferLegacy::hdcp_send_request_gated(const uint8_t *, size_t, IOMFBNotifyRequestArgs *)
+IOReturn IOMobileFramebufferLegacy::spinner_surface_alloc(IOSurface **)
+IOReturn IOMobileFramebufferLegacy::updateBufferMappingCount_gated(bool)
+IOReturn IOMobileFramebufferUserClient::hdcp_get_reply(const uint8_t *, size_t *)
+IOReturn UnifiedPipeline2::dart_map_mdesc_gated(IOMemoryDescriptor *, IODMACommand **, dva_t *, bool)
+IOReturn map_memory_dart(IOMapper *, IOMemoryDescriptor *, IODirection, IODMACommand **, dva_t *)
+IOReturn unmap_memory_dart(IOMapper *, IOMemoryDescriptor *, IODMACommand *)
+ISP_FlushInactiveDARTMappings_gated
+Kernel2DARTAddr
+LogDARTErrorInfo
+MSR Reset - activateDART(false) failed: 0x%x
+MSR Reset - activateDART(true) failed: 0x%x
+Mapping md (%p) to DART failed (%#x)!
+NULL HDCP message
+Negotiating HDCP1 with %s.
+NewIODARTMapper
+No active HDCP controller
+PpKpAmtfcDCPtAtwRMnHBueaQklIgpzLiH
+RepeaterAuth_Send_ReceiverID_List<MAX_DEVS_EXCEEDED=%d MAX_CASCADE_EXCEEDED=%d DEVICE_COUNT=%d DEPTH=%d HDCP2_LEGACY_DEVICE_DOWNSTREAM=%d HDCP1_DEVICE_DOWNSTREAM=%d> rx_info[%zu] = { %*D }
+RetrieveDARTInfo
+Scaler[%d] activateDART_gatedContext activate=%d
+SendRequestToFirmware: DartSpaceLimited type, we send request from queuePendingRequests
+SessionMeas_NumFramesDARTErr
+SetDART
+SharedCPU
+SharedDARTMapperProxy
+SharedDARTMapperService_C.c
+Skipping shutdown notification on secondary DCP for stitched config
+SupportsHDCP
+Surface %s | Name: %s %p %lld Surf %p ID %d Desc %p Map %p Fence %p Size %d DARTCfg 0x%llx OpFlag 0x%llx DARTOpFlag 0x%llx Protect 0x%llx Cnt %d %d Fmt %s 
+Surface Manager %s | %p | Total DART Size: [%s]bytes
+TALSCLCLGSCVPTGPEDCVPTGLDICVPTGLLACVPTGDNRCVPTGLGSCVGRFPEDCVGRFLDICVGRFLLACVGRFDNRCVGRFLGSCVMDCPEDCVMDCLDICVMDCLLACVMDCDNRCVMDC
+TMB AFR DCPMS
+TXCMRXCMSBEREBERBBERRBEREEITLSENENUMRDCPRHMGRSMGRDSW
+TriggerDCPResetRequestFromM3
+UIO: %-30s !!!!DART error happened!!!!
+UIO: %-30s DART error handler registeration failed!, ret: 0x%08x
+UIO: %-30s DART reported minDVA %p and maxDVA %p and page size %p
+UIO: %-30s IODARTVMAllocatorGeneric failed to initialize
+UIO: %-30s failed to create DARTVMAllocator
+UIO: %-30s failed to set DARTVMAllocator
+UInt64 AppleSmartIOControl::_getDARTMapping(UInt64, UInt64, IODMACommand *&)
+ZMobileFramebufferUserClient
+[%s::appendMultitouchData][%s] ERROR: _mtFrameBuffer isn't large enough to accomodate this data
+[AppleDCPExpert:0x%llx] _setDCPExpertPowerState(%d,%d):%x duration:%lld
+[AppleDCPExpert:0x%llx] failed to create mogul matching dict
+[AppleDCPExpert:0x%llx] mogul auth failed
+[AppleDCPExpert:0x%llx] mogul provider not found
+[AppleDCPExpert:0x%llx] open fail 0x%llx
+[AppleDCPExpert:0x%llx]: support-health-telemetry present but mogul path not in devicetree
+[AppleDCPExpert:0x%llx]_changeDCPPowerStateInternal:%x
+[CBPWR] %s DCP FE pwr assertion. %s (0x%x)
+[CBPWR] Cannot take/release DCP FE pwr assertion, _dcpPwrAssrtionFn is missing.
+[ERROR] %s: %s: ANEProgram: Failed %s state with event %s [programHandle: 0x%llx] wireCount: %u dartMapCount: %u
+[ERROR] %s: %s: ANEUnionResource: failed to restore dartMap state result=0x%x
+[ERROR] %s: %s: DART verdict: NOT recently unmapped - DVA 0x%llx is in none of the %u tracked unmapped allocations (highest unmapped end: 0x%llx). Suspect a wild descriptor / out-of-range bar offset rather than a teardown race
+[ERROR] %s: %s: DART verdict: USE-AFTER-FREE - DVA 0x%llx lies inside an allocation unmapped at %llu us [base: 0x%llx size: 0x%llx offset: 0x%llx programId: %u processId: %u usageType: %u unmapTimestampFW: %llu]
+[ERROR] %s: %s: DART verdict: faulting DVA is 0 - descriptor was never programmed (NULL bar / uninitialised slot)
+[ERROR] %s: %s: Failed dartMap() result=0x%x
+[ERROR] %s: %s: Failed to DART map and prepare request resources. result: 0x%x
+[ERROR] %s: %s: Failed to DART map the memory
+[ERROR] %s: %s: Failed to allocate wire and dart map request
+[ERROR] %s: %s: Failed to dartMap aneResourceID: 0x%llx
+[ERROR] %s: %s: Failed to dartMap request. result: 0x%x
+[ERROR] %s: %s: Failed to dartMap. result: 0x%x
+[ERROR] %s: %s: Failed to flush inactive dart mappings: 0x%x
+[ERROR] %s: %s: Failed to take power assertion for DART unmap processing. result: 0x%x
+[ERROR] %s: %s: Failed to take sleep assertion to perform DART map and prepare. result: 0x%x, request uuid: 0x%llx, request type: %u
+[ERROR] %s: %s: Memory is still DART mapped. Will not unwire resourceId=0x%llx
+[ERROR] %s: %s: Program DartUnmap invoked while its dartMapCount is 0, which is unexpected
+[ERROR] %s: %s: dartMap() failed. result=0x%x
+[ERROR] %s: %s: dartMapMemoryDescriptor failed to remap ISP surface
+[IOSA] dart-scaler%d error!! type %s, %s SID %u %s DVA %llx Msr IntrSts %x
+[PCIe:%u %llu ns] apcie[%u:%s]::%s Using static SID for device %p RID 0x%04x(%d:%d:%d) DART %p
+[PCIe:%u %llu ns] apcie[%u:%s]::%s created mapper %p for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID 0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID=0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p mapper %p RID 0x%04x(%d:%d:%d) SID %d useCount %d status 0x%08x
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to allocate mapper for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign SID for device %p RID 0x%04x(%d:%d:%d) DART %p
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign an extra dummy SID for device %p RID 0x%04x(%d:%d:%d) DART %p. Device won't work.
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to release DART %p SID %d for device %p RID=0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTMapperProtectionGranularityKey in mapperDict
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTVMForceKey in mapperDict
+[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set mapper 'reg' property for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apcie[%u:%s]::%s found DART %p with %u SIDs
+[PCIe:%u %llu ns] apcie[%u:%s]::%s unable to destroy mapper %p for device %p RID=0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apciec[%s]::%s Dart Not Idle timeout
+[PCIe:%u %llu ns] apciec[%s]::%s created mapper %p for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apciec[%s]::%s device %p DART %p RID 0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apciec[%s]::%s device %p DART %p RID=0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apciec[%s]::%s device %p DART %p mapper %p RID 0x%04x(%d:%d:%d) SID %d useCount %d status 0x%08x
+[PCIe:%u %llu ns] apciec[%s]::%s failed to allocate mapper for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apciec[%s]::%s failed to assign SID for device %p RID 0x%04x(%d:%d:%d) DART %p
+[PCIe:%u %llu ns] apciec[%s]::%s failed to assign an extra dummy SID for device %p RID 0x%04x(%d:%d:%d) DART %p. Return code 0x%X. Device won't work.
+[PCIe:%u %llu ns] apciec[%s]::%s failed to release DART %p SID %d for device %p RID=0x%04x(%d:%d:%d)
+[PCIe:%u %llu ns] apciec[%s]::%s failed to release DART %p SID %d for device %p RID=0x%04x(%d:%d:%d) result=0x%08x
+[PCIe:%u %llu ns] apciec[%s]::%s failed to set kIODARTMapperProtectionGranularityKey in mapperDict
+[PCIe:%u %llu ns] apciec[%s]::%s failed to set kIODARTVMForceKey in mapperDict
+[PCIe:%u %llu ns] apciec[%s]::%s failed to set mapper 'reg' property for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d
+[PCIe:%u %llu ns] apciec[%s]::%s found DART %p with %u SIDs
+[PCIe:%u %llu ns] apciec[%s]::%s unable to destroy mapper %p for device %p RID=0x%04x(%d:%d:%d) DART %p SID %d
+_IOFramebufferNotifier
+__FUNCTION__ " framebuffer gated?" @%s:%d
+__FUNCTION__ " not framebuffer gated?" @%s:%d
+_cpCapabilties.hdcp.protocolMask=0x%x
+_dart != nullptr
+_dartCapability != nullptr
+_dartErrorHandler
+_dartForceActiveFunction != nullptr
+_dartInitializeStateCapture
+_dartLock != nullptr
+_dartMap
+_dartPrepareForPowerDown
+_dartReleaseSIDFunction != nullptr
+_dartRequestSIDFunction != nullptr
+_dartSelfFunction != nullptr
+_dartSetup
+_dartSetupInstance
+_dcpExpertWorkLoop->inGate()
+_dcpForceWakeupBaseAddress
+_findDART
+_hdcpInitMask=0x%x cpTypesMask=0x%x hdcp.protocolMask=0x%x hdcp.authPolicy=%d
+_hdcp_capable
+_kdebugCoreID = kdebug_register_coproc(_iopRole->getCStringNoCopy(), _continuousTimestamps ? KDCP_CONTINUOUS_TIME : (kdebug_coproc_flags_t)0, OSMemberFunctionCast(kd_callback_fn, this, &RTBuddy::_kdebugCallback), this )
+_relocateDartMapper
+_rx_version %d _hdcp_capable %d _repeater %d rx_caps 0x%02x%02x%02x receiverID:[%zu] = { %*D }
+_staticConfig.adcPreAmpGain << 6 | _staticConfig.adcPgaVol
+abortHDCPNegotiation
+abortHDCPNegotiation ret=0x%08x
+activateDART() failed: 0x%x
+activateDART_gatedContext
+addFramebufferNotificationWithOptions
+allocateDefaultFramebuffer
+aop-dcp-buffer-address
+aop-dcp-buffer-size
+arm-io
+auc_dcp_queue
+authenticated=%d negotiating=%d maxHDCPContentType=%d state=%s(%d)
+auto IOMobileFramebufferShim::set_matrix(uint32_t, const IOMFBMatrix *)::(anonymous class)::operator()(Gate::owner_t *, void *, void *, void *, void *) const
+auto IOMobileFramebufferTilingMgr::setDisplayWall(uint8_t, uint32_t, bool)::(anonymous class)::operator()(void *, void *, void *, void *) const
+av_hdcp_auth_policy
+av_hdcp_protocol_mask
+bool IOMobileFramebufferAP::isDevice(char *)
+bool IOMobileFramebufferLegacy::isDevice(char *)
+bool IOMobileFramebufferLegacy::isLayerValidForSwap(uint32_t, IOMFBSwapIORequest *)
+bool IOMobileFramebufferLegacy::setDisplayRefreshProperties()
+bool IOMobileFramebufferLegacy::verifyKeepOnScreen_gated(IOMFBSwapIORequest *)
+bora-dcpl
+bora-dcpr
+bora-dcps
+calendarTimePtr
+checkDartTimeoutAndAddToList
+com.apple.iomfb.dcp_reset_req
+com.apple.jpegdriverevents.frameBufferFormat
+com.apple.jpegdriverevents.frameBufferFormatEncode
+cpTypesMask=0x%x hdcp.protocolMask=0x%x
+createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveChannelLayoutElements) ret=0x%08x
+createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveEDIDUUID) ret=0x%08x
+createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveElements) ret=0x%08x
+createObjectFromSerializedData(&DCPAVAudioInterfaceProxy::retrieveProductAttributes) ret=0x%08x
+cvfs_rename Entry: fdvp %p fdcp %p tdvp %p tdcp %p frmname '%s' toname '%s'
+cvfs_rename Exit: fname '%s' fdcp %p tname '%s' tdcp %p return error %d syserr %d out_line %d
+dart
+dart-all
+dart-bar
+dart-id
+dart-lzh
+dart-map-firmware-debug-only
+dart-map-seg-limit
+dart-mapper
+dart-options
+dart-rle
+dart-segment-history
+dart-unmap-page-limit
+dartErrorHandlerCallback
+dartErrorHandlerCallback - client null.
+dartMap
+dartMapIPCEndPoints
+dartMapMemoryDescriptor
+dartMapMemoryDescriptorSharedMallocRegion
+dartUnMapMemoryDescriptorSharedMallocRegion
+dartUnmapHandler
+dartUnmapInactiveResource
+dartUnmapMemoryDescriptor
+dart_allows_pte_remap = %u
+dart_flush_by_smmu = %u
+dcp-backlight-enable
+dcp-brightness-nits
+dcp-controls-reg-index
+dcp-controls-value-off
+dcp-controls-value-on
+dcp-delegate
+dcp-pmgr-scratch
+dcp-power-assertion-for-aot
+dcp-power-manage
+dcp-pwr-assertion-slp-only
+dcp-remote-power-state
+dcp-soc-vmax-index
+dcp-tcon
+dcp_reset_display_id
+dcp_reset_loop_panic
+dcp_reset_notify
+dcp_reset_reason
+dcp_reset_req
+dcpexpert-epi
+dcpexpert-service
+dcptransporthealth_cp
+dcptransporthealth_failure_counter
+dcptransporthealth_failure_ratio
+dcptransporthealth_failure_time
+direct-dart-power
+disableHDCPGated
+disableHDCPProtection
+dual plug status checked on invalid framebuffer %d
+enableHDCPProtection
+error reading Bcaps (0x%08x); assuming not HDCP 1.x capable
+error reading RxCaps (0x%08x); assuming not HDCP 2.2 capable
+error: HDCP1 is required, but SoC is not HDCP1 fused!
+error: HDCP2 is required, but SoC is not HDCP2 fused!
+error: no HDCP protocol bit _cpCapabilities
+euID < 4 && pDART != nullptr
+exportDBClToDCP
+failed to allocate DART Pool %d
+failed to do DART mapping %p %p %d
+failed to do DART unmapping %p %d %d
+failed to do DART unmapping %p %d %p %d
+failed to do register DART mapping %p %d
+flushDARTCacheGated
+flushDARTCache_gatedContext
+flushInactiveDARTMappings
+framebuffer-height
+framebuffer-rotation
+framebuffer-width
+function-dart_force_active
+function-dart_release_sid
+function-dart_request_sid
+function-dart_self
+function-dcp_enable
+gen3dart
+get a wrong DART entry
+get_block_dcp
+get_buf_block_dcp
+haltedCpuPC
+handleFrameBufferMsg
+handleHDCP1IRQ
+handleHDCP2IRQ
+handleStartHDCPController
+hdcp-channel
+hdcp-channels
+hdcp-fuse-mask
+hdcp-hoover-protocol
+hdcp-parent
+hdcp-parents
+hdcp.protocolMask
+hdcp2HPrimeAvailable
+hdcp2PairingInfoAvailable
+hdcp2ReceiverIDListAvailable
+hdcp2ReceiverIDListAvailable ret=0x%08x: Reprotecting.
+hdcpAuthSessionAction
+hdcpInterface
+hdcpIsTrue
+hdcpReauthenticationRequest
+hdcp_fuse_mask
+hdcp_get_reply
+hdcp_log_level
+hdcp_use_storedkm
+i28@?0^{PBTBlockHandlerGeneric=^^?II^{DCPLink}Bi{?=^{PBTBlockHandlerGeneric}^^{PBTBlockHandlerGeneric}}III}8^v16I24
+id < 1 && pDART != nullptr
+initHDCP
+interface[%u] hdcp-fuse-mask=0x%x applied
+interruptOccurredDartFlush
+invalid HDCP message type %d for sending
+invalid HDCP message type for receiving
+invalid hdcp_bool 0x%02x
+iomfb_RuntimeProperty_DCPIndex
+iomfb_RuntimeProperty_DCPResetLoopMaxCount
+iomfb_RuntimeProperty_DCPResetLoopWindowSec
+iomfb_RuntimeProperty_TriggerDCPResetRequestFromM3
+iomfb_RuntimeProperty_allocateDefaultFramebuffer
+iomfb_dcp_power_async
+iomfb_prep_dcp_power
+iommu-dart-dynamic
+iommu-dart-identity
+iommu-dart-translation
+is plugged checked for invalid framebuffer %d
+kIODARTFunctionCacheFlushInactive FAILED!
+kMMU_DART
+m_pcDART != nullptr
+m_pcaDART[euID] != nullptr
+m_pcaDART[id] != nullptr && m_psaDARTEntry[id] != nullptr
+mapBufferOnDartGatedIfNeeded
+mapBufferWithDART
+mapBufferWithDARTGated
+mapDART
+mapDartVAddrUserSpace
+mapToDART
+mapper [%d]: WiredMemSize before DARTFlush = %llu
+msr_direct_dart_power
+msr_multi_msr_dart_ganging
+negotiateHDCP
+negotiateHDCP_Software
+negotiateHDCP_Software ret=0x%08x
+no-dcp-driver
+nvme-ans-dart
+pProvider != nullptr && pCfg != nullptr && pDevInfo != nullptr && pSurfaceMgr != nullptr && id < 4 && pDART != nullptr
+pProvider != nullptr && pDART != nullptr
+pTempSurface->GetDARTStatus(pCHM->iID) != 0
+pci-dart-error-data
+pci-get-dart-error
+pmp-dart
+real_extent <= dart_vm_base + dart_vm_size
+real_start >= dart_vm_base
+register DART mapping is not supported %p
+ret = IOHDCP2TransmitterAuthSession::hPrimeAvailable() == 0 
+ret = IOHDCP2TransmitterAuthSession::pairingInfoAvailable() == 0 
+ret = IOHDCP2TransmitterAuthSession::receiverIDListAvailable() == 0 
+ret = getInterface()->enableHDCP(false) == 0 
+ret = getInterface()->enableHDCP(true) == 0 
+ret = setIntegerValue( inRegistryEntry, IORegistryKey::kIOFrameBufferSize, inDeviceInfo.frameBufferSize) == 0 
+ret = setIntegerValue( inRegistryEntry, IORegistryKey::kIOFrameBufferWrapSize, inDeviceInfo.frameBufferWrapSize) == 0 
+setDCPAVPropChunk
+setDCPAVPropEnd
+setDCPAVPropStart
+set_block: pbt=%u rejected, DCP reset in progress
+set_block_dcp
+set_dcp_clamshell_state ClamshellState %d 
+set_parameter_dcp
+setupDartRemap
+shutdownHDCPBlock
+shutdownHDCPBlock ret=0x%08x
+site.AVDDart
+site.AVDDartDeferralList
+site.AVE_DART
+site.AppleANS2DARTNVMeController
+site.AppleDCPDPTXRemoteHDCPAuthSessionProxy
+site.AppleDCPDPTXRemoteHDCPInterfaceProxy
+site.AppleDCPDPTXRemotePortProxy
+site.AppleDCPDPTXRemotePortUFP
+site.AppleDCPExpert
+site.AppleDCPLPDPTXPortProxy
+site.AppleDCPLinkService
+site.AppleDCPLinkServiceSoC
+site.AppleDCPTCON
+site.AppleDPTXHDCP1Controller
+site.AppleDPTXHDCP2Controller
+site.AppleDPTXHDCPController
+site.AppleGen3DART
+site.AppleHDCPInterface
+site.AppleHDCPManager
+site.AppleJPEGDart
+site.AppleSEPHDCPEndpoint
+site.AppleSEPHDCPManager
+site.AppleSPUDCPDriver
+site.AppleThunderboltNHIDARTVMAllocator
+site.AppleUIOPCIDARTVMAllocator
+site.AppleUSBEHCIDARTDMACommand
+site.AppleUSBHostDARTDMACommand
+site.AvdDartClientInfo_t
+site.DCPAVAudioDMADelegate
+site.DCPAVAudioDriver
+site.DCPAVAudioInterfaceProxy
+site.DCPAVAudioInterfaceProxyUserClient
+site.DCPAVCECController
+site.DCPAVCECInterfaceProxy
+site.DCPAVControllerProxy
+site.DCPAVControllerProxyUserClient
+site.DCPAVDeviceProxy
+site.DCPAVDeviceProxyUserClient
+site.DCPAVPowerControllerProxy
+site.DCPAVProxy
+site.DCPAVRemotePowerController
+site.DCPAVRemoteSACControllerProxy
+site.DCPAVSACController
+site.DCPAVServiceProxy
+site.DCPAVServiceProxyUserClient
+site.DCPAVVideoInterfaceProxy
+site.DCPAVVideoInterfaceProxyUserClient
+site.DCPBufferDescriptor
+site.DCPDPControllerProxy
+site.DCPDPControllerProxyUserClient
+site.DCPDPDeviceProxy
+site.DCPDPDeviceProxyUserClient
+site.DCPDPServiceProxy
+site.DCPDPServiceProxyUserClient
+site.DCPEndpointV2
+site.DCPLink
+site.DCPMemoryDescriptor
+site.DCPPowerCallback
+site.DCPPowerManager
+site.DartUmapNode
+site.HxDARTSPTMInterface
+site.IOBootFramebuffer
+site.IODART
+site.IODART::capability_t
+site.IODART::pageRange_t
+site.IODART::ptRef
+site.IODARTClient
+site.IODARTErrorInfo
+site.IODARTMapper
+site.IODARTMapper::pioRange_t
+site.IODARTMapperClient
+site.IODARTMapperNub
+site.IODARTPIOAllocatorGeneric
+site.IODARTVMAllocator
+site.IODARTVMAllocatorGeneric
+site.IODARTVMAllocatorMPM
+site.IODARTVMSpace
+site.IODPHDCPMessageTransport
+site.IODPHDCPMessageTransportDelayContentType
+site.IOFramebuffer
+site.IOFramebufferI2CInterface
+site.IOFramebufferParameterHandler
+site.IOFramebufferPrivate
+site.IOFramebufferSharedUserClient
+site.IOFramebufferUserClient
+site.IOHDCP1TransmitterAuthSession
+site.IOHDCP2AuthSession
+site.IOHDCP2DPTransmitterAuthSession
+site.IOHDCP2LocalMessageTransport
+site.IOHDCP2ReceiverAuthSession
+site.IOHDCP2TransmitterAuthSession
+site.IOHDCPAuthSession
+site.IOHDCPInterface
+site.IOHDCPMessageTransport
+site.IOMobileFramebuffer
+site.IOMobileFramebufferAP
+site.IOMobileFramebufferAP::NotifyEventData
+site.IOMobileFramebufferLegacy
+site.IOMobileFramebufferService
+site.IOMobileFramebufferShim
+site.IOMobileFramebufferTilingMgr
+site.IOMobileFramebufferUserClient
+site.S_ACE_DART_Pool.S_ACE_DART_Entry
+site.SharedDARTMapperProxy
+site._IOFramebufferNotifier
+site.const IODART::capability_t
+site.dartCapturedState_t
+site.dartSetWayTagPA
+site.dart_sid_carveout_data
+site.dart_sid_data
+site.dart_sid_init_data
+site.gen3dart_apf_slice
+site.gen3dart_sid_data
+startDartFlush mapper (%d) size: %lld
+startupHDCPBlock
+static IODARTVMAllocatorMPM *IODARTVMAllocatorMPM::forMapper(IOMapper *, ppnum_t)
+static IOMobileFramebufferTilingMgr *IOMobileFramebufferTilingMgr::instance()
+static IOReturn AppleJPEGDriver::IODARTErrorHandler(void *, const IODARTErrorInfo *)
+static IOReturn IOMobileFramebufferUserClient::s_hdcp_get_reply(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)
+static IOReturn IOMobileFramebufferUserClient::s_hdcp_send_request(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)
+static IOReturn IOMobileFramebufferUserClient::s_map_display_type(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)
+static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMFB::DCPPowerManager]
+static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMobileFramebufferAP]
+static bool IOMobileFramebufferAP::readDataInEDT(IOService *, bool, const char *, const uint32_t, uint32_t *)
+static bool IOMobileFramebufferLegacy::readDataInEDT(IOService *, bool, const char *, const uint32_t, uint32_t *)
+static void DCPAVRemoteSACControllerProxy::handleRegisterSACAggressor(DCPAVRemoteSACControllerProxy * _Nonnull, const DCPAVIPC::Message * _Nonnull)
+t6000dart
+t6000dart %p (%s): Bypassed SID remap %u->%u @%s:%d
+t6000dart %p (%s): Can't ignore lock validation @%s:%d
+t6000dart %p (%s): IOA %p flush timed out waiting for %s @%s:%d
+t6000dart %p (%s): Invalid SID mask: 0x%#08x 0x%#08x @%s:%d
+t6000dart %p (%s): Invalid SID remap %u->%u @%s:%d
+t6000dart %p (%s): Invalid SID remap count: %u @%s:%d
+t6000dart %p (%s): Invalid TTE found in page table walk in mapping request at level %hhu ppnum(%u) tte(%p)=%#llx table(%p) table_pa(%#llx) @%s:%d
+t6000dart %p (%s): PTE remap not permitted @%s:%d
+t6000dart %p (%s): SID %s and dynamic SID assignment are mutually exclusive @%s:%d
+t6000dart %p (%s): SID remap %u->%u %s is remapped %u->%u @%s:%d
+t6000dart %p (%s): in_iova %#lx + in_nbytes %#lx wraps around @%s:%d
+t6000dart %p (%s): invalid SID %u @%s:%d
+t6000dart %p (%s): iova %#lx len %#lx out of range @%s:%d
+t6000dart %p (%s): iova %#lx len %#lx wraps around @%s:%d
+t6000dart %p (%s): map_idx oob %zu @%s:%d
+t6000dart %p (%s): out of range IOVA (%#lx) @%s:%d
+t6000dart %p (%s): pa %#llx len %#lx out of range @%s:%d
+t6000dart %p (%s): pa %#llx len %#lx wraps around @%s:%d
+t6000dart %p (%s): remap not permitted @%s:%d
+t6000dart %p (%s): remapping allowed only for read-only mapping, iova %#lx old PA %#llx new PA %#llx pte %#llx prot %#x @%s:%d
+t6000dart %p (%s): scratch page not acquired, nbytes_map %#lx iova %#lx last_iova %#lx @%s:%d
+t6000dart %p (%s): segment protection mismatch at %zu prot %#x expected %#x @%s:%d
+t6000dart %p: Invalid TTBR access: level %u table_index %u page_offset 0x%x @%s:%d
+t6000dart %p: SID %u page table carveout TTB offset is outside carveout region @%s:%d
+t6000dart %p: SID %u page table carveout TTB offset not page-aligned @%s:%d
+t6000dart %p: SID %u page table carveout not page-aligned @%s:%d
+t6000dart %p: SID %u page table carveout region is physically discontiguous @%s:%d
+t6000dart %p: SID %u page table carveout size not page-aligned @%s:%d
+t6000dart %p: SID %u page table carveout wraps around end of physical memory @%s:%d
+t6000dart %p: mis-aligned DART APF register base %p @%s:%d
+t6000dart %p: mis-aligned DART register base %p @%s:%d
+t6000dart %p: mis-aligned SMMU register base %p @%s:%d
+t6000dart %s %p: Realtime agents require an IOA parent @%s:%d
+t6000dart %s %p: invalid max DVA/PA @%s:%d
+t6000dart.c
+t6000dart.h
+t6000dart: %s bincompat breakage, invalid size or version @%s:%d
+t6000dart_init
+t8020dart
+t8020dart %p (%s): Bypassed SID remap %u->%u @%s:%d
+t8020dart %p (%s): Can't ignore lock validation @%s:%d
+t8020dart %p (%s): Invalid SID mask: 0x%#016llx 0x%#016llx 0x%#016llx @%s:%d
+t8020dart %p (%s): Invalid SID remap %u->%u @%s:%d
+t8020dart %p (%s): Invalid SID remap count: %u @%s:%d
+t8020dart %p (%s): Invalid TTE found in page table walk in mapping request at level %hhu ppnum(%u) tte(%p)=%#llx table(%p) table_pa(%#llx) @%s:%d
+t8020dart %p (%s): Invalid bypass mask: %#llx @%s:%d
+t8020dart %p (%s): PTE remap not permitted @%s:%d
+t8020dart %p (%s): SID %s and dynamic SID assignment are mutually exclusive @%s:%d
+t8020dart %p (%s): SID remap %u->%u %s is remapped %u->%u @%s:%d
+t8020dart %p (%s): in_iova %#lx + in_nbytes %#lx wraps around @%s:%d
+t8020dart %p (%s): invalid SID %u @%s:%d
+t8020dart %p (%s): invalid max SIDs: %d @%s:%d
+t8020dart %p (%s): iova %#lx len %#lx out of range @%s:%d
+t8020dart %p (%s): iova %#lx len %#lx wraps around @%s:%d
+t8020dart %p (%s): map_idx oob %zu @%s:%d
+t8020dart %p (%s): out of range IOVA (%#lx) @%s:%d
+t8020dart %p (%s): pa %#llx len %#lx out of range @%s:%d
+t8020dart %p (%s): pa %#llx len %#lx wraps around @%s:%d
+t8020dart %p (%s): realtime and flushPTE are mutually exclusive @%s:%d
+t8020dart %p (%s): remap not permitted @%s:%d
+t8020dart %p (%s): remapping allowed only for read-only mapping, iova %#lx old PA %#llx new PA %#llx pte %#llx prot %#x @%s:%d
+t8020dart %p (%s): scratch page not acquired, nbytes_map %#lx iova %#lx last_iova %#lx @%s:%d
+t8020dart %p (%s): segment protection mismatch at %zu prot %#x expected %#x @%s:%d
+t8020dart %p: SID %u page table carveout TTB offset is outside carveout region @%s:%d
+t8020dart %p: SID %u page table carveout TTB offset not page-aligned @%s:%d
+t8020dart %p: SID %u page table carveout not page-aligned @%s:%d
+t8020dart %p: SID %u page table carveout region is physically discontiguous @%s:%d
+t8020dart %p: SID %u page table carveout size not page-aligned @%s:%d
+t8020dart %p: SID %u page table carveout wraps around end of physical memory @%s:%d
+t8020dart %p: invalid page shift %u @%s:%d
+t8020dart %p: mis-aligned DART APF register base %p @%s:%d
+t8020dart %p: mis-aligned DART register base %p @%s:%d
+t8020dart %p: mis-aligned SMMU register base %p @%s:%d
+t8020dart %s %p: invalid max DVA/PA @%s:%d
+t8020dart %s %p: invalid max SIDs @%s:%d
+t8020dart.c
+t8020dart: %s bincompat breakage, invalid size or version @%s:%d
+t8020dart: %s failed to allocate state page @%s:%d
+t8020dart_init
+t8110dart
+t8110dart %p (%s): APF SID remap not permitted @%s:%d
+t8110dart %p (%s): Has no SIDs defined @%s:%d
+t8110dart %p (%s): Invalid TTE found in page table walk in mapping request at level %hhu ppnum(%u) tte(%p)=%#llx table(%p) table_pa(%#llx) @%s:%d
+t8110dart %p (%s): PTE remap not permitted @%s:%d
+t8110dart %p (%s): SID crosscheck failed actual %u expected %u @%s:%d
+t8110dart %p (%s): SID remap %u->%u invalid target @%s:%d
+t8110dart %p (%s): in_iova %#lx + in_nbytes %#lx wraps around @%s:%d
+t8110dart %p (%s): invalid %s limit @%s:%d
+t8110dart %p (%s): invalid SID %u @%s:%d
+t8110dart %p (%s): invalid SID %u TTBR access: level %u table_index %#x page_offset %#x @%s:%d
+t8110dart %p (%s): invalid SID %u translation level: %u @%s:%d
+t8110dart %p (%s): iova %#lx len %#lx out of range @%s:%d
+t8110dart %p (%s): iova %#lx len %#lx wraps around @%s:%d
+t8110dart %p (%s): map_idx oob %zu @%s:%d
+t8110dart %p (%s): mis-aligned DART register base %p @%s:%d
+t8110dart %p (%s): mis-aligned SMMU register base %p @%s:%d
+t8110dart %p (%s): out of range IOVA (%#lx) @%s:%d
+t8110dart %p (%s): pa %#llx len %#lx out of range @%s:%d
+t8110dart %p (%s): pa %#llx len %#lx wraps around @%s:%d
+t8110dart %p (%s): remapping allowed only for read-only mapping, iova %#lx old PA %#llx new PA %#llx pte %#llx prot %#x @%s:%d
+t8110dart %p (%s): scratch page not acquired, nbytes_map %#lx iova %#lx last_iova %#lx @%s:%d
+t8110dart %p (%s): segment protection mismatch at %zu prot %#x expected %#x @%s:%d
+t8110dart %p (%s, DART instance %u): Invalid APF slice %u limits [%#llx,%#llx] @%s:%d
+t8110dart %p (%s, DART instance %u): Mis-aligned APF register base: %p @%s:%d
+t8110dart %p (%s, DART instance %u): Missing APF init data @%s:%d
+t8110dart %p (%s, DART instance %u): Missing APF register base @%s:%d
+t8110dart %p (%s, DART instance %u): No space for %s: allocSize %#zx need %#zx @%s:%d
+t8110dart %p (%s, DART instance %u): invalid APF %u SID %u @%s:%d
+t8110dart %p (%s, DART instance %u): invalid number of APF slices: Max %u, in use %u @%s:%d
+t8110dart %p (%s, SID %u) can't have realtime property at both DART and SID level @%s:%d
+t8110dart %p (%s, SID %u): Already allocated @%s:%d
+t8110dart %p (%s, SID %u): No space for %s: allocSize %#zx need %#zx @%s:%d
+t8110dart %p (%s, SID %u): Not initialized @%s:%d
+t8110dart %p (%s, SID %u): SID remapped to itself: %#x @%s:%d
+t8110dart %p (%s, SID %u): bypass not support for SIDs >= %u if DART is not Gen 2.x @%s:%d
+t8110dart %p (%s, SID %u): invalid SID configuration: %#x @%s:%d
+t8110dart %p (%s, SID %u): invalid VM limits [%#x,%#x) @%s:%d
+t8110dart %p (%s, SID %u): invalid config bypass=%u bypassAddr=%#llx @%s:%d
+t8110dart %p (%s, SID %u): invalid remapSID %u @%s:%d
+t8110dart %p (%s, SID %u): page table carveout TTB offset is outside carveout region @%s:%d
+t8110dart %p (%s, SID %u): page table carveout TTB offset not page-aligned @%s:%d
+t8110dart %p (%s, SID %u): page table carveout not page-aligned @%s:%d
+t8110dart %p (%s, SID %u): page table carveout region is physically discontiguous @%s:%d
+t8110dart %p (%s, SID %u): page table carveout size not page-aligned @%s:%d
+t8110dart %p (%s, SID %u): page table carveout wraps around end of physical memory @%s:%d
+t8110dart %p (%s, SID %u):%s dartBypass/remapEnable are mutually exclusive @%s:%d
+t8110dart %p (%s, SID %u):%s remapEnable are mutually exclusive @%s:%d
+t8110dart %p(%s, SID %u): exceeds the maximum SIDs (%u) for this DART @%s:%d
+t8110dart.c
+t8110dart: bincompat breakage, invalid size or version @%s:%d
+trackDartError_gated
+unMapBufferWithDARTGated
+unexpected type returned from DCPAVAudioInterfaceProxy::retrieveChannelLayoutElements(): %s
+unexpected type returned from DCPAVAudioInterfaceProxy::retrieveEDIDUUID(): %s
+unexpected type returned from DCPAVAudioInterfaceProxy::retrieveElements(): %s
+unexpected type returned from DCPAVAudioInterfaceProxy::retrieveProductAttributes(): %s
+unmapDART
+unmapFromDART
+use-dcp-passthrough
+use-legacy-DART
+v24@?0{shareddartmapperservice_shareddartmapperservice_resume__result_s=C(?={exclavesaudiodrivers_exadresult_s=Q})}8
+v24@?0{shareddartmapperservice_shareddartmapperservice_suspend__result_s=C(?={exclavesaudiodrivers_exadresult_s=Q})}8
+validateHDCP
+virtual IODARTVMSpace *IODARTVMAllocatorMPM::vmAlloc(IOItemCount, IOItemCount, ppnum_t, IODMACommand *, IOItemCount, IOItemCount, bool)
+virtual IOMFBStatus IOMobileFramebufferAP::hdcp_get_reply(IOMemoryMap *, size_t *)
+virtual IOMFBStatus IOMobileFramebufferLegacy::get_color_remap_mode(DisplayColorRemapMode *) const
+virtual IOMFBStatus IOMobileFramebufferLegacy::hdcp_get_reply(IOMemoryMap *, size_t *)
+virtual IOMFBStatus IOMobileFramebufferLegacy::swap_submit(IOMFBSwap *, IOUserClient *, uint32_t *)
+virtual IOMFBStatus IOMobileFramebufferShim::get_display_area(DisplayArea *)
+virtual IOMFBStatus IOMobileFramebufferShim::set_matrix(uint32_t, const IOMFBMatrix *)
+virtual IOReturn AUC::hdcp_get_reply(uint8_t *, size_t *)
+virtual IOReturn AppleANS2DARTNVMeController::EnableSHA()
+virtual IOReturn AppleANS2DARTNVMeController::InitializeNVMe(bool)
+virtual IOReturn AppleANS2DARTNVMeController::ShutdownNVMe(bool, bool)
+virtual IOReturn DCPEndpointV2::setPowerState(unsigned long, IOService *)
+virtual IOService *AppleANS2DARTNVMeController::probe(IOService *, SInt32 *)
+virtual IOSurfaceID IOMobileFramebufferAP::default_fb_surface_gated(uint32_t, uint32_t)
+virtual bool AppleDCPExpert::start(IOService *)
+virtual bool AppleDCPLinkService::start(IOService *)
+virtual bool DCPAVRemotePowerController::start(IOService *)
+virtual bool DCPAVSACController::start(IOService *)
+virtual bool DCPEndpointV2::start(IOService *)
+virtual bool IOMobileFramebufferAP::init(OSDictionary *)
+virtual bool IOMobileFramebufferAP::start(IOService *)
+virtual bool IOMobileFramebufferAP::start_client_state()
+virtual bool IOMobileFramebufferLegacy::init(OSDictionary *)
+virtual bool IOMobileFramebufferLegacy::start(IOService *)
+virtual bool IOMobileFramebufferTilingMgr::applyProperty(RuntimeProperty, uint32_t)
+virtual bool IOMobileFramebufferTilingMgr::buildDisplayWallModeConfig(uint8_t, uint8_t)
+virtual bool IOMobileFramebufferTilingMgr::buildDisplayWallModeConfig(uint8_t, uint8_t, IOMFB_DisplayWallModeMap *, IOMFB_DisplayWallColorMap *, uint32_t *)
+virtual bool IOMobileFramebufferTilingMgr::initTilingMgr(IOMobileFramebufferShim *)
+virtual bool IOMobileFramebufferTilingMgr::isDisplayWallConfigSupported(uint8_t)
+virtual bool IOMobileFramebufferTilingMgr::setDisplayWall(uint8_t, uint32_t, bool)
+virtual void AppleANS2DARTNVMeController::EnableLinearSQ()
+virtual void AppleEmbeddedPCIEPort::_findDART()
+virtual void IOMobileFramebufferAP::genlock_error_notify_gated(uint64_t)
+virtual void IOMobileFramebufferAP::hotPlug_notify_gated(uint64_t, IOMFB_TiledDisplayInfo *, bool)
+virtual void IOMobileFramebufferLegacy::writeDebugInfo_gated(OSDictionary *)
+virtual void IOMobileFramebufferShim::get_display_size(uint32_t *, uint32_t *) const
+virtual void IOMobileFramebufferUserClient::stop(IOService *)
+void APCIECPort::_findDART()
+void AppleA7IOP::_dartMapiBootFirmware(IOMapper *)
+void AppleDCPExpert::_enterTrace(UInt32, void * _Nullable, void * _Nullable, void * _Nullable)
+void AppleDCPExpert::_pollReg(IOLogicalAddress, UInt32, UInt32, UInt32, bool)
+void AppleDCPExpert::_setConditionalRetentionEnable(bool)
+void AppleDCPExpert::_setDCPForceWakeup(bool)
+void AppleDCPExpert::_setDispSysFePowerGateEnable(bool)
+void AppleDCPExpert::_setPMGRScratchRegion(bool)
+void AppleJPEGDriver::checkDARTException()
+void IODARTVMAllocatorMPM::setNextAllocation(uint32_t)
+void IOMobileFramebufferAP::blit_surface_complete(IOMFBDisplayedData *, uint32_t, uint32_t)
+void IOMobileFramebufferAP::blit_surface_complete(IOMFBSwapIORequest *, uint32_t)
+void IOMobileFramebufferAP::setSystemConsoleMode_gated(bool)
+void IOMobileFramebufferAP::surface_complete(IOMFBDisplayedData *, uint32_t, uint32_t)
+void IOMobileFramebufferAP::surface_complete(IOMFBSwapIORequest *, uint32_t)
+void IOMobileFramebufferLegacy::disp_has_no_clients_gated()
+void IOMobileFramebufferLegacy::getCurrentActiveRegions_gated(uint32_t, const IOMFBRect **, uint32_t *) const
+void IOMobileFramebufferLegacy::parse_RTP_boot_args()
+void IOMobileFramebufferLegacy::record_swap_info_gated(IOMFBSwapIORequest *, IOMFBSwapCompletionState)
+void IOMobileFramebufferLegacy::setSystemConsoleMode_gated(bool)
+void IOMobileFramebufferLegacy::surface_complete(IOMFBDisplayedData *, uint32_t)
+void IOMobileFramebufferLegacy::surface_complete(IOMFBSwapIORequest *, uint32_t, bool)
+void getCalendarTimeNanoSec(uint64_t *)
+waitForDARTMapperActive

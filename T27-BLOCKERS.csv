@@ -1,0 +1,24 @@
+id,blocker,severity,domain,phase,evidence,impact,minimum_next_test,status,no_go
+B-01,BootKC/SystemKC 26B131 complete assenti,CRITICAL,KC,3,T3 0 kext; target/KDK 0 .kc,nessuna base avviabile,kmutil inspect + diff ID su materiali esistenti,OPEN,NOT_ISSUED
+B-02,0 primari top-level nel target 26B131,CRITICAL,TARGET,3,"694 top-level, 0 primari top-level, 37 annidati",repository incompleto,find/lipo/plutil read-only,OPEN,NOT_ISSUED
+B-03,ACPI/APIC/PCI/storage non 26B131,CRITICAL,ACPI,3,ACPI/APIC assenti; PCI/storage metadati/26B116/25G325,launchd non raggiungibile,verifica file/build/arch,OPEN,NOT_ISSUED
+B-04,AMD X6000 26B131 assente,CRITICAL,GPU,9,7 bundle solo donor 25G325/7.1.8,display/Metal/WindowServer bloccati,find/lipo/plutil,OPEN,NOT_ISSUED
+B-05,VHCI/BCE 26B131 assenti,HIGH,T2,8,BCE assente; VHCI parziale; root2 25G325,input interno non disponibile,find/lipo plugin USB,OPEN,NOT_ISSUED
+B-06,TopCase/HID 26B131 parziali,HIGH,T2,8,TopCase/HIDKeyboard/Multitouch metadati; donor 25G325,tastiera/trackpad non provati,find/lipo/plutil,OPEN,NOT_ISSUED
+B-07,AppleHIDTransport arm-only,HIGH,ARCH,8,no x86_64 slice,non usabile su Intel,lipo; escludere dal percorso x86,OPEN,NOT_ISSUED
+B-08,Installer/root 25G342 non sostituisce 26B131,HIGH,DONOR,1,installer assente; root 25G342/root2 25G325,donor insufficiente,ricerca read-only; manifest donor,OPEN,NOT_ISSUED
+B-09,"KDK 26B131 debug 26B116, 0 KC",HIGH,KDK,3,"706 bundle, 0 .kc, 14 manifest ARM",non e release set,plutil/vtool; confronto build,OPEN,NOT_ISSUED
+B-10,boot.efi/Recovery 26B131 assenti,HIGH,BOOT,5,target no boot.efi/Recovery; 25G342 only,catena EFI incompleta,find/stat/shasum,OPEN,NOT_ISSUED
+B-11,Framework/DriverKit/Cryptex parziali,HIGH,USERSPACE,9,"340 framework, 289 DriverKit, 0 Cryptex file",userspace non completo,find; ls -l,OPEN,NOT_ISSUED
+B-12,Spazio 80/160 GiB non disponibile,HIGH,HOST,2,"11,95 GiB liberi vs 80/160 GiB",installazione non eseguibile,df; piano spazio,OPEN,NOT_ISSUED
+B-13,Ambiente 26B131 con KDK registrato assente,CRITICAL,ENV,3,host 25G342; KDK non registrato,kmutil userebbe build host,verifica ambiente read-only,OPEN,NOT_ISSUED
+B-14,Sigillo bundle non verificato,MEDIUM,SIGNATURE,4,Authority Apple; strict verify invalid resource directory,provenienza parziale,codesign --verify --strict,OPEN,NOT_ISSUED
+B-15,Nessun test boot/hardware,HIGH,TEST,6,"nessun boot/kextload su MBP16,1",compatibilita non provata,solo dopo Gate 3-5; nessun boot in T27,OPEN,NOT_ISSUED
+B-16,Nessun .src/.delta 26B131,HIGH,TOOLCHAIN,3,Liberator pinned 26B123,bspatch non applicabile,analisi checksum; non eseguire,OPEN,NOT_ISSUED
+B-17,"OpenCore non verificato per MBP16,1/T2",HIGH,EFI,5,nessuna config/test locale,EFI non validata,read-only config review,OPEN,NOT_ISSUED
+B-18,SMBIOS/T2 Secure Boot/NVRAM non verificati,HIGH,EFI,5,nessun ioreg/dump/policy check,boot policy sconosciuta,analisi documentale/read-only,OPEN,NOT_ISSUED
+B-19,AMD eDP/gMux/Metal/UCLK UNPROVEN,HIGH,GPU,8-9,"kext 25G325; MTL 25G-series recuperato, bundle incompleto; prove Linux separate",desktop non dimostrabile,test GPU dopo Gate 7,OPEN,NOT_ISSUED
+B-20,Audio/rete/BT non verificati,MEDIUM,USERSPACE,10,driver donor 25G325; no runtime,desktop parziale,test dopo WindowServer,OPEN,NOT_ISSUED
+B-21,sleep/wake non verificato,MEDIUM,POWER,10,T2/GPU/sleep path unproven,desktop non completo,test dopo desktop base,OPEN,NOT_ISSUED
+B-22,WindowServer/loginwindow/desktop non raggiunti,CRITICAL,DESKTOP,9-10,nessun runtime grafico/display/input,desktop bloccato,solo dopo Gate 8,OPEN,NOT_ISSUED
+B-23,launchd non raggiunto,CRITICAL,BOOT,7,nessuna KC/boot; launchd solo file,utente space non avviato,solo dopo Gate 6,OPEN,NOT_ISSUED
