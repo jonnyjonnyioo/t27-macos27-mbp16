@@ -1,0 +1,42 @@
+13D406AC  55                push rbp
+13D406AD  4889E5            mov rbp,rsp
+13D406B0  4156              push r14
+13D406B2  53                push rbx
+13D406B3  4889F3            mov rbx,rsi
+13D406B6  4989FE            mov r14,rdi
+13D406B9  BF00120000        mov edi,0x1200
+13D406BE  31F6              xor esi,esi
+13D406C0  4C89F2            mov rdx,r14
+13D406C3  E80AF8FFFF        call 0x13d3fed2
+13D406C8  488B3D71520000    mov rdi,[rel 0x13d45940]
+13D406CF  E81C002DEC        call 0x106f0
+13D406D4  B810040000        mov eax,0x410
+13D406D9  488D0D60520000    lea rcx,[rel 0x13d45940]
+13D406E0  488D3D59660000    lea rdi,[rel 0x13d46d40]
+13D406E7  4C393408          cmp [rax+rcx],r14
+13D406EB  7415              jz 0x13d40702
+13D406ED  480510010000      add rax,0x110
+13D406F3  483D10150000      cmp rax,0x1510
+13D406F9  75EC              jnz 0x13d406e7
+13D406FB  B800140000        mov eax,0x1400
+13D40700  EB06              jmp 0x13d40708
+13D40702  4801C1            add rcx,rax
+13D40705  4889CF            mov rdi,rcx
+13D40708  31C9              xor ecx,ecx
+13D4070A  BA10150000        mov edx,0x1510
+13D4070F  4829C2            sub rdx,rax
+13D40712  480F43CA          cmovnc rcx,rdx
+13D40716  81F90F010000      cmp ecx,0x10f
+13D4071C  762D              jna 0x13d4074b
+13D4071E  BE10010000        mov esi,0x110
+13D40723  E88CF92CEC        call 0x100b4
+13D40728  488B3D11520000    mov rdi,[rel 0x13d45940]
+13D4072F  E8C2FF2CEC        call 0x106f6
+13D40734  488B050D290000    mov rax,[rel 0x13d43048]
+13D4073B  4C89F7            mov rdi,r14
+13D4073E  4889DE            mov rsi,rbx
+13D40741  5B                pop rbx
+13D40742  415E              pop r14
+13D40744  5D                pop rbp
+13D40745  FFA0D8050000      jmp qword near [rax+0x5d8]
+13D4074B  E8251E0000        call 0x13d42575

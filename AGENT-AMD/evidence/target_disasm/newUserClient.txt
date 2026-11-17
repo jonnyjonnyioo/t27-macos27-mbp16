@@ -1,0 +1,123 @@
+13D41CBE  55                push rbp
+13D41CBF  4889E5            mov rbp,rsp
+13D41CC2  4157              push r15
+13D41CC4  4156              push r14
+13D41CC6  4155              push r13
+13D41CC8  4154              push r12
+13D41CCA  53                push rbx
+13D41CCB  4883EC18          sub rsp,0x18
+13D41CCF  4D89CF            mov r15,r9
+13D41CD2  894DD4            mov [rbp-0x2c],ecx
+13D41CD5  488955C0          mov [rbp-0x40],rdx
+13D41CD9  4989F5            mov r13,rsi
+13D41CDC  4989FE            mov r14,rdi
+13D41CDF  4C8B257A130000    mov r12,[rel 0x13d43060]
+13D41CE6  498B3424          mov rsi,[r12]
+13D41CEA  488B07            mov rax,[rdi]
+13D41CED  FF90A8020000      call qword near [rax+0x2a8]
+13D41CF3  4889C3            mov rbx,rax
+13D41CF6  488B052B130000    mov rax,[rel 0x13d43028]
+13D41CFD  488B30            mov rsi,[rax]
+13D41D00  4889DF            mov rdi,rbx
+13D41D03  E876E32CEC        call 0x1007e
+13D41D08  4885C0            test rax,rax
+13D41D0B  740A              jz 0x13d41d17
+13D41D0D  4885DB            test rbx,rbx
+13D41D10  7555              jnz 0x13d41d67
+13D41D12  E9F1000000        jmp 0x13d41e08
+13D41D17  4C897DC8          mov [rbp-0x38],r15
+13D41D1B  488B05FE120000    mov rax,[rel 0x13d43020]
+13D41D22  488B30            mov rsi,[rax]
+13D41D25  4889DF            mov rdi,rbx
+13D41D28  E851E32CEC        call 0x1007e
+13D41D2D  41BFC70200E0      mov r15d,0xe00002c7
+13D41D33  4885C0            test rax,rax
+13D41D36  0F84EF000000      jz 0x13d41e2b
+13D41D3C  4889DF            mov rdi,rbx
+13D41D3F  E884EA2CEC        call 0x107c8
+13D41D44  4885C0            test rax,rax
+13D41D47  0F84DE000000      jz 0x13d41e2b
+13D41D4D  4889C3            mov rbx,rax
+13D41D50  498B3424          mov rsi,[r12]
+13D41D54  498B06            mov rax,[r14]
+13D41D57  4C89F7            mov rdi,r14
+13D41D5A  4889DA            mov rdx,rbx
+13D41D5D  FF9058020000      call qword near [rax+0x258]
+13D41D63  4C8B7DC8          mov r15,[rbp-0x38]
+13D41D67  4889DF            mov rdi,rbx
+13D41D6A  E853EA2CEC        call 0x107c2
+13D41D6F  4885C0            test rax,rax
+13D41D72  0F8481000000      jz 0x13d41df9
+13D41D78  4889C3            mov rbx,rax
+13D41D7B  488D051E130000    lea rax,[rel 0x13d430a0]
+13D41D82  488B30            mov rsi,[rax]
+13D41D85  4889DF            mov rdi,rbx
+13D41D88  E8F1E22CEC        call 0x1007e
+13D41D8D  4C8B03            mov r8,[rbx]
+13D41D90  4885C0            test rax,rax
+13D41D93  746C              jz 0x13d41e01
+13D41D95  4889DF            mov rdi,rbx
+13D41D98  4C89EE            mov rsi,r13
+13D41D9B  488B55C0          mov rdx,[rbp-0x40]
+13D41D9F  448B65D4          mov r12d,[rbp-0x2c]
+13D41DA3  4489E1            mov ecx,r12d
+13D41DA6  41FF90E8080000    call qword near [r8+0x8e8]
+13D41DAD  4C8B03            mov r8,[rbx]
+13D41DB0  84C0              test al,al
+13D41DB2  745C              jz 0x13d41e10
+13D41DB4  4889DF            mov rdi,rbx
+13D41DB7  4C89F6            mov rsi,r14
+13D41DBA  4C89EA            mov rdx,r13
+13D41DBD  4489E1            mov ecx,r12d
+13D41DC0  41FF9060090000    call qword near [r8+0x960]
+13D41DC7  488B0B            mov rcx,[rbx]
+13D41DCA  84C0              test al,al
+13D41DCC  7451              jz 0x13d41e1f
+13D41DCE  4889DF            mov rdi,rbx
+13D41DD1  4C89F6            mov rsi,r14
+13D41DD4  FF9170060000      call qword near [rcx+0x670]
+13D41DDA  488B0B            mov rcx,[rbx]
+13D41DDD  84C0              test al,al
+13D41DDF  745C              jz 0x13d41e3d
+13D41DE1  4889DF            mov rdi,rbx
+13D41DE4  4C89F6            mov rsi,r14
+13D41DE7  FF91C0050000      call qword near [rcx+0x5c0]
+13D41DED  84C0              test al,al
+13D41DEF  7454              jz 0x13d41e45
+13D41DF1  49891F            mov [r15],rbx
+13D41DF4  4531FF            xor r15d,r15d
+13D41DF7  EB32              jmp 0x13d41e2b
+13D41DF9  41BFBD0200E0      mov r15d,0xe00002bd
+13D41DFF  EB2A              jmp 0x13d41e2b
+13D41E01  4889DF            mov rdi,rbx
+13D41E04  41FF5028          call qword near [r8+0x28]
+13D41E08  41BFC70200E0      mov r15d,0xe00002c7
+13D41E0E  EB1B              jmp 0x13d41e2b
+13D41E10  4889DF            mov rdi,rbx
+13D41E13  41FF5028          call qword near [r8+0x28]
+13D41E17  41BFBC0200E0      mov r15d,0xe00002bc
+13D41E1D  EB0C              jmp 0x13d41e2b
+13D41E1F  4889DF            mov rdi,rbx
+13D41E22  FF5128            call qword near [rcx+0x28]
+13D41E25  41BFE20200E0      mov r15d,0xe00002e2
+13D41E2B  4489F8            mov eax,r15d
+13D41E2E  4883C418          add rsp,0x18
+13D41E32  5B                pop rbx
+13D41E33  415C              pop r12
+13D41E35  415D              pop r13
+13D41E37  415E              pop r14
+13D41E39  415F              pop r15
+13D41E3B  5D                pop rbp
+13D41E3C  C3                retq
+13D41E3D  4889DF            mov rdi,rbx
+13D41E40  FF5128            call qword near [rcx+0x28]
+13D41E43  EBD2              jmp 0x13d41e17
+13D41E45  488B03            mov rax,[rbx]
+13D41E48  4889DF            mov rdi,rbx
+13D41E4B  4C89F6            mov rsi,r14
+13D41E4E  FF9078060000      call qword near [rax+0x678]
+13D41E54  488B03            mov rax,[rbx]
+13D41E57  4889DF            mov rdi,rbx
+13D41E5A  FF5028            call qword near [rax+0x28]
+13D41E5D  EBB8              jmp 0x13d41e17
+13D41E5F  90                nop

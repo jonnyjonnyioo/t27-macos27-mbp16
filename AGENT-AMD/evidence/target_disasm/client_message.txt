@@ -1,0 +1,77 @@
+13D3FD00  55                push rbp
+13D3FD01  4889E5            mov rbp,rsp
+13D3FD04  488B0535330000    mov rax,[rel 0x13d43040]
+13D3FD0B  5D                pop rbp
+13D3FD0C  FFA040070000      jmp qword near [rax+0x740]
+13D3FD12  55                push rbp
+13D3FD13  4889E5            mov rbp,rsp
+13D3FD16  5D                pop rbp
+13D3FD17  E950032DEC        jmp 0x1006c
+13D3FD1C  55                push rbp
+13D3FD1D  4889E5            mov rbp,rsp
+13D3FD20  488D3D715B0000    lea rdi,[rel 0x13d45898]
+13D3FD27  488D3562280000    lea rsi,[rel 0x13d42590]
+13D3FD2E  488B15DB320000    mov rdx,[rel 0x13d43010]
+13D3FD35  B940010000        mov ecx,0x140
+13D3FD3A  E827032DEC        call 0x10066
+13D3FD3F  488D05FA3C0000    lea rax,[rel 0x13d43a40]
+13D3FD46  4889054B5B0000    mov [rel 0x13d45898],rax
+13D3FD4D  5D                pop rbp
+13D3FD4E  C3                retq
+13D3FD4F  55                push rbp
+13D3FD50  4889E5            mov rbp,rsp
+13D3FD53  488D3D3E5B0000    lea rdi,[rel 0x13d45898]
+13D3FD5A  5D                pop rbp
+13D3FD5B  E90C032DEC        jmp 0x1006c
+13D3FD60  0000              add [rax],al
+13D3FD62  55                push rbp
+13D3FD63  4889E5            mov rbp,rsp
+13D3FD66  5D                pop rbp
+13D3FD67  E900032DEC        jmp 0x1006c
+13D3FD6C  0000              add [rax],al
+13D3FD6E  55                push rbp
+13D3FD6F  4889E5            mov rbp,rsp
+13D3FD72  5D                pop rbp
+13D3FD73  E90E042DEC        jmp 0x10186
+13D3FD78  55                push rbp
+13D3FD79  4889E5            mov rbp,rsp
+13D3FD7C  53                push rbx
+13D3FD7D  50                push rax
+13D3FD7E  4889FB            mov rbx,rdi
+13D3FD81  E800042DEC        call 0x10186
+13D3FD86  488D3DB3720000    lea rdi,[rel 0x13d47040]
+13D3FD8D  BA88000000        mov edx,0x88
+13D3FD92  4889DE            mov rsi,rbx
+13D3FD95  4883C408          add rsp,0x8
+13D3FD99  5B                pop rbx
+13D3FD9A  5D                pop rbp
+13D3FD9B  E990022DEC        jmp 0x10030
+13D3FDA0  55                push rbp
+13D3FDA1  4889E5            mov rbp,rsp
+13D3FDA4  488D05155B0000    lea rax,[rel 0x13d458c0]
+13D3FDAB  5D                pop rbp
+13D3FDAC  C3                retq
+13D3FDAD  90                nop
+13D3FDAE  0000              add [rax],al
+13D3FDB0  55                push rbp
+13D3FDB1  4889E5            mov rbp,rsp
+13D3FDB4  4156              push r14
+13D3FDB6  53                push rbx
+13D3FDB7  488D3D82720000    lea rdi,[rel 0x13d47040]
+13D3FDBE  BE88000000        mov esi,0x88
+13D3FDC3  E86E022DEC        call 0x10036
+13D3FDC8  4889C3            mov rbx,rax
+13D3FDCB  4C8D35EE5A0000    lea r14,[rel 0x13d458c0]
+13D3FDD2  4889C7            mov rdi,rax
+13D3FDD5  4C89F6            mov rsi,r14
+13D3FDD8  E8A3032DEC        call 0x10180
+13D3FDDD  488D05443D0000    lea rax,[rel 0x13d43b28]
+13D3FDE4  488903            mov [rbx],rax
+13D3FDE7  4C89F7            mov rdi,r14
+13D3FDEA  E8BF022DEC        call 0x100ae
+13D3FDEF  4889D8            mov rax,rbx
+13D3FDF2  5B                pop rbx
+13D3FDF3  415E              pop r14
+13D3FDF5  5D                pop rbp
+13D3FDF6  C3                retq
+13D3FDF7  90                nop

@@ -1,0 +1,15 @@
+13D41BDC  55                push rbp
+13D41BDD  4889E5            mov rbp,rsp
+13D41BE0  4989C8            mov r8,rcx
+13D41BE3  4889D1            mov rcx,rdx
+13D41BE6  89F2              mov edx,esi
+13D41BE8  31C0              xor eax,eax
+13D41BEA  BE01000000        mov esi,0x1
+13D41BEF  4531C9            xor r9d,r9d
+13D41BF2  50                push rax
+13D41BF3  50                push rax
+13D41BF4  E8B7EBFFFF        call 0x13d407b0
+13D41BF9  4883C410          add rsp,0x10
+13D41BFD  5D                pop rbp
+13D41BFE  C3                retq
+13D41BFF  90                nop

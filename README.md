@@ -15,7 +15,7 @@ The immediate blocker is narrow and testable: the AMD X6000 stack resolves stati
 
 ## What is included
 
-This archive contains **231 T27 text artifacts**: reports, worklogs, dependency matrices, blocklists, symbol tables, hashes and helper scripts. With this README and the public checksum manifest, the repository has 234 files.
+This archive contains **231 T27 text artifacts**: reports, worklogs, dependency matrices, blocklists, symbol tables, hashes and helper scripts. `AGENT-AMD/evidence/` adds **100 raw analysis tables** — export lists, `unresolved` lists, symbol and path tables — so the one-symbol result can be re-checked without owning the Apple binaries. With this README, `RESTORE.md`, two helper scripts, `.gitignore` and the public checksum manifest, the repository has 337 files.
 
 Start with:
 
@@ -25,6 +25,8 @@ Start with:
 - `AGENT-AMD/T27-PROVIDERS-26B131.md` — provider/symbol coverage
 - `AGENT-AMD/T27-DONOR-COMPAT.md` — 25G342 donor compatibility
 - `AGENT-AMD/T27-REDEFINITION.md` — why the read-only phase was closed
+- `AGENT-AMD/evidence/` — raw export/unresolved/symbol tables behind the result
+- `RESTORE.md` — how to restore this archive and what a rebuild can and cannot recover
 
 ## Result in one screen
 
@@ -43,10 +45,15 @@ AMDRadeonX6000_AMDHardware::decrementInternalRefCount(unsigned int)
 ## What is deliberately not included
 
 - Apple binaries, kernel caches, KDK contents, IPSW/installer payloads, `.dmg`/`.zip` files.
-- The 112 GB of local session data and the 432 MB `.tmp` extraction/disassembly tree.
+- Disassembly and `.compact` listings, raw `.bin` captures cut from Apple code, and the 112 GB of local session data.
+- The rest of the 432 MB `.tmp` tree: its analysis tables are published, its binaries are not.
 - Local paths, machine names, session identifiers, account emails and other personal data.
 
 Local paths in the published reports were replaced with placeholders such as `<PROJECT_ROOT>`, `<TARGET_ROOT>`, `<DONOR_VOLUME>`, `<SESSION>` and `<VOLUME>`. The `*.sha256` files that shipped with individual reports refer to the **pre-sanitization** local versions; `MANIFEST-PUBLIC.sha256` is the checksum manifest for this public copy.
+
+## Restore and reuse
+
+`git clone` returns the published bytes exactly; `TOOLS/verify.sh` re-hashes all of them against `MANIFEST-PUBLIC.sha256` and exits 0 only when nothing is missing or changed. `TOOLS/rebuild-public.sh` re-derives the sanitized tree from a private T27 copy and reports any file that does not reproduce exactly. See `RESTORE.md` for the placeholder map, what a rebuild can recover and what is lost for good once the private tree is deleted.
 
 ## Important limitation
 

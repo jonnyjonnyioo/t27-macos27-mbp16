@@ -1,0 +1,127 @@
+0BF9894E  55                push rbp
+0BF9894F  4889E5            mov rbp,rsp
+0BF98952  4157              push r15
+0BF98954  4156              push r14
+0BF98956  4155              push r13
+0BF98958  4154              push r12
+0BF9895A  53                push rbx
+0BF9895B  50                push rax
+0BF9895C  4D89C7            mov r15,r8
+0BF9895F  4889D3            mov rbx,rdx
+0BF98962  4189F5            mov r13d,esi
+0BF98965  4989FE            mov r14,rdi
+0BF98968  4D85C9            test r9,r9
+0BF9896B  7405              jz 0xbf98972
+0BF9896D  4D8B21            mov r12,[r9]
+0BF98970  EB03              jmp 0xbf98975
+0BF98972  4531E4            xor r12d,r12d
+0BF98975  4D85FF            test r15,r15
+0BF98978  0F94C0            setz al
+0BF9897B  4885DB            test rbx,rbx
+0BF9897E  0F94C2            setz dl
+0BF98981  08C2              or dl,al
+0BF98983  751D              jnz 0xbf989a2
+0BF98985  4939DF            cmp r15,rbx
+0BF98988  7418              jz 0xbf989a2
+0BF9898A  4D85E4            test r12,r12
+0BF9898D  7413              jz 0xbf989a2
+0BF9898F  4C39E1            cmp rcx,r12
+0BF98992  750E              jnz 0xbf989a2
+0BF98994  4C89FF            mov rdi,r15
+0BF98997  4889DE            mov rsi,rbx
+0BF9899A  4889CA            mov rdx,rcx
+0BF9899D  E8427707F4        call 0x100e4
+0BF989A2  4183FD03          cmp r13d,0x3
+0BF989A6  7430              jz 0xbf989d8
+0BF989A8  B8C70200E0        mov eax,0xe00002c7
+0BF989AD  4183FD01          cmp r13d,0x1
+0BF989B1  0F8525010000      jnz 0xbf98adc
+0BF989B7  4D85E4            test r12,r12
+0BF989BA  7436              jz 0xbf989f2
+0BF989BC  4C89F7            mov rdi,r14
+0BF989BF  4C89FE            mov rsi,r15
+0BF989C2  4C89E2            mov rdx,r12
+0BF989C5  4883C408          add rsp,0x8
+0BF989C9  5B                pop rbx
+0BF989CA  415C              pop r12
+0BF989CC  415D              pop r13
+0BF989CE  415E              pop r14
+0BF989D0  415F              pop r15
+0BF989D2  5D                pop rbp
+0BF989D3  E914010000        jmp 0xbf98aec
+0BF989D8  4D85E4            test r12,r12
+0BF989DB  741F              jz 0xbf989fc
+0BF989DD  4D85FF            test r15,r15
+0BF989E0  0F84C1000000      jz 0xbf98aa7
+0BF989E6  41C70703000000    mov dword [r15],0x3
+0BF989ED  E9B1000000        jmp 0xbf98aa3
+0BF989F2  B8010000E0        mov eax,0xe0000001
+0BF989F7  E9E0000000        jmp 0xbf98adc
+0BF989FC  4885DB            test rbx,rbx
+0BF989FF  0F84A2000000      jz 0xbf98aa7
+0BF98A05  498B06            mov rax,[r14]
+0BF98A08  4C89F7            mov rdi,r14
+0BF98A0B  FF9080060000      call qword near [rax+0x680]
+0BF98A11  4989C6            mov r14,rax
+0BF98A14  4889C7            mov rdi,rax
+0BF98A17  E8E861FFFF        call 0xbf8ec04
+0BF98A1C  8B03              mov eax,[rbx]
+0BF98A1E  A802              test al,0x2
+0BF98A20  742B              jz 0xbf98a4d
+0BF98A22  498B06            mov rax,[r14]
+0BF98A25  488D35776A1B00    lea rsi,[rel 0xc14f4a3]
+0BF98A2C  4C89F7            mov rdi,r14
+0BF98A2F  BA01000000        mov edx,0x1
+0BF98A34  FF9078020000      call qword near [rax+0x278]
+0BF98A3A  498B06            mov rax,[r14]
+0BF98A3D  4C89F7            mov rdi,r14
+0BF98A40  BE02000000        mov esi,0x2
+0BF98A45  FF90B0050000      call qword near [rax+0x5b0]
+0BF98A4B  8B03              mov eax,[rbx]
+0BF98A4D  A801              test al,0x1
+0BF98A4F  741A              jz 0xbf98a6b
+0BF98A51  498B06            mov rax,[r14]
+0BF98A54  488D35576A1B00    lea rsi,[rel 0xc14f4b2]
+0BF98A5B  4C89F7            mov rdi,r14
+0BF98A5E  BA01000000        mov edx,0x1
+0BF98A63  FF9078020000      call qword near [rax+0x278]
+0BF98A69  8B03              mov eax,[rbx]
+0BF98A6B  A802              test al,0x2
+0BF98A6D  741A              jz 0xbf98a89
+0BF98A6F  498B06            mov rax,[r14]
+0BF98A72  488D35486A1B00    lea rsi,[rel 0xc14f4c1]
+0BF98A79  4C89F7            mov rdi,r14
+0BF98A7C  BA01000000        mov edx,0x1
+0BF98A81  FF9078020000      call qword near [rax+0x278]
+0BF98A87  8B03              mov eax,[rbx]
+0BF98A89  A803              test al,0x3
+0BF98A8B  740E              jz 0xbf98a9b
+0BF98A8D  498B06            mov rax,[r14]
+0BF98A90  4C89F7            mov rdi,r14
+0BF98A93  31F6              xor esi,esi
+0BF98A95  FF90B0050000      call qword near [rax+0x5b0]
+0BF98A9B  4C89F7            mov rdi,r14
+0BF98A9E  E86161FFFF        call 0xbf8ec04
+0BF98AA3  31C0              xor eax,eax
+0BF98AA5  EB35              jmp 0xbf98adc
+0BF98AA7  498D9E36010000    lea rbx,[r14+0x136]
+0BF98AAE  498B06            mov rax,[r14]
+0BF98AB1  4C89F7            mov rdi,r14
+0BF98AB4  31F6              xor esi,esi
+0BF98AB6  FF9088030000      call qword near [rax+0x388]
+0BF98ABC  488D3DB3691B00    lea rdi,[rel 0xc14f476]
+0BF98AC3  488D0D85F21A00    lea rcx,[rel 0xc147d4f]
+0BF98ACA  4889DE            mov rsi,rbx
+0BF98ACD  4889C2            mov rdx,rax
+0BF98AD0  31C0              xor eax,eax
+0BF98AD2  E83D7607F4        call 0x10114
+0BF98AD7  B8C20200E0        mov eax,0xe00002c2
+0BF98ADC  4883C408          add rsp,0x8
+0BF98AE0  5B                pop rbx
+0BF98AE1  415C              pop r12
+0BF98AE3  415D              pop r13
+0BF98AE5  415E              pop r14
+0BF98AE7  415F              pop r15
+0BF98AE9  5D                pop rbp
+0BF98AEA  C3                retq
+0BF98AEB  90                nop

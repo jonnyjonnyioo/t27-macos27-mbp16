@@ -1,0 +1,1166 @@
+13D407B0  55                push rbp
+13D407B1  4889E5            mov rbp,rsp
+13D407B4  4157              push r15
+13D407B6  4156              push r14
+13D407B8  4155              push r13
+13D407BA  4154              push r12
+13D407BC  53                push rbx
+13D407BD  4881EC18010000    sub rsp,0x118
+13D407C4  4D89CF            mov r15,r9
+13D407C7  4989CA            mov r10,rcx
+13D407CA  4189D5            mov r13d,edx
+13D407CD  488B5518          mov rdx,[rbp+0x18]
+13D407D1  4C8B5D10          mov r11,[rbp+0x10]
+13D407D5  41BCE20200E0      mov r12d,0xe00002e2
+13D407DB  4531F6            xor r14d,r14d
+13D407DE  4181FD01200000    cmp r13d,0x2001
+13D407E5  48897DC8          mov [rbp-0x38],rdi
+13D407E9  48894DD0          mov [rbp-0x30],rcx
+13D407ED  4C8945C0          mov [rbp-0x40],r8
+13D407F1  7E75              jng 0x13d40868
+13D407F3  418D8500BFFFFF    lea eax,[r13-0x4100]
+13D407FA  83F825            cmp eax,0x25
+13D407FD  0F83E0020000      jnc 0x13d40ae3
+13D40803  48B8AAAAAAAAAAAA  mov rax,0xaaaaaaaaaaaaaaaa
+         -AAAA
+13D4080D  48898518FFFFFF    mov [rbp-0xe8],rax
+13D40814  48898510FFFFFF    mov [rbp-0xf0],rax
+13D4081B  48898508FFFFFF    mov [rbp-0xf8],rax
+13D40822  48898500FFFFFF    mov [rbp-0x100],rax
+13D40829  488985F8FEFFFF    mov [rbp-0x108],rax
+13D40830  488985F0FEFFFF    mov [rbp-0x110],rax
+13D40837  488985E8FEFFFF    mov [rbp-0x118],rax
+13D4083E  488985E0FEFFFF    mov [rbp-0x120],rax
+13D40845  4181FD1C410000    cmp r13d,0x411c
+13D4084C  0F94C0            setz al
+13D4084F  83FE01            cmp esi,0x1
+13D40852  0F95C1            setnz cl
+13D40855  84C1              test cl,al
+13D40857  0F84C1000000      jz 0x13d4091e
+13D4085D  41BCC20200E0      mov r12d,0xe00002c2
+13D40863  E962100000        jmp 0x13d418ca
+13D40868  4181FD22090000    cmp r13d,0x922
+13D4086F  7F64              jg 0x13d408d5
+13D40871  4181FD03070000    cmp r13d,0x703
+13D40878  0F8F50010000      jg 0x13d409ce
+13D4087E  4183FD7F          cmp r13d,0x7f
+13D40882  0F8E32040000      jng 0x13d40cba
+13D40888  418D4580          lea eax,[r13-0x80]
+13D4088C  83F803            cmp eax,0x3
+13D4088F  0F877F040000      ja 0x13d40d14
+13D40895  488D0DDC120000    lea rcx,[rel 0x13d41b78]
+13D4089C  48630481          movsxd rax,dword [rcx+rax*4]
+13D408A0  4801C8            add rax,rcx
+13D408A3  FFE0              jmp rax
+13D408A5  41BCE20200E0      mov r12d,0xe00002e2
+13D408AB  83FE01            cmp esi,0x1
+13D408AE  0F849E0E0000      jz 0x13d41752
+13D408B4  85F6              test esi,esi
+13D408B6  0F850E100000      jnz 0x13d418ca
+13D408BC  4D85FF            test r15,r15
+13D408BF  0F8405100000      jz 0x13d418ca
+13D408C5  8A87B4000000      mov al,[rdi+0xb4]
+13D408CB  2401              and al,0x1
+13D408CD  418807            mov [r15],al
+13D408D0  E9910E0000        jmp 0x13d41766
+13D408D5  4181FD8F090000    cmp r13d,0x98f
+13D408DC  0F8F63010000      jg 0x13d40a45
+13D408E2  4181FD74090000    cmp r13d,0x974
+13D408E9  0F8F3F020000      jg 0x13d40b2e
+13D408EF  4181FD23090000    cmp r13d,0x923
+13D408F6  0F8457050000      jz 0x13d40e53
+13D408FC  4181FD41090000    cmp r13d,0x941
+13D40903  0F84DE040000      jz 0x13d40de7
+13D40909  4181FD42090000    cmp r13d,0x942
+13D40910  0F853A110000      jnz 0x13d41a50
+13D40916  4D85C0            test r8,r8
+13D40919  E9F90A0000        jmp 0x13d41417
+13D4091E  4C8D351B500000    lea r14,[rel 0x13d45940]
+13D40925  488B3D14500000    mov rdi,[rel 0x13d45940]
+13D4092C  E8BFFD2CEC        call 0x106f0
+13D40931  4489E8            mov eax,r13d
+13D40934  C1E802            shr eax,byte 0x2
+13D40937  25C0030000        and eax,0x3c0
+13D4093C  4A8B5C3020        mov rbx,[rax+r14+0x20]
+13D40941  4885DB            test rbx,rbx
+13D40944  0F84CD010000      jz 0x13d40b17
+13D4094A  4901C6            add r14,rax
+13D4094D  4983C610          add r14,0x10
+13D40951  488B03            mov rax,[rbx]
+13D40954  4889DF            mov rdi,rbx
+13D40957  FF5020            call qword near [rax+0x20]
+13D4095A  488B3DDF4F0000    mov rdi,[rel 0x13d45940]
+13D40961  E890FD2CEC        call 0x106f6
+13D40966  41BCC70200E0      mov r12d,0xe00002c7
+13D4096C  453B6E18          cmp r13d,[r14+0x18]
+13D40970  0F87D60C0000      ja 0x13d4164c
+13D40976  488B55C8          mov rdx,[rbp-0x38]
+13D4097A  488BBAA0000000    mov rdi,[rdx+0xa0]
+13D40981  4885FF            test rdi,rdi
+13D40984  0F843C040000      jz 0x13d40dc6
+13D4098A  488995E0FEFFFF    mov [rbp-0x120],rdx
+13D40991  4489ADE8FEFFFF    mov [rbp-0x118],r13d
+13D40998  488B45D0          mov rax,[rbp-0x30]
+13D4099C  488985F0FEFFFF    mov [rbp-0x110],rax
+13D409A3  488B45C0          mov rax,[rbp-0x40]
+13D409A7  488985F8FEFFFF    mov [rbp-0x108],rax
+13D409AE  4C89BD00FFFFFF    mov [rbp-0x100],r15
+13D409B5  488B4510          mov rax,[rbp+0x10]
+13D409B9  4885C0            test rax,rax
+13D409BC  488B4D18          mov rcx,[rbp+0x18]
+13D409C0  0F841A050000      jz 0x13d40ee0
+13D409C6  488B00            mov rax,[rax]
+13D409C9  E914050000        jmp 0x13d40ee2
+13D409CE  4181FD11070000    cmp r13d,0x711
+13D409D5  0F8F00020000      jg 0x13d40bdb
+13D409DB  4181FD04070000    cmp r13d,0x704
+13D409E2  0F846D020000      jz 0x13d40c55
+13D409E8  4181FD07070000    cmp r13d,0x707
+13D409EF  0F8410040000      jz 0x13d40e05
+13D409F5  4181FD11070000    cmp r13d,0x711
+13D409FC  0F854E100000      jnz 0x13d41a50
+13D40A02  4981F86C190000    cmp r8,0x196c
+13D40A09  0F95C0            setnz al
+13D40A0C  4D85D2            test r10,r10
+13D40A0F  0F94C1            setz cl
+13D40A12  4D85DB            test r11,r11
+13D40A15  400F94C6          setz sil
+13D40A19  41BCC20200E0      mov r12d,0xe00002c2
+13D40A1F  08C1              or cl,al
+13D40A21  4008F1            or cl,sil
+13D40A24  0F85A00E0000      jnz 0x13d418ca
+13D40A2A  4D85FF            test r15,r15
+13D40A2D  0F84970E0000      jz 0x13d418ca
+13D40A33  49813B6C190000    cmp qword [r11],0x196c
+13D40A3A  0F84470D0000      jz 0x13d41787
+13D40A40  E9850E0000        jmp 0x13d418ca
+13D40A45  4181FD00120000    cmp r13d,0x1200
+13D40A4C  0F8FD9010000      jg 0x13d40c2b
+13D40A52  4181FDFF100000    cmp r13d,0x10ff
+13D40A59  0F8EF4020000      jng 0x13d40d53
+13D40A5F  4181FD00110000    cmp r13d,0x1100
+13D40A66  0F84FA060000      jz 0x13d41166
+13D40A6C  4181FD01110000    cmp r13d,0x1101
+13D40A73  0F840D050000      jz 0x13d40f86
+13D40A79  4181FD00120000    cmp r13d,0x1200
+13D40A80  0F85CA0F0000      jnz 0x13d41a50
+13D40A86  41BCC20200E0      mov r12d,0xe00002c2
+13D40A8C  4983F808          cmp r8,0x8
+13D40A90  0F85340E0000      jnz 0x13d418ca
+13D40A96  488B3DA34E0000    mov rdi,[rel 0x13d45940]
+13D40A9D  E84EFC2CEC        call 0x106f0
+13D40AA2  488B75D0          mov rsi,[rbp-0x30]
+13D40AA6  31C0              xor eax,eax
+13D40AA8  488D0D914E0000    lea rcx,[rel 0x13d45940]
+13D40AAF  48837C082000      cmp qword [rax+rcx+0x20],0x0
+13D40AB5  7515              jnz 0x13d40acc
+13D40AB7  488B540810        mov rdx,[rax+rcx+0x10]
+13D40ABC  483B16            cmp rdx,[rsi]
+13D40ABF  750B              jnz 0x13d40acc
+13D40AC1  F644081801        test byte [rax+rcx+0x18],0x1
+13D40AC6  0F85710E0000      jnz 0x13d4193d
+13D40ACC  4883C040          add rax,0x40
+13D40AD0  483D00040000      cmp rax,0x400
+13D40AD6  75D7              jnz 0x13d40aaf
+13D40AD8  41BCF00200E0      mov r12d,0xe00002f0
+13D40ADE  E9850E0000        jmp 0x13d41968
+13D40AE3  418D8500DDFFFF    lea eax,[r13-0x2300]
+13D40AEA  83F805            cmp eax,0x5
+13D40AED  0F8777010000      ja 0x13d40c6a
+13D40AF3  488D0DCA100000    lea rcx,[rel 0x13d41bc4]
+13D40AFA  48630481          movsxd rax,dword [rcx+rax*4]
+13D40AFE  4801C8            add rax,rcx
+13D40B01  FFE0              jmp rax
+13D40B03  41BCC20200E0      mov r12d,0xe00002c2
+13D40B09  4D85DB            test r11,r11
+13D40B0C  0F850F0C0000      jnz 0x13d41721
+13D40B12  E9B30D0000        jmp 0x13d418ca
+13D40B17  488B3D224E0000    mov rdi,[rel 0x13d45940]
+13D40B1E  E8D3FB2CEC        call 0x106f6
+13D40B23  41BCE20200E0      mov r12d,0xe00002e2
+13D40B29  E99C0D0000        jmp 0x13d418ca
+13D40B2E  418D8580F6FFFF    lea eax,[r13-0x980]
+13D40B35  83F806            cmp eax,0x6
+13D40B38  0F8756030000      ja 0x13d40e94
+13D40B3E  488D0D53100000    lea rcx,[rel 0x13d41b98]
+13D40B45  48630481          movsxd rax,dword [rcx+rax*4]
+13D40B49  4801C8            add rax,rcx
+13D40B4C  FFE0              jmp rax
+13D40B4E  488DBDE0FEFFFF    lea rdi,[rbp-0x120]
+13D40B55  BEDC000000        mov esi,0xdc
+13D40B5A  E855F52CEC        call 0x100b4
+13D40B5F  488B5518          mov rdx,[rbp+0x18]
+13D40B63  4885D2            test rdx,rdx
+13D40B66  0F84730D0000      jz 0x13d418df
+13D40B6C  4C8B4D10          mov r9,[rbp+0x10]
+13D40B70  4D85C9            test r9,r9
+13D40B73  488B7DC8          mov rdi,[rbp-0x38]
+13D40B77  0F84E0FCFFFF      jz 0x13d4085d
+13D40B7D  498139DC000000    cmp qword [r9],0xdc
+13D40B84  0F85D3FCFFFF      jnz 0x13d4085d
+13D40B8A  488B07            mov rax,[rdi]
+13D40B8D  48891424          mov [rsp],rdx
+13D40B91  4C8D85E0FEFFFF    lea r8,[rbp-0x120]
+13D40B98  BE80090000        mov esi,0x980
+13D40B9D  488B55D0          mov rdx,[rbp-0x30]
+13D40BA1  488B4DC0          mov rcx,[rbp-0x40]
+13D40BA5  FF9058080000      call qword near [rax+0x858]
+13D40BAB  4189C4            mov r12d,eax
+13D40BAE  488B4518          mov rax,[rbp+0x18]
+13D40BB2  F6403001          test byte [rax+0x30],0x1
+13D40BB6  0F850E0D0000      jnz 0x13d418ca
+13D40BBC  4585E4            test r12d,r12d
+13D40BBF  0F84010E0000      jz 0x13d419c6
+13D40BC5  BEDC000000        mov esi,0xdc
+13D40BCA  4C89FF            mov rdi,r15
+13D40BCD  E8E2F42CEC        call 0x100b4
+13D40BD2  488B5518          mov rdx,[rbp+0x18]
+13D40BD6  E9620E0000        jmp 0x13d41a3d
+13D40BDB  418D8500F8FFFF    lea eax,[r13-0x800]
+13D40BE2  83F803            cmp eax,0x3
+13D40BE5  0F877A020000      ja 0x13d40e65
+13D40BEB  488D0D960F0000    lea rcx,[rel 0x13d41b88]
+13D40BF2  48630481          movsxd rax,dword [rcx+rax*4]
+13D40BF6  4801C8            add rax,rcx
+13D40BF9  FFE0              jmp rax
+13D40BFB  41BCC20200E0      mov r12d,0xe00002c2
+13D40C01  49F7C0EFFFFFFF    test r8,0xffffffffffffffef
+13D40C08  0F85BC0C0000      jnz 0x13d418ca
+13D40C0E  31DB              xor ebx,ebx
+13D40C10  4D85DB            test r11,r11
+13D40C13  0F84700B0000      jz 0x13d41789
+13D40C19  49F703EFFFFFFF    test qword [r11],0xffffffffffffffef
+13D40C20  0F84630B0000      jz 0x13d41789
+13D40C26  E99F0C0000        jmp 0x13d418ca
+13D40C2B  418D8500E8FFFF    lea eax,[r13-0x1800]
+13D40C32  83F802            cmp eax,0x2
+13D40C35  0F825B010000      jc 0x13d40d96
+13D40C3B  4181FD01120000    cmp r13d,0x1201
+13D40C42  0F84EB040000      jz 0x13d41133
+13D40C48  4181FD02180000    cmp r13d,0x1802
+13D40C4F  0F85FB0D0000      jnz 0x13d41a50
+13D40C55  41BCC20200E0      mov r12d,0xe00002c2
+13D40C5B  4983F808          cmp r8,0x8
+13D40C5F  0F84220B0000      jz 0x13d41787
+13D40C65  E9600C0000        jmp 0x13d418ca
+13D40C6A  418D85FEDFFFFF    lea eax,[r13-0x2002]
+13D40C71  83F803            cmp eax,0x3
+13D40C74  0F87D60D0000      ja 0x13d41a50
+13D40C7A  488D0D330F0000    lea rcx,[rel 0x13d41bb4]
+13D40C81  48630481          movsxd rax,dword [rcx+rax*4]
+13D40C85  4801C8            add rax,rcx
+13D40C88  FFE0              jmp rax
+13D40C8A  4981F8E0030000    cmp r8,0x3e0
+13D40C91  0F95C0            setnz al
+13D40C94  4D85DB            test r11,r11
+13D40C97  0F94C1            setz cl
+13D40C9A  08C1              or cl,al
+13D40C9C  41BCC20200E0      mov r12d,0xe00002c2
+13D40CA2  0F85220C0000      jnz 0x13d418ca
+13D40CA8  49813BE0030000    cmp qword [r11],0x3e0
+13D40CAF  0F84D20A0000      jz 0x13d41787
+13D40CB5  E9100C0000        jmp 0x13d418ca
+13D40CBA  4183FD03          cmp r13d,0x3
+13D40CBE  0F842C060000      jz 0x13d412f0
+13D40CC4  4183FD10          cmp r13d,0x10
+13D40CC8  0F84CC030000      jz 0x13d4109a
+13D40CCE  4183FD20          cmp r13d,0x20
+13D40CD2  0F85780D0000      jnz 0x13d41a50
+13D40CD8  41BCC20200E0      mov r12d,0xe00002c2
+13D40CDE  4D85DB            test r11,r11
+13D40CE1  0F84E30B0000      jz 0x13d418ca
+13D40CE7  49833B08          cmp qword [r11],0x8
+13D40CEB  0F85D90B0000      jnz 0x13d418ca
+13D40CF1  488B07            mov rax,[rdi]
+13D40CF4  48891424          mov [rsp],rdx
+13D40CF8  BE20000000        mov esi,0x20
+13D40CFD  4C89D2            mov rdx,r10
+13D40D00  4C89C1            mov rcx,r8
+13D40D03  4D89F8            mov r8,r15
+13D40D06  4D89D9            mov r9,r11
+13D40D09  FF9058080000      call qword near [rax+0x858]
+13D40D0F  E9B90B0000        jmp 0x13d418cd
+13D40D14  4181FD00030000    cmp r13d,0x300
+13D40D1B  0F84B1060000      jz 0x13d413d2
+13D40D21  4181FD01030000    cmp r13d,0x301
+13D40D28  0F85220D0000      jnz 0x13d41a50
+13D40D2E  4983F802          cmp r8,0x2
+13D40D32  0F95C0            setnz al
+13D40D35  83FE01            cmp esi,0x1
+13D40D38  0F95C1            setnz cl
+13D40D3B  08C1              or cl,al
+13D40D3D  0F85E9090000      jnz 0x13d4172c
+13D40D43  410FB702          movzx eax,word [r10]
+13D40D47  668987B0000000    mov [rdi+0xb0],ax
+13D40D4E  E9130A0000        jmp 0x13d41766
+13D40D53  4181FD90090000    cmp r13d,0x990
+13D40D5A  0F842C060000      jz 0x13d4138c
+13D40D60  4181FD91090000    cmp r13d,0x991
+13D40D67  0F85E30C0000      jnz 0x13d41a50
+13D40D6D  4D85C0            test r8,r8
+13D40D70  0F95C0            setnz al
+13D40D73  4D85DB            test r11,r11
+13D40D76  0F94C1            setz cl
+13D40D79  08C1              or cl,al
+13D40D7B  41BCC20200E0      mov r12d,0xe00002c2
+13D40D81  0F85430B0000      jnz 0x13d418ca
+13D40D87  49833B48          cmp qword [r11],0x48
+13D40D8B  0F84F6090000      jz 0x13d41787
+13D40D91  E9340B0000        jmp 0x13d418ca
+13D40D96  4981F88C7B0000    cmp r8,0x7b8c
+13D40D9D  0F95C0            setnz al
+13D40DA0  4D85DB            test r11,r11
+13D40DA3  0F94C1            setz cl
+13D40DA6  08C1              or cl,al
+13D40DA8  41BCC20200E0      mov r12d,0xe00002c2
+13D40DAE  0F85160B0000      jnz 0x13d418ca
+13D40DB4  49813B8C7B0000    cmp qword [r11],0x7b8c
+13D40DBB  0F84C6090000      jz 0x13d41787
+13D40DC1  E9040B0000        jmp 0x13d418ca
+13D40DC6  488B4510          mov rax,[rbp+0x10]
+13D40DCA  4885C0            test rax,rax
+13D40DCD  488B4DD0          mov rcx,[rbp-0x30]
+13D40DD1  488B7518          mov rsi,[rbp+0x18]
+13D40DD5  4C8B45C0          mov r8,[rbp-0x40]
+13D40DD9  0F8424080000      jz 0x13d41603
+13D40DDF  488B00            mov rax,[rax]
+13D40DE2  E91E080000        jmp 0x13d41605
+13D40DE7  41BCC20200E0      mov r12d,0xe00002c2
+13D40DED  4D85DB            test r11,r11
+13D40DF0  0F84D40A0000      jz 0x13d418ca
+13D40DF6  49833B30          cmp qword [r11],0x30
+13D40DFA  0F8487090000      jz 0x13d41787
+13D40E00  E9C50A0000        jmp 0x13d418ca
+13D40E05  41BCC20200E0      mov r12d,0xe00002c2
+13D40E0B  4D85C0            test r8,r8
+13D40E0E  741B              jz 0x13d40e2b
+13D40E10  4981F808040000    cmp r8,0x408
+13D40E17  0F85AD0A0000      jnz 0x13d418ca
+13D40E1D  41817A0400040000  cmp dword [r10+0x4],0x400
+13D40E25  0F879F0A0000      ja 0x13d418ca
+13D40E2B  31DB              xor ebx,ebx
+13D40E2D  4D85DB            test r11,r11
+13D40E30  0F8453090000      jz 0x13d41789
+13D40E36  498B03            mov rax,[r11]
+13D40E39  4885C0            test rax,rax
+13D40E3C  0F8447090000      jz 0x13d41789
+13D40E42  483D08040000      cmp rax,0x408
+13D40E48  0F843B090000      jz 0x13d41789
+13D40E4E  E9770A0000        jmp 0x13d418ca
+13D40E53  83FE03            cmp esi,0x3
+13D40E56  410F94C6          setz r14b
+13D40E5A  41BCE20200E0      mov r12d,0xe00002e2
+13D40E60  E9010C0000        jmp 0x13d41a66
+13D40E65  4181FD12070000    cmp r13d,0x712
+13D40E6C  0F8477080000      jz 0x13d416e9
+13D40E72  4181FD13070000    cmp r13d,0x713
+13D40E79  0F85D10B0000      jnz 0x13d41a50
+13D40E7F  41BCC20200E0      mov r12d,0xe00002c2
+13D40E85  4983F814          cmp r8,0x14
+13D40E89  0F84F8080000      jz 0x13d41787
+13D40E8F  E9360A0000        jmp 0x13d418ca
+13D40E94  4181FD75090000    cmp r13d,0x975
+13D40E9B  0F845D080000      jz 0x13d416fe
+13D40EA1  4181FD76090000    cmp r13d,0x976
+13D40EA8  0F85A20B0000      jnz 0x13d41a50
+13D40EAE  4D85C0            test r8,r8
+13D40EB1  0F95C0            setnz al
+13D40EB4  4D85DB            test r11,r11
+13D40EB7  0F94C1            setz cl
+13D40EBA  41BCC20200E0      mov r12d,0xe00002c2
+13D40EC0  08C1              or cl,al
+13D40EC2  0F85020A0000      jnz 0x13d418ca
+13D40EC8  4D85FF            test r15,r15
+13D40ECB  0F84F9090000      jz 0x13d418ca
+13D40ED1  49833B0D          cmp qword [r11],0xd
+13D40ED5  0F87AC080000      ja 0x13d41787
+13D40EDB  E9EA090000        jmp 0x13d418ca
+13D40EE0  31C0              xor eax,eax
+13D40EE2  48898508FFFFFF    mov [rbp-0xf8],rax
+13D40EE9  48898D18FFFFFF    mov [rbp-0xe8],rcx
+13D40EF0  4885C9            test rcx,rcx
+13D40EF3  7406              jz 0x13d40efb
+13D40EF5  488B4138          mov rax,[rcx+0x38]
+13D40EF9  EB02              jmp 0x13d40efd
+13D40EFB  31C0              xor eax,eax
+13D40EFD  4C8D85E0FEFFFF    lea r8,[rbp-0x120]
+13D40F04  49894030          mov [r8+0x30],rax
+13D40F08  488B07            mov rax,[rdi]
+13D40F0B  48C7042400000000  mov qword [rsp],0x0
+13D40F13  488D35480D0000    lea rsi,[rel 0x13d41c62]
+13D40F1A  4889D9            mov rcx,rbx
+13D40F1D  4531C9            xor r9d,r9d
+13D40F20  FF90A0010000      call qword near [rax+0x1a0]
+13D40F26  E9F4060000        jmp 0x13d4161f
+13D40F2B  41BCC20200E0      mov r12d,0xe00002c2
+13D40F31  4983F840          cmp r8,0x40
+13D40F35  0F858F090000      jnz 0x13d418ca
+13D40F3B  83FE01            cmp esi,0x1
+13D40F3E  0F85A9090000      jnz 0x13d418ed
+13D40F44  41F6422001        test byte [r10+0x20],0x1
+13D40F49  7428              jz 0x13d40f73
+13D40F4B  41F6422101        test byte [r10+0x21],0x1
+13D40F50  7421              jz 0x13d40f73
+13D40F52  488D15BB490000    lea rdx,[rel 0x13d45914]
+13D40F59  BF01000000        mov edi,0x1
+13D40F5E  31F6              xor esi,esi
+13D40F60  E8C1F12CEC        call 0x10126
+13D40F65  488B7DC8          mov rdi,[rbp-0x38]
+13D40F69  488B45D0          mov rax,[rbp-0x30]
+13D40F6D  66C740200000      mov word [rax+0x20],0x0
+13D40F73  448AB7B4000000    mov r14b,[rdi+0xb4]
+13D40F7A  4180F601          xor r14b,0x1
+13D40F7E  4531E4            xor r12d,r12d
+13D40F81  E970090000        jmp 0x13d418f6
+13D40F86  41BCE20200E0      mov r12d,0xe00002e2
+13D40F8C  83FE03            cmp esi,0x3
+13D40F8F  0F8435090000      jz 0x13d418ca
+13D40F95  41BCC20200E0      mov r12d,0xe00002c2
+13D40F9B  4983F808          cmp r8,0x8
+13D40F9F  0F8525090000      jnz 0x13d418ca
+13D40FA5  488B3D94490000    mov rdi,[rel 0x13d45940]
+13D40FAC  E83FF72CEC        call 0x106f0
+13D40FB1  488B55D0          mov rdx,[rbp-0x30]
+13D40FB5  31C0              xor eax,eax
+13D40FB7  488D0D82490000    lea rcx,[rel 0x13d45940]
+13D40FBE  48837C082000      cmp qword [rax+rcx+0x20],0x0
+13D40FC4  750A              jnz 0x13d40fd0
+13D40FC6  48833A00          cmp qword [rdx],0x0
+13D40FCA  0F846D090000      jz 0x13d4193d
+13D40FD0  4883C040          add rax,0x40
+13D40FD4  483D00040000      cmp rax,0x400
+13D40FDA  75E2              jnz 0x13d40fbe
+13D40FDC  41BCE20200E0      mov r12d,0xe00002e2
+13D40FE2  E981090000        jmp 0x13d41968
+13D40FE7  41BCE20200E0      mov r12d,0xe00002e2
+13D40FED  83FE03            cmp esi,0x3
+13D40FF0  0F84D4080000      jz 0x13d418ca
+13D40FF6  41BCC20200E0      mov r12d,0xe00002c2
+13D40FFC  4983F810          cmp r8,0x10
+13D41000  0F85C4080000      jnz 0x13d418ca
+13D41006  498B3A            mov rdi,[r10]
+13D41009  488D35D8480000    lea rsi,[rel 0x13d458e8]
+13D41010  4C89D3            mov rbx,r10
+13D41013  E866F02CEC        call 0x1007e
+13D41018  488B4DC8          mov rcx,[rbp-0x38]
+13D4101C  488981A8000000    mov [rcx+0xa8],rax
+13D41023  488B7B08          mov rdi,[rbx+0x8]
+13D41027  488B05D21F0000    mov rax,[rel 0x13d43000]
+13D4102E  488B30            mov rsi,[rax]
+13D41031  E848F02CEC        call 0x1007e
+13D41036  488B55C8          mov rdx,[rbp-0x38]
+13D4103A  488982A0000000    mov [rdx+0xa0],rax
+13D41041  4883BAA800000000  cmp qword [rdx+0xa8],0x0
+13D41049  0F95C1            setnz cl
+13D4104C  4885C0            test rax,rax
+13D4104F  0F95C0            setnz al
+13D41052  20C8              and al,cl
+13D41054  41BCE20200E0      mov r12d,0xe00002e2
+13D4105A  3C01              cmp al,0x1
+13D4105C  0F8568080000      jnz 0x13d418ca
+13D41062  4531E4            xor r12d,r12d
+13D41065  BF83000000        mov edi,0x83
+13D4106A  31F6              xor esi,esi
+13D4106C  E861EEFFFF        call 0x13d3fed2
+13D41071  E954080000        jmp 0x13d418ca
+13D41076  41BCE20200E0      mov r12d,0xe00002e2
+13D4107C  83FE01            cmp esi,0x1
+13D4107F  0F8545080000      jnz 0x13d418ca
+13D41085  41BCC20200E0      mov r12d,0xe00002c2
+13D4108B  4983F840          cmp r8,0x40
+13D4108F  0F84F2060000      jz 0x13d41787
+13D41095  E930080000        jmp 0x13d418ca
+13D4109A  41BCE20200E0      mov r12d,0xe00002e2
+13D410A0  4D85DB            test r11,r11
+13D410A3  7425              jz 0x13d410ca
+13D410A5  498B03            mov rax,[r11]
+13D410A8  4885C0            test rax,rax
+13D410AB  741D              jz 0x13d410ca
+13D410AD  41BCC20200E0      mov r12d,0xe00002c2
+13D410B3  4883F808          cmp rax,0x8
+13D410B7  0F850D080000      jnz 0x13d418ca
+13D410BD  48630550480000    movsxd rax,dword [rel 0x13d45914]
+13D410C4  498907            mov [r15],rax
+13D410C7  4531E4            xor r12d,r12d
+13D410CA  4D85C0            test r8,r8
+13D410CD  0F84F7070000      jz 0x13d418ca
+13D410D3  41BCC20200E0      mov r12d,0xe00002c2
+13D410D9  4983F808          cmp r8,0x8
+13D410DD  0F85E7070000      jnz 0x13d418ca
+13D410E3  4885D2            test rdx,rdx
+13D410E6  0F94C0            setz al
+13D410E9  83FE03            cmp esi,0x3
+13D410EC  0F95C1            setnz cl
+13D410EF  41BCC10200E0      mov r12d,0xe00002c1
+13D410F5  08C1              or cl,al
+13D410F7  0F85CD070000      jnz 0x13d418ca
+13D410FD  F6422001          test byte [rdx+0x20],0x1
+13D41101  0F84C3070000      jz 0x13d418ca
+13D41107  498B02            mov rax,[r10]
+13D4110A  F6422101          test byte [rdx+0x21],0x1
+13D4110E  0F847E080000      jz 0x13d41992
+13D41114  488D15F9470000    lea rdx,[rel 0x13d45914]
+13D4111B  4531E4            xor r12d,r12d
+13D4111E  4885C0            test rax,rax
+13D41121  0F843E0A0000      jz 0x13d41b65
+13D41127  31FF              xor edi,edi
+13D41129  BE01000000        mov esi,0x1
+13D4112E  E9390A0000        jmp 0x13d41b6c
+13D41133  41BCC20200E0      mov r12d,0xe00002c2
+13D41139  4983F810          cmp r8,0x10
+13D4113D  0F8587070000      jnz 0x13d418ca
+13D41143  488B3DF6470000    mov rdi,[rel 0x13d45940]
+13D4114A  E8A1F52CEC        call 0x106f0
+13D4114F  488B3DEA470000    mov rdi,[rel 0x13d45940]
+13D41156  E89BF52CEC        call 0x106f6
+13D4115B  41BCF00200E0      mov r12d,0xe00002f0
+13D41161  E964070000        jmp 0x13d418ca
+13D41166  41BCE20200E0      mov r12d,0xe00002e2
+13D4116C  83FE03            cmp esi,0x3
+13D4116F  0F8455070000      jz 0x13d418ca
+13D41175  41BCC20200E0      mov r12d,0xe00002c2
+13D4117B  4983F818          cmp r8,0x18
+13D4117F  0F8545070000      jnz 0x13d418ca
+13D41185  488B3DB4470000    mov rdi,[rel 0x13d45940]
+13D4118C  E85FF52CEC        call 0x106f0
+13D41191  488B55D0          mov rdx,[rbp-0x30]
+13D41195  31C0              xor eax,eax
+13D41197  4C8D35A2470000    lea r14,[rel 0x13d45940]
+13D4119E  4A837C302000      cmp qword [rax+r14+0x20],0x0
+13D411A4  750F              jnz 0x13d411b5
+13D411A6  4A8B4C3010        mov rcx,[rax+r14+0x10]
+13D411AB  483B4A08          cmp rcx,[rdx+0x8]
+13D411AF  0F84C6070000      jz 0x13d4197b
+13D411B5  4883C040          add rax,0x40
+13D411B9  483D00040000      cmp rax,0x400
+13D411BF  75DD              jnz 0x13d4119e
+13D411C1  488B3D78470000    mov rdi,[rel 0x13d45940]
+13D411C8  E829F52CEC        call 0x106f6
+13D411CD  488B45D0          mov rax,[rbp-0x30]
+13D411D1  4883780800        cmp qword [rax+0x8],0x0
+13D411D6  0F84EE060000      jz 0x13d418ca
+13D411DC  488B38            mov rdi,[rax]
+13D411DF  4885FF            test rdi,rdi
+13D411E2  0F84E2060000      jz 0x13d418ca
+13D411E8  488D05293C0000    lea rax,[rel 0x13d44e18]
+13D411EF  488B30            mov rsi,[rax]
+13D411F2  E887EE2CEC        call 0x1007e
+13D411F7  4885C0            test rax,rax
+13D411FA  0F84CA060000      jz 0x13d418ca
+13D41200  488B55D0          mov rdx,[rbp-0x30]
+13D41204  8B7210            mov esi,[rdx+0x10]
+13D41207  8B4214            mov eax,[rdx+0x14]
+13D4120A  89C1              mov ecx,eax
+13D4120C  29F1              sub ecx,esi
+13D4120E  81F9FF000000      cmp ecx,0xff
+13D41214  0F87B0060000      ja 0x13d418ca
+13D4121A  3D00500000        cmp eax,0x5000
+13D4121F  0F87A5060000      ja 0x13d418ca
+13D41225  81FE00400000      cmp esi,0x4000
+13D4122B  0F8299060000      jc 0x13d418ca
+13D41231  39F0              cmp eax,esi
+13D41233  0F8691060000      jna 0x13d418ca
+13D41239  4889F3            mov rbx,rsi
+13D4123C  488B4208          mov rax,[rdx+0x8]
+13D41240  B98256B998        mov ecx,0x98b95682
+13D41245  4839C8            cmp rax,rcx
+13D41248  740C              jz 0x13d41256
+13D4124A  483DC2551C72      cmp rax,0x721c55c2
+13D41250  0F8574060000      jnz 0x13d418ca
+13D41256  488B3DE3460000    mov rdi,[rel 0x13d45940]
+13D4125D  E88EF42CEC        call 0x106f0
+13D41262  4989DC            mov r12,rbx
+13D41265  41C1EC02          shr r12d,byte 0x2
+13D41269  4181E4C0030000    and r12d,0x3c0
+13D41270  31DB              xor ebx,ebx
+13D41272  4B895C3448        mov [r12+r14+0x48],rbx
+13D41277  4B895C3440        mov [r12+r14+0x40],rbx
+13D4127C  4B895C3438        mov [r12+r14+0x38],rbx
+13D41281  4B895C3430        mov [r12+r14+0x30],rbx
+13D41286  4B895C3428        mov [r12+r14+0x28],rbx
+13D4128B  4B895C3420        mov [r12+r14+0x20],rbx
+13D41290  4B895C3418        mov [r12+r14+0x18],rbx
+13D41295  4B895C3410        mov [r12+r14+0x10],rbx
+13D4129A  488B45D0          mov rax,[rbp-0x30]
+13D4129E  488B4008          mov rax,[rax+0x8]
+13D412A2  4B89443410        mov [r12+r14+0x10],rax
+13D412A7  43C644341801      mov byte [r12+r14+0x18],0x1
+13D412AD  488B45D0          mov rax,[rbp-0x30]
+13D412B1  488B38            mov rdi,[rax]
+13D412B4  4B897C3420        mov [r12+r14+0x20],rdi
+13D412B9  488B45D0          mov rax,[rbp-0x30]
+13D412BD  8B4014            mov eax,[rax+0x14]
+13D412C0  4389443428        mov [r12+r14+0x28],eax
+13D412C5  488B07            mov rax,[rdi]
+13D412C8  FF5020            call qword near [rax+0x20]
+13D412CB  488B3D6E460000    mov rdi,[rel 0x13d45940]
+13D412D2  E81FF42CEC        call 0x106f6
+13D412D7  4B8B743410        mov rsi,[r12+r14+0x10]
+13D412DC  BF00100000        mov edi,0x1000
+13D412E1  31D2              xor edx,edx
+13D412E3  E8EAEBFFFF        call 0x13d3fed2
+13D412E8  4531E4            xor r12d,r12d
+13D412EB  E9B8040000        jmp 0x13d417a8
+13D412F0  4D85C0            test r8,r8
+13D412F3  741B              jz 0x13d41310
+13D412F5  4983F804          cmp r8,0x4
+13D412F9  0F95C0            setnz al
+13D412FC  4D85D2            test r10,r10
+13D412FF  0F94C1            setz cl
+13D41302  41BCC20200E0      mov r12d,0xe00002c2
+13D41308  08C1              or cl,al
+13D4130A  0F85BA050000      jnz 0x13d418ca
+13D41310  4D85DB            test r11,r11
+13D41313  7423              jz 0x13d41338
+13D41315  498B03            mov rax,[r11]
+13D41318  4885C0            test rax,rax
+13D4131B  741B              jz 0x13d41338
+13D4131D  4883F804          cmp rax,0x4
+13D41321  0F95C0            setnz al
+13D41324  4D85FF            test r15,r15
+13D41327  0F94C1            setz cl
+13D4132A  41BCC20200E0      mov r12d,0xe00002c2
+13D41330  08C1              or cl,al
+13D41332  0F8592050000      jnz 0x13d418ca
+13D41338  31DB              xor ebx,ebx
+13D4133A  4D85D2            test r10,r10
+13D4133D  0F8446040000      jz 0x13d41789
+13D41343  F687B500000001    test byte [rdi+0xb5],0x1
+13D4134A  0F8439040000      jz 0x13d41789
+13D41350  41F60204          test byte [r10],0x4
+13D41354  0F842F040000      jz 0x13d41789
+13D4135A  F687B600000001    test byte [rdi+0xb6],0x1
+13D41361  0F8522040000      jnz 0x13d41789
+13D41367  C687B600000001    mov byte [rdi+0xb6],0x1
+13D4136E  E8DDEDFFFF        call 0x13d40150
+13D41373  4C8B5D10          mov r11,[rbp+0x10]
+13D41377  4C8B45C0          mov r8,[rbp-0x40]
+13D4137B  488B5518          mov rdx,[rbp+0x18]
+13D4137F  4C8B55D0          mov r10,[rbp-0x30]
+13D41383  488B7DC8          mov rdi,[rbp-0x38]
+13D41387  E9FD030000        jmp 0x13d41789
+13D4138C  4981F896000000    cmp r8,0x96
+13D41393  0F95C0            setnz al
+13D41396  4D85DB            test r11,r11
+13D41399  0F94C1            setz cl
+13D4139C  08C1              or cl,al
+13D4139E  41BCC20200E0      mov r12d,0xe00002c2
+13D413A4  0F8520050000      jnz 0x13d418ca
+13D413AA  49813B96000000    cmp qword [r11],0x96
+13D413B1  0F8513050000      jnz 0x13d418ca
+13D413B7  41807A1040        cmp byte [r10+0x10],0x40
+13D413BC  0F8708050000      ja 0x13d418ca
+13D413C2  41807A5140        cmp byte [r10+0x51],0x40
+13D413C7  0F86BA030000      jna 0x13d41787
+13D413CD  E9F8040000        jmp 0x13d418ca
+13D413D2  83FE01            cmp esi,0x1
+13D413D5  0F95C0            setnz al
+13D413D8  4981F899000000    cmp r8,0x99
+13D413DF  0F95C1            setnz cl
+13D413E2  08C1              or cl,al
+13D413E4  41BCC20200E0      mov r12d,0xe00002c2
+13D413EA  0F8497030000      jz 0x13d41787
+13D413F0  E9D5040000        jmp 0x13d418ca
+13D413F5  41BCC20200E0      mov r12d,0xe00002c2
+13D413FB  4D85DB            test r11,r11
+13D413FE  0F84C6040000      jz 0x13d418ca
+13D41404  49833B08          cmp qword [r11],0x8
+13D41408  0F8479030000      jz 0x13d41787
+13D4140E  E9B7040000        jmp 0x13d418ca
+13D41413  4983F82C          cmp r8,0x2c
+13D41417  0F95C0            setnz al
+13D4141A  4D85DB            test r11,r11
+13D4141D  0F94C1            setz cl
+13D41420  08C1              or cl,al
+13D41422  41BCC20200E0      mov r12d,0xe00002c2
+13D41428  0F859C040000      jnz 0x13d418ca
+13D4142E  49833B2C          cmp qword [r11],0x2c
+13D41432  0F844F030000      jz 0x13d41787
+13D41438  E98D040000        jmp 0x13d418ca
+13D4143D  85F6              test esi,esi
+13D4143F  0F8429030000      jz 0x13d4176e
+13D41445  83FE01            cmp esi,0x1
+13D41448  0F94C0            setz al
+13D4144B  4983F80C          cmp r8,0xc
+13D4144F  0F95C1            setnz cl
+13D41452  41BCC20200E0      mov r12d,0xe00002c2
+13D41458  84C8              test al,cl
+13D4145A  0F8427030000      jz 0x13d41787
+13D41460  E965040000        jmp 0x13d418ca
+13D41465  4983F814          cmp r8,0x14
+13D41469  0F95C0            setnz al
+13D4146C  4D85DB            test r11,r11
+13D4146F  0F94C1            setz cl
+13D41472  08C1              or cl,al
+13D41474  41BCC20200E0      mov r12d,0xe00002c2
+13D4147A  0F854A040000      jnz 0x13d418ca
+13D41480  49833B14          cmp qword [r11],0x14
+13D41484  0F84FD020000      jz 0x13d41787
+13D4148A  E93B040000        jmp 0x13d418ca
+13D4148F  4983F80C          cmp r8,0xc
+13D41493  0F95C0            setnz al
+13D41496  4D85DB            test r11,r11
+13D41499  0F94C1            setz cl
+13D4149C  08C1              or cl,al
+13D4149E  41BCC20200E0      mov r12d,0xe00002c2
+13D414A4  0F84D3020000      jz 0x13d4177d
+13D414AA  E91B040000        jmp 0x13d418ca
+13D414AF  41BCC20200E0      mov r12d,0xe00002c2
+13D414B5  4983F810          cmp r8,0x10
+13D414B9  0F84C8020000      jz 0x13d41787
+13D414BF  E906040000        jmp 0x13d418ca
+13D414C4  41BCC20200E0      mov r12d,0xe00002c2
+13D414CA  4D85DB            test r11,r11
+13D414CD  0F84F7030000      jz 0x13d418ca
+13D414D3  49833B44          cmp qword [r11],0x44
+13D414D7  0F84AA020000      jz 0x13d41787
+13D414DD  E9E8030000        jmp 0x13d418ca
+13D414E2  4983F804          cmp r8,0x4
+13D414E6  0F95C0            setnz al
+13D414E9  4D85DB            test r11,r11
+13D414EC  0F94C1            setz cl
+13D414EF  08C1              or cl,al
+13D414F1  41BCC20200E0      mov r12d,0xe00002c2
+13D414F7  0F85CD030000      jnz 0x13d418ca
+13D414FD  49833B04          cmp qword [r11],0x4
+13D41501  0F85C3030000      jnz 0x13d418ca
+13D41507  8B0503440000      mov eax,[rel 0x13d45910]
+13D4150D  FFC0              inc eax
+13D4150F  8905FB430000      mov [rel 0x13d45910],eax
+13D41515  418907            mov [r15],eax
+13D41518  E906F6FFFF        jmp 0x13d40b23
+13D4151D  83C6FC            add esi,0xfffffffffffffffc
+13D41520  41BCC20200E0      mov r12d,0xe00002c2
+13D41526  83FEFE            cmp esi,0xfffffffffffffffe
+13D41529  0F829B030000      jc 0x13d418ca
+13D4152F  4983F850          cmp r8,0x50
+13D41533  0F95C0            setnz al
+13D41536  4D85DB            test r11,r11
+13D41539  0F94C1            setz cl
+13D4153C  08C1              or cl,al
+13D4153E  0F8586030000      jnz 0x13d418ca
+13D41544  49833B50          cmp qword [r11],0x50
+13D41548  0F857C030000      jnz 0x13d418ca
+13D4154E  41807A0C40        cmp byte [r10+0xc],0x40
+13D41553  0F862E020000      jna 0x13d41787
+13D41559  E96C030000        jmp 0x13d418ca
+13D4155E  83C6FC            add esi,0xfffffffffffffffc
+13D41561  41BCC20200E0      mov r12d,0xe00002c2
+13D41567  83FEFE            cmp esi,0xfffffffffffffffe
+13D4156A  0F825A030000      jc 0x13d418ca
+13D41570  4981F816020000    cmp r8,0x216
+13D41577  0F95C0            setnz al
+13D4157A  4D85DB            test r11,r11
+13D4157D  0F94C1            setz cl
+13D41580  08C1              or cl,al
+13D41582  0F8542030000      jnz 0x13d418ca
+13D41588  49813B16020000    cmp qword [r11],0x216
+13D4158F  0F8535030000      jnz 0x13d418ca
+13D41595  6641817A100001    cmp word [r10+0x10],0x100
+13D4159C  0F8728030000      ja 0x13d418ca
+13D415A2  664181BA12010000  cmp word [r10+0x112],0x100
+         -0001
+13D415AC  0F86D5010000      jna 0x13d41787
+13D415B2  E913030000        jmp 0x13d418ca
+13D415B7  83C6FC            add esi,0xfffffffffffffffc
+13D415BA  41BCC20200E0      mov r12d,0xe00002c2
+13D415C0  83FEFE            cmp esi,0xfffffffffffffffe
+13D415C3  0F8201030000      jc 0x13d418ca
+13D415C9  4981F890000000    cmp r8,0x90
+13D415D0  0F95C0            setnz al
+13D415D3  4D85DB            test r11,r11
+13D415D6  0F94C1            setz cl
+13D415D9  08C1              or cl,al
+13D415DB  0F85E9020000      jnz 0x13d418ca
+13D415E1  49813B90000000    cmp qword [r11],0x90
+13D415E8  0F85DC020000      jnz 0x13d418ca
+13D415EE  BB02000000        mov ebx,0x2
+13D415F3  41837A0807        cmp dword [r10+0x8],0x7
+13D415F8  0F868B010000      jna 0x13d41789
+13D415FE  E9C7020000        jmp 0x13d418ca
+13D41603  31C0              xor eax,eax
+13D41605  4889742408        mov [rsp+0x8],rsi
+13D4160A  48890424          mov [rsp],rax
+13D4160E  4889DF            mov rdi,rbx
+13D41611  4889D6            mov rsi,rdx
+13D41614  4489EA            mov edx,r13d
+13D41617  4D89F9            mov r9,r15
+13D4161A  E8EF0D0000        call 0x13d4240e
+13D4161F  4189C4            mov r12d,eax
+13D41622  4181FD18410000    cmp r13d,0x4118
+13D41629  7521              jnz 0x13d4164c
+13D4162B  31C0              xor eax,eax
+13D4162D  49894638          mov [r14+0x38],rax
+13D41631  49894630          mov [r14+0x30],rax
+13D41635  49894628          mov [r14+0x28],rax
+13D41639  49894620          mov [r14+0x20],rax
+13D4163D  49894618          mov [r14+0x18],rax
+13D41641  49894610          mov [r14+0x10],rax
+13D41645  49894608          mov [r14+0x8],rax
+13D41649  498906            mov [r14],rax
+13D4164C  488B03            mov rax,[rbx]
+13D4164F  4889DF            mov rdi,rbx
+13D41652  FF5028            call qword near [rax+0x28]
+13D41655  E970020000        jmp 0x13d418ca
+13D4165A  4D85C0            test r8,r8
+13D4165D  0F95C0            setnz al
+13D41660  4D85DB            test r11,r11
+13D41663  0F94C1            setz cl
+13D41666  08C1              or cl,al
+13D41668  41BCC20200E0      mov r12d,0xe00002c2
+13D4166E  0F8556020000      jnz 0x13d418ca
+13D41674  49833B1C          cmp qword [r11],0x1c
+13D41678  0F8409010000      jz 0x13d41787
+13D4167E  E947020000        jmp 0x13d418ca
+13D41683  4981F8BC000000    cmp r8,0xbc
+13D4168A  0F92C0            setc al
+13D4168D  4D85D2            test r10,r10
+13D41690  0F94C1            setz cl
+13D41693  4D85DB            test r11,r11
+13D41696  400F94C6          setz sil
+13D4169A  08C1              or cl,al
+13D4169C  4008F1            or cl,sil
+13D4169F  41BCC20200E0      mov r12d,0xe00002c2
+13D416A5  0F851F020000      jnz 0x13d418ca
+13D416AB  49813B00000200    cmp qword [r11],0x20000
+13D416B2  0F86CF000000      jna 0x13d41787
+13D416B8  E90D020000        jmp 0x13d418ca
+13D416BD  4D85C0            test r8,r8
+13D416C0  0F95C0            setnz al
+13D416C3  4D85DB            test r11,r11
+13D416C6  0F94C1            setz cl
+13D416C9  08C1              or cl,al
+13D416CB  41BCC20200E0      mov r12d,0xe00002c2
+13D416D1  0F85F3010000      jnz 0x13d418ca
+13D416D7  49813B100A0000    cmp qword [r11],0xa10
+13D416DE  0F84A3000000      jz 0x13d41787
+13D416E4  E9E1010000        jmp 0x13d418ca
+13D416E9  41BCC20200E0      mov r12d,0xe00002c2
+13D416EF  4983F836          cmp r8,0x36
+13D416F3  0F848E000000      jz 0x13d41787
+13D416F9  E9CC010000        jmp 0x13d418ca
+13D416FE  4D85C0            test r8,r8
+13D41701  0F95C0            setnz al
+13D41704  4D85DB            test r11,r11
+13D41707  0F94C1            setz cl
+13D4170A  41BCC20200E0      mov r12d,0xe00002c2
+13D41710  08C1              or cl,al
+13D41712  0F85B2010000      jnz 0x13d418ca
+13D41718  4D85FF            test r15,r15
+13D4171B  0F84A9010000      jz 0x13d418ca
+13D41721  49833B04          cmp qword [r11],0x4
+13D41725  7460              jz 0x13d41787
+13D41727  E99E010000        jmp 0x13d418ca
+13D4172C  41BCC20200E0      mov r12d,0xe00002c2
+13D41732  4D85DB            test r11,r11
+13D41735  0F848F010000      jz 0x13d418ca
+13D4173B  49833B02          cmp qword [r11],0x2
+13D4173F  0F8585010000      jnz 0x13d418ca
+13D41745  0FB787B0000000    movzx eax,word [rdi+0xb0]
+13D4174C  66418907          mov [r15],ax
+13D41750  EB14              jmp 0x13d41766
+13D41752  4D85D2            test r10,r10
+13D41755  0F846F010000      jz 0x13d418ca
+13D4175B  418A02            mov al,[r10]
+13D4175E  2401              and al,0x1
+13D41760  8887B4000000      mov [rdi+0xb4],al
+13D41766  4531E4            xor r12d,r12d
+13D41769  E95C010000        jmp 0x13d418ca
+13D4176E  41BCC20200E0      mov r12d,0xe00002c2
+13D41774  4D85DB            test r11,r11
+13D41777  0F844D010000      jz 0x13d418ca
+13D4177D  49833B0C          cmp qword [r11],0xc
+13D41781  0F8543010000      jnz 0x13d418ca
+13D41787  31DB              xor ebx,ebx
+13D41789  488B07            mov rax,[rdi]
+13D4178C  48891424          mov [rsp],rdx
+13D41790  4489EE            mov esi,r13d
+13D41793  4C89D2            mov rdx,r10
+13D41796  4C89C1            mov rcx,r8
+13D41799  4D89F8            mov r8,r15
+13D4179C  4D89D9            mov r9,r11
+13D4179F  FF9058080000      call qword near [rax+0x858]
+13D417A5  4189C4            mov r12d,eax
+13D417A8  4181FD86090000    cmp r13d,0x986
+13D417AF  0F8515010000      jnz 0x13d418ca
+13D417B5  4585E4            test r12d,r12d
+13D417B8  0F850C010000      jnz 0x13d418ca
+13D417BE  4C8D2D0B100000    lea r13,[rel 0x13d427d0]
+13D417C5  4531E4            xor r12d,r12d
+13D417C8  B90C000000        mov ecx,0xc
+13D417CD  31C0              xor eax,eax
+13D417CF  4102040F          add al,[r15+rcx]
+13D417D3  48FFC1            inc rcx
+13D417D6  4881F98B000000    cmp rcx,0x8b
+13D417DD  75F0              jnz 0x13d417cf
+13D417DF  450FB68F8B000000  movzx r9d,byte [r15+0x8b]
+13D417E7  89C1              mov ecx,eax
+13D417E9  4400C9            add cl,r9b
+13D417EC  0F8474FFFFFF      jz 0x13d41766
+13D417F2  488B7DD0          mov rdi,[rbp-0x30]
+13D417F6  440FB64708        movzx r8d,byte [rdi+0x8]
+13D417FB  488B4DC8          mov rcx,[rbp-0x38]
+13D417FF  0FB7B1B0000000    movzx esi,word [rcx+0xb0]
+13D41806  8B17              mov edx,[rdi]
+13D41808  8B4F04            mov ecx,[rdi+0x4]
+13D4180B  F6D8              neg al
+13D4180D  0FB6C0            movzx eax,al
+13D41810  890424            mov [rsp],eax
+13D41813  488D3D6B0F0000    lea rdi,[rel 0x13d42785]
+13D4181A  31C0              xor eax,eax
+13D4181C  E8FDE72CEC        call 0x1001e
+13D41821  4531F6            xor r14d,r14d
+13D41824  430FB654F70C      movzx edx,byte [r15+r14*8+0xc]
+13D4182A  430FB64CF70D      movzx ecx,byte [r15+r14*8+0xd]
+13D41830  470FB644F70E      movzx r8d,byte [r15+r14*8+0xe]
+13D41836  470FB64CF70F      movzx r9d,byte [r15+r14*8+0xf]
+13D4183C  430FB644F710      movzx eax,byte [r15+r14*8+0x10]
+13D41842  430FB674F711      movzx esi,byte [r15+r14*8+0x11]
+13D41848  430FB67CF712      movzx edi,byte [r15+r14*8+0x12]
+13D4184E  470FB654F713      movzx r10d,byte [r15+r14*8+0x13]
+13D41854  4489542418        mov [rsp+0x18],r10d
+13D41859  897C2410          mov [rsp+0x10],edi
+13D4185D  89742408          mov [rsp+0x8],esi
+13D41861  890424            mov [rsp],eax
+13D41864  4C89EF            mov rdi,r13
+13D41867  4489F6            mov esi,r14d
+13D4186A  31C0              xor eax,eax
+13D4186C  E8ADE72CEC        call 0x1001e
+13D41871  49FFC6            inc r14
+13D41874  4183FE10          cmp r14d,0x10
+13D41878  75AA              jnz 0x13d41824
+13D4187A  83EB01            sub ebx,0x1
+13D4187D  488B7DC8          mov rdi,[rbp-0x38]
+13D41881  488B55D0          mov rdx,[rbp-0x30]
+13D41885  488B7518          mov rsi,[rbp+0x18]
+13D41889  488B4DC0          mov rcx,[rbp-0x40]
+13D4188D  4C8B4D10          mov r9,[rbp+0x10]
+13D41891  7237              jc 0x13d418ca
+13D41893  488B07            mov rax,[rdi]
+13D41896  48893424          mov [rsp],rsi
+13D4189A  BE86090000        mov esi,0x986
+13D4189F  4D89F8            mov r8,r15
+13D418A2  FF9058080000      call qword near [rax+0x858]
+13D418A8  41BCE90200E0      mov r12d,0xe00002e9
+13D418AE  85C0              test eax,eax
+13D418B0  0F8412FFFFFF      jz 0x13d417c8
+13D418B6  4189C6            mov r14d,eax
+13D418B9  488D3D3D0F0000    lea rdi,[rel 0x13d427fd]
+13D418C0  31C0              xor eax,eax
+13D418C2  E857E72CEC        call 0x1001e
+13D418C7  4589F4            mov r12d,r14d
+13D418CA  4489E0            mov eax,r12d
+13D418CD  4881C418010000    add rsp,0x118
+13D418D4  5B                pop rbx
+13D418D5  415C              pop r12
+13D418D7  415D              pop r13
+13D418D9  415E              pop r14
+13D418DB  415F              pop r15
+13D418DD  5D                pop rbp
+13D418DE  C3                retq
+13D418DF  41BCE20200E0      mov r12d,0xe00002e2
+13D418E5  4531F6            xor r14d,r14d
+13D418E8  E953010000        jmp 0x13d41a40
+13D418ED  41BCE20200E0      mov r12d,0xe00002e2
+13D418F3  41B601            mov r14b,0x1
+13D418F6  488D95E0FEFFFF    lea rdx,[rbp-0x120]
+13D418FD  C70201000000      mov dword [rdx],0x1
+13D41903  488B07            mov rax,[rdi]
+13D41906  48C7042400000000  mov qword [rsp],0x0
+13D4190E  B904000000        mov ecx,0x4
+13D41913  BE01200000        mov esi,0x2001
+13D41918  4531C0            xor r8d,r8d
+13D4191B  4531C9            xor r9d,r9d
+13D4191E  FF9058080000      call qword near [rax+0x858]
+13D41924  488B7DC8          mov rdi,[rbp-0x38]
+13D41928  4C8B55D0          mov r10,[rbp-0x30]
+13D4192C  488B5518          mov rdx,[rbp+0x18]
+13D41930  4C8B45C0          mov r8,[rbp-0x40]
+13D41934  4C8B5D10          mov r11,[rbp+0x10]
+13D41938  E929010000        jmp 0x13d41a66
+13D4193D  4531E4            xor r12d,r12d
+13D41940  4C89640848        mov [rax+rcx+0x48],r12
+13D41945  4C89640840        mov [rax+rcx+0x40],r12
+13D4194A  4C89640838        mov [rax+rcx+0x38],r12
+13D4194F  4C89640830        mov [rax+rcx+0x30],r12
+13D41954  4C89640828        mov [rax+rcx+0x28],r12
+13D41959  4C89640820        mov [rax+rcx+0x20],r12
+13D4195E  4C89640818        mov [rax+rcx+0x18],r12
+13D41963  4C89640810        mov [rax+rcx+0x10],r12
+13D41968  488B3DD13F0000    mov rdi,[rel 0x13d45940]
+13D4196F  E882ED2CEC        call 0x106f6
+13D41974  31DB              xor ebx,ebx
+13D41976  E92DFEFFFF        jmp 0x13d417a8
+13D4197B  488B3DBE3F0000    mov rdi,[rel 0x13d45940]
+13D41982  E86FED2CEC        call 0x106f6
+13D41987  41BCDA0200E0      mov r12d,0xe00002da
+13D4198D  E938FFFFFF        jmp 0x13d418ca
+13D41992  4885C0            test rax,rax
+13D41995  0F84CBFDFFFF      jz 0x13d41766
+13D4199B  488D15723F0000    lea rdx,[rel 0x13d45914]
+13D419A2  4531E4            xor r12d,r12d
+13D419A5  31FF              xor edi,edi
+13D419A7  BE01000000        mov esi,0x1
+13D419AC  E875E72CEC        call 0x10126
+13D419B1  84C0              test al,al
+13D419B3  0F8411FFFFFF      jz 0x13d418ca
+13D419B9  488B4518          mov rax,[rbp+0x18]
+13D419BD  C6402101          mov byte [rax+0x21],0x1
+13D419C1  E904FFFFFF        jmp 0x13d418ca
+13D419C6  488BBD14FFFFFF    mov rdi,[rbp-0xec]
+13D419CD  4885FF            test rdi,rdi
+13D419D0  740C              jz 0x13d419de
+13D419D2  E8CDE72CEC        call 0x101a4
+13D419D7  48898514FFFFFF    mov [rbp-0xec],rax
+13D419DE  83BD10FFFFFF00    cmp dword [rbp-0xf0],0x0
+13D419E5  7437              jz 0x13d41a1e
+13D419E7  31DB              xor ebx,ebx
+13D419E9  41BE08000000      mov r14d,0x8
+13D419EF  488BBCDD1CFFFFFF  mov rdi,[rbp+rbx*8-0xe4]
+13D419F7  4885FF            test rdi,rdi
+13D419FA  7422              jz 0x13d41a1e
+13D419FC  E8A3E72CEC        call 0x101a4
+13D41A01  488984DD1CFFFFFF  mov [rbp+rbx*8-0xe4],rax
+13D41A09  48FFC3            inc rbx
+13D41A0C  8B8510FFFFFF      mov eax,[rbp-0xf0]
+13D41A12  83F808            cmp eax,0x8
+13D41A15  410F43C6          cmovnc eax,r14d
+13D41A19  4839C3            cmp rbx,rax
+13D41A1C  72D1              jc 0x13d419ef
+13D41A1E  488DB5E0FEFFFF    lea rsi,[rbp-0x120]
+13D41A25  BADC000000        mov edx,0xdc
+13D41A2A  4C89FF            mov rdi,r15
+13D41A2D  E8ACE62CEC        call 0x100de
+13D41A32  488B5518          mov rdx,[rbp+0x18]
+13D41A36  C6423001          mov byte [rdx+0x30],0x1
+13D41A3A  4531E4            xor r12d,r12d
+13D41A3D  41B601            mov r14b,0x1
+13D41A40  488B7DC8          mov rdi,[rbp-0x38]
+13D41A44  4C8B5D10          mov r11,[rbp+0x10]
+13D41A48  4C8B55D0          mov r10,[rbp-0x30]
+13D41A4C  4C8B45C0          mov r8,[rbp-0x40]
+13D41A50  418D85FFAFFFFF    lea eax,[r13-0x5001]
+13D41A57  3DFFEFFFFF        cmp eax,0xffffefff
+13D41A5C  0F92C0            setc al
+13D41A5F  4408F0            or al,r14b
+13D41A62  A801              test al,0x1
+13D41A64  7411              jz 0x13d41a77
+13D41A66  31DB              xor ebx,ebx
+13D41A68  41F6C601          test r14b,0x1
+13D41A6C  0F8417FDFFFF      jz 0x13d41789
+13D41A72  E931FDFFFF        jmp 0x13d417a8
+13D41A77  488D1DC23E0000    lea rbx,[rel 0x13d45940]
+13D41A7E  488B3DBB3E0000    mov rdi,[rel 0x13d45940]
+13D41A85  E866EC2CEC        call 0x106f0
+13D41A8A  4589EE            mov r14d,r13d
+13D41A8D  41C1EE02          shr r14d,byte 0x2
+13D41A91  4181E6C0030000    and r14d,0x3c0
+13D41A98  498B5C1E20        mov rbx,[r14+rbx+0x20]
+13D41A9D  4885DB            test rbx,rbx
+13D41AA0  7477              jz 0x13d41b19
+13D41AA2  488B03            mov rax,[rbx]
+13D41AA5  4889DF            mov rdi,rbx
+13D41AA8  FF5020            call qword near [rax+0x20]
+13D41AAB  488B3D8E3E0000    mov rdi,[rel 0x13d45940]
+13D41AB2  E83FEC2CEC        call 0x106f6
+13D41AB7  4584ED            test r13b,r13b
+13D41ABA  746E              jz 0x13d41b2a
+13D41ABC  41BCD80200E0      mov r12d,0xe00002d8
+13D41AC2  488B75C8          mov rsi,[rbp-0x38]
+13D41AC6  4883BEA800000000  cmp qword [rsi+0xa8],0x0
+13D41ACE  488B4DD0          mov rcx,[rbp-0x30]
+13D41AD2  488B5518          mov rdx,[rbp+0x18]
+13D41AD6  488B7D10          mov rdi,[rbp+0x10]
+13D41ADA  0F846CFBFFFF      jz 0x13d4164c
+13D41AE0  4883BEA000000000  cmp qword [rsi+0xa0],0x0
+13D41AE8  4C8B45C0          mov r8,[rbp-0x40]
+13D41AEC  0F845AFBFFFF      jz 0x13d4164c
+13D41AF2  488D05473E0000    lea rax,[rel 0x13d45940]
+13D41AF9  4C01F0            add rax,r14
+13D41AFC  4883C010          add rax,0x10
+13D41B00  41BCC70200E0      mov r12d,0xe00002c7
+13D41B06  443B6818          cmp r13d,[rax+0x18]
+13D41B0A  0F873CFBFFFF      ja 0x13d4164c
+13D41B10  4885FF            test rdi,rdi
+13D41B13  752E              jnz 0x13d41b43
+13D41B15  31C0              xor eax,eax
+13D41B17  EB2D              jmp 0x13d41b46
+13D41B19  488B3D203E0000    mov rdi,[rel 0x13d45940]
+13D41B20  E8D1EB2CEC        call 0x106f6
+13D41B25  E9A0FDFFFF        jmp 0x13d418ca
+13D41B2A  488B7D10          mov rdi,[rbp+0x10]
+13D41B2E  4885FF            test rdi,rdi
+13D41B31  488B75C8          mov rsi,[rbp-0x38]
+13D41B35  488B4DD0          mov rcx,[rbp-0x30]
+13D41B39  488B5518          mov rdx,[rbp+0x18]
+13D41B3D  4C8B45C0          mov r8,[rbp-0x40]
+13D41B41  74D2              jz 0x13d41b15
+13D41B43  488B07            mov rax,[rdi]
+13D41B46  4889542408        mov [rsp+0x8],rdx
+13D41B4B  48890424          mov [rsp],rax
+13D41B4F  4889DF            mov rdi,rbx
+13D41B52  4489EA            mov edx,r13d
+13D41B55  4D89F9            mov r9,r15
+13D41B58  E8B1080000        call 0x13d4240e
+13D41B5D  4189C4            mov r12d,eax
+13D41B60  E9E7FAFFFF        jmp 0x13d4164c
+13D41B65  BF01000000        mov edi,0x1
+13D41B6A  31F6              xor esi,esi
+13D41B6C  E8B5E52CEC        call 0x10126
+13D41B71  E954FDFFFF        jmp 0x13d418ca
+13D41B76  6690              o16 nop
+13D41B78  2DEDFFFFFE        sub eax,0xfeffffed
+13D41B7D  F4                hlt
+13D41B7E  FFFF              udw
+13D41B80  B3F3              mov bl,0xf3
+13D41B82  FFFF              udw
+13D41B84  6F                outsd
+13D41B85  F4                hlt
+13D41B86  FFFF              udw
+13D41B88  73F0              jnc 0x13d41b7a
+13D41B8A  FFFF              udw
+13D41B8C  35FBFFFFD2        xor eax,0xd2fffffb
+13D41B91  FA                cli
+13D41B92  FFFF              udw
+13D41B94  FB                sti
+13D41B95  FA                cli
+13D41B96  FFFF              udw
+13D41B98  B6EF              mov dh,0xef
+13D41B9A  FFFF              udw
+13D41B9C  B8FEFFFFB8        mov eax,0xb8fffffe
+13D41BA1  FE                db 0xfe
+13D41BA2  FFFF              udw
+13D41BA4  C6                db 0xc6
+13D41BA5  F9                stc
+13D41BA6  FFFF              udw
+13D41BA8  B8FEFFFF85        mov eax,0x85fffffe
+13D41BAD  F9                stc
+13D41BAE  FFFF              udw
+13D41BB0  1F                db 0x1f
+13D41BB1  FA                cli
+13D41BB2  FFFF              udw
+13D41BB4  D6                udb
+13D41BB5  F0                lock
+13D41BB6  FFFF              udw
+13D41BB8  DB                db 0xdb
+13D41BB9  F8                clc
+13D41BBA  FFFF              udw
+13D41BBC  5F                pop rdi
+13D41BBD  F8                clc
+13D41BBE  FFFF              udw
+13D41BC0  B1F8              mov cl,0xf8
+13D41BC2  FFFF              udw
+13D41BC4  3F                db 0x3f
+13D41BC5  EF                out dx,eax
+13D41BC6  FFFF              udw
+13D41BC8  00F9              add cl,bh
+13D41BCA  FFFF              udw
+13D41BCC  79F8              jns 0x13d41bc6
+13D41BCE  FFFF              udw
+13D41BD0  EBF8              jmp 0x13d41bca
+13D41BD2  FFFF              udw
+13D41BD4  31F8              xor eax,edi
+13D41BD6  FFFF              udw
+13D41BD8  1E                db 0x1e
+13D41BD9  F9                stc
+13D41BDA  FFFF              udw

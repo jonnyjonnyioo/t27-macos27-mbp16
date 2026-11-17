@@ -1,0 +1,12 @@
+42d1ad03c71ee3496209ae5f90fec4eb8af3a715c216c719eeaf59d97df6d5b6  <PROJECT_ROOT>/Sessions/<SESSION>/work/kdk/KDK_27.2.1_26B131.kdk/System/Library/Extensions/IOGraphicsFamily.kext/IOGraphicsFamily
+bbe5d9bc84009bc2c96d6987ae5700358eab5d885623b4cd4edb2a7f60598e0d  <PROJECT_ROOT>/Sessions/<SESSION>/work/kdk/KDK_27.2.1_26B131.kdk/System/Library/Extensions/IOPCIFamily.kext/Contents/MacOS/IOPCIFamily
+d5088d053d88d6177ac43a3b8fcde4e1e26db840d84be640b5d15ae1d487ade6  <PROJECT_ROOT>/Sessions/<SESSION>/work/kdk/KDK_27.2.1_26B131.kdk/System/Library/Extensions/IOAcceleratorFamily2.kext/Contents/MacOS/IOAcceleratorFamily2
+39b2f6bf494dbb463de5bc2fe1d6b9b2f7749659601d64128f39f0ebf19cb0b7  <PROJECT_ROOT>/Sessions/<SESSION>/work/kdk/KDK_27.2.1_26B131.kdk/System/Library/Extensions/IOSurface.kext/Contents/MacOS/IOSurface
+d6a4e87f4af02f809e91673f04d6367a9018bc17e5e01a48d9884879d27bb5b5  <PROJECT_ROOT>/Sessions/<SESSION>/work/kdk/KDK_27.2.1_26B131.kdk/System/Library/Extensions/IOACPIFamily.kext/Contents/MacOS/IOACPIFamily
+c569698b689d3822ce3f18a51202b10f46f48e395e80a339dc3bae403754f2a4  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDSupport.kext/Contents/MacOS/AMDSupport
+54033d995b2d40a6440da6b0dc686c345a70ec7dd16207dae3e07d4386394e88  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDFramebuffer.kext/Contents/MacOS/AMDFramebuffer
+bdb566f37ce2be039e47bfb807fdc03b6d6bcd5b251eefc874916ed22b3cbf81  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDRadeonServiceManager.kext/Contents/MacOS/AMDRadeonServiceManager
+2734aaf7bf338afb9dece81466651a0c9db3a99dc6c5930798dd1fb5da63a40b  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDRadeonX6000.kext/Contents/MacOS/AMDRadeonX6000
+a2469429602210e64a74292a30b06353d9e0f75cd6b8b65f98324e64fa0b4536  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDRadeonX6000Framebuffer.kext/Contents/MacOS/AMDRadeonX6000Framebuffer
+cc7aaca45446f98cc4ea03b1fdf80b402975c1b0e0d07585a304d78dcdf797f7  <PROJECT_ROOT>/Sessions/<SESSION>/work/root-full/System/Library/Extensions/AMDRadeonX6000HWServices.kext/Contents/MacOS/AMDRadeonX6000HWServices
+a6a1040fef266bef6773b3c5df703a4e7bc8a84579d45104c5ab6b019224707f  <PROJECT_ROOT>/AGENT-AMD/.tmp/t27-donor-compat/com.apple.kext.AMDRadeonX6000HWLibs

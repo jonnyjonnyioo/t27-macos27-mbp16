@@ -1,0 +1,193 @@
+13D40392  55                push rbp
+13D40393  4889E5            mov rbp,rsp
+13D40396  4157              push r15
+13D40398  4156              push r14
+13D4039A  4155              push r13
+13D4039C  4154              push r12
+13D4039E  53                push rbx
+13D4039F  4881EC28010000    sub rsp,0x128
+13D403A6  4989FE            mov r14,rdi
+13D403A9  488B05A02C0000    mov rax,[rel 0x13d43050]
+13D403B0  488B00            mov rax,[rax]
+13D403B3  488945D0          mov [rbp-0x30],rax
+13D403B7  488B058A2C0000    mov rax,[rel 0x13d43048]
+13D403BE  FF90D0050000      call qword near [rax+0x5d0]
+13D403C4  89C3              mov ebx,eax
+13D403C6  84C0              test al,al
+13D403C8  0F84B5020000      jz 0x13d40683
+13D403CE  4C8DBDC8FEFFFF    lea r15,[rbp-0x138]
+13D403D5  BE08010000        mov esi,0x108
+13D403DA  4C89FF            mov rdi,r15
+13D403DD  E8D2FC2CEC        call 0x100b4
+13D403E2  4D8977F8          mov [r15-0x8],r14
+13D403E6  4C8D8DB8FEFFFF    lea r9,[rbp-0x148]
+13D403ED  49C7012C000000    mov qword [r9],0x2c
+13D403F4  498B06            mov rax,[r14]
+13D403F7  48C7042400000000  mov qword [rsp],0x0
+13D403FF  4C89F7            mov rdi,r14
+13D40402  BE01000000        mov esi,0x1
+13D40407  31D2              xor edx,edx
+13D40409  31C9              xor ecx,ecx
+13D4040B  4D89F8            mov r8,r15
+13D4040E  FF9058080000      call qword near [rax+0x858]
+13D40414  418B4728          mov eax,[r15+0x28]
+13D40418  8D48FF            lea ecx,[rax-0x1]
+13D4041B  83F901            cmp ecx,0x1
+13D4041E  7739              ja 0x13d40459
+13D40420  4C8D8DB8FEFFFF    lea r9,[rbp-0x148]
+13D40427  49C701DC000000    mov qword [r9],0xdc
+13D4042E  4C8DBDF4FEFFFF    lea r15,[rbp-0x10c]
+13D40435  498B06            mov rax,[r14]
+13D40438  48C7042400000000  mov qword [rsp],0x0
+13D40440  4C89F7            mov rdi,r14
+13D40443  BE80090000        mov esi,0x980
+13D40448  31D2              xor edx,edx
+13D4044A  31C9              xor ecx,ecx
+13D4044C  4D89F8            mov r8,r15
+13D4044F  FF9058080000      call qword near [rax+0x858]
+13D40455  418B47FC          mov eax,[r15-0x4]
+13D40459  83C0F9            add eax,0xfffffffffffffff9
+13D4045C  83F801            cmp eax,0x1
+13D4045F  7715              ja 0x13d40476
+13D40461  498B06            mov rax,[r14]
+13D40464  488D35A5230000    lea rsi,[rel 0x13d42810]
+13D4046B  4C89F7            mov rdi,r14
+13D4046E  31D2              xor edx,edx
+13D40470  FF9078020000      call qword near [rax+0x278]
+13D40476  E8A9FE2CEC        call 0x10324
+13D4047B  4989C7            mov r15,rax
+13D4047E  488985B8FEFFFF    mov [rbp-0x148],rax
+13D40485  488D3596230000    lea rsi,[rel 0x13d42822]
+13D4048C  4C89F7            mov rdi,r14
+13D4048F  E8E6FF2CEC        call 0x1047a
+13D40494  4885C0            test rax,rax
+13D40497  0F849E000000      jz 0x13d4053b
+13D4049D  E83C022DEC        call 0x106de
+13D404A2  48890597540000    mov [rel 0x13d45940],rax
+13D404A9  488D3D906B0000    lea rdi,[rel 0x13d47040]
+13D404B0  BE88000000        mov esi,0x88
+13D404B5  E87CFB2CEC        call 0x10036
+13D404BA  4989C7            mov r15,rax
+13D404BD  4C8D25FC530000    lea r12,[rel 0x13d458c0]
+13D404C4  4889C7            mov rdi,rax
+13D404C7  4C89E6            mov rsi,r12
+13D404CA  E8B1FC2CEC        call 0x10180
+13D404CF  488D0552360000    lea rax,[rel 0x13d43b28]
+13D404D6  498907            mov [r15],rax
+13D404D9  4C89E7            mov rdi,r12
+13D404DC  E8CDFB2CEC        call 0x100ae
+13D404E1  498B07            mov rax,[r15]
+13D404E4  4C89FF            mov rdi,r15
+13D404E7  31F6              xor esi,esi
+13D404E9  FF9048020000      call qword near [rax+0x248]
+13D404EF  84C0              test al,al
+13D404F1  0F84AA000000      jz 0x13d405a1
+13D404F7  498B07            mov rax,[r15]
+13D404FA  4C89FF            mov rdi,r15
+13D404FD  4C89F6            mov rsi,r14
+13D40500  FF9070060000      call qword near [rax+0x670]
+13D40506  84C0              test al,al
+13D40508  0F8493000000      jz 0x13d405a1
+13D4050E  498B07            mov rax,[r15]
+13D40511  4C89FF            mov rdi,r15
+13D40514  4C89F6            mov rsi,r14
+13D40517  FF90C0050000      call qword near [rax+0x5c0]
+13D4051D  84C0              test al,al
+13D4051F  7471              jz 0x13d40592
+13D40521  4C893D20540000    mov [rel 0x13d45948],r15
+13D40528  498B07            mov rax,[r15]
+13D4052B  4C89FF            mov rdi,r15
+13D4052E  BE02000000        mov esi,0x2
+13D40533  FF90B0050000      call qword near [rax+0x5b0]
+13D40539  EB66              jmp 0x13d405a1
+13D4053B  488D3DE0220000    lea rdi,[rel 0x13d42822]
+13D40542  31F6              xor esi,esi
+13D40544  E839FD2CEC        call 0x10282
+13D40549  4885C0            test rax,rax
+13D4054C  745C              jz 0x13d405aa
+13D4054E  4989C4            mov r12,rax
+13D40551  4889C7            mov rdi,rax
+13D40554  48C7C6FFFFFFFF    mov rsi,0xffffffffffffffff
+13D4055B  E82EFD2CEC        call 0x1028e
+13D40560  4989C5            mov r13,rax
+13D40563  E8BCFD2CEC        call 0x10324
+13D40568  4C29F8            sub rax,r15
+13D4056B  488DB5B8FEFFFF    lea rsi,[rbp-0x148]
+13D40572  4889C7            mov rdi,rax
+13D40575  E898FD2CEC        call 0x10312
+13D4057A  498B0424          mov rax,[r12]
+13D4057E  4C89E7            mov rdi,r12
+13D40581  FF5028            call qword near [rax+0x28]
+13D40584  4D85ED            test r13,r13
+13D40587  7421              jz 0x13d405aa
+13D40589  498B4500          mov rax,[r13+0x0]
+13D4058D  4C89EF            mov rdi,r13
+13D40590  EB15              jmp 0x13d405a7
+13D40592  498B07            mov rax,[r15]
+13D40595  4C89FF            mov rdi,r15
+13D40598  4C89F6            mov rsi,r14
+13D4059B  FF9078060000      call qword near [rax+0x678]
+13D405A1  498B07            mov rax,[r15]
+13D405A4  4C89FF            mov rdi,r15
+13D405A7  FF5028            call qword near [rax+0x28]
+13D405AA  41C686B2000000FF  mov byte [r14+0xb2],0xff
+13D405B2  488B3D87530000    mov rdi,[rel 0x13d45940]
+13D405B9  E832012DEC        call 0x106f0
+13D405BE  488D3D8B570000    lea rdi,[rel 0x13d45d50]
+13D405C5  4531FF            xor r15d,r15d
+13D405C8  48833F00          cmp qword [rdi],0x0
+13D405CC  7412              jz 0x13d405e0
+13D405CE  49FFC7            inc r15
+13D405D1  4881C710010000    add rdi,0x110
+13D405D8  4983FF10          cmp r15,0x10
+13D405DC  75EA              jnz 0x13d405c8
+13D405DE  EB18              jmp 0x13d405f8
+13D405E0  488DB5C0FEFFFF    lea rsi,[rbp-0x140]
+13D405E7  BA10010000        mov edx,0x110
+13D405EC  E8EDFA2CEC        call 0x100de
+13D405F1  4588BEB2000000    mov [r14+0xb2],r15b
+13D405F8  488B3D41530000    mov rdi,[rel 0x13d45940]
+13D405FF  E8F2002DEC        call 0x106f6
+13D40604  488B054D2A0000    mov rax,[rel 0x13d43058]
+13D4060B  488B10            mov rdx,[rax]
+13D4060E  498B06            mov rax,[r14]
+13D40611  488D354C210000    lea rsi,[rel 0x13d42764]
+13D40618  4C89F7            mov rdi,r14
+13D4061B  B903000000        mov ecx,0x3
+13D40620  FF90D0020000      call qword near [rax+0x2d0]
+13D40626  4885C0            test rax,rax
+13D40629  410F9586B5000000  setnz byte [r14+0xb5]
+13D40631  BF00100000        mov edi,0x1000
+13D40636  31F6              xor esi,esi
+13D40638  4C89F2            mov rdx,r14
+13D4063B  E892F8FFFF        call 0x13d3fed2
+13D40640  488B05192A0000    mov rax,[rel 0x13d43060]
+13D40647  488B30            mov rsi,[rax]
+13D4064A  498B06            mov rax,[r14]
+13D4064D  4C89F7            mov rdi,r14
+13D40650  FF90A8020000      call qword near [rax+0x2a8]
+13D40656  4885C0            test rax,rax
+13D40659  751A              jnz 0x13d40675
+13D4065B  498B06            mov rax,[r14]
+13D4065E  488D350E210000    lea rsi,[rel 0x13d42773]
+13D40665  488D15241F0000    lea rdx,[rel 0x13d42590]
+13D4066C  4C89F7            mov rdi,r14
+13D4066F  FF9070020000      call qword near [rax+0x270]
+13D40675  498B06            mov rax,[r14]
+13D40678  4C89F7            mov rdi,r14
+13D4067B  31F6              xor esi,esi
+13D4067D  FF90B0050000      call qword near [rax+0x5b0]
+13D40683  488B05C6290000    mov rax,[rel 0x13d43050]
+13D4068A  488B00            mov rax,[rax]
+13D4068D  483B45D0          cmp rax,[rbp-0x30]
+13D40691  7514              jnz 0x13d406a7
+13D40693  89D8              mov eax,ebx
+13D40695  4881C428010000    add rsp,0x128
+13D4069C  5B                pop rbx
+13D4069D  415C              pop r12
+13D4069F  415D              pop r13
+13D406A1  415E              pop r14
+13D406A3  415F              pop r15
+13D406A5  5D                pop rbp
+13D406A6  C3                retq
+13D406A7  E80EFA2CEC        call 0x100ba

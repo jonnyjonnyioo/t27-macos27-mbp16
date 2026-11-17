@@ -1,0 +1,16 @@
+13D41C34  55                push rbp
+13D41C35  4889E5            mov rbp,rsp
+13D41C38  4883EC10          sub rsp,0x10
+13D41C3C  488B4510          mov rax,[rbp+0x10]
+13D41C40  4885C0            test rax,rax
+13D41C43  7406              jz 0x13d41c4b
+13D41C45  488B4038          mov rax,[rax+0x38]
+13D41C49  EB02              jmp 0x13d41c4d
+13D41C4B  31C0              xor eax,eax
+13D41C4D  4C8B17            mov r10,[rdi]
+13D41C50  48890424          mov [rsp],rax
+13D41C54  41FF9250080000    call qword near [r10+0x850]
+13D41C5B  4883C410          add rsp,0x10
+13D41C5F  5D                pop rbp
+13D41C60  C3                retq
+13D41C61  90                nop

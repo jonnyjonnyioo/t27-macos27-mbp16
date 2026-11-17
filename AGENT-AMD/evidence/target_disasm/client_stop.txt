@@ -1,0 +1,23 @@
+13D3FBBA  55                push rbp
+13D3FBBB  4889E5            mov rbp,rsp
+13D3FBBE  488B057B340000    mov rax,[rel 0x13d43040]
+13D3FBC5  5D                pop rbp
+13D3FBC6  FFA0D8050000      jmp qword near [rax+0x5d8]
+13D3FBCC  55                push rbp
+13D3FBCD  4889E5            mov rbp,rsp
+13D3FBD0  53                push rbx
+13D3FBD1  50                push rax
+13D3FBD2  4889FB            mov rbx,rdi
+13D3FBD5  488BBFE0000000    mov rdi,[rdi+0xe0]
+13D3FBDC  4885FF            test rdi,rdi
+13D3FBDF  7410              jz 0x13d3fbf1
+13D3FBE1  E8040B2DEC        call 0x106ea
+13D3FBE6  48C783E000000000  mov qword [rbx+0xe0],0x0
+         -000000
+13D3FBF1  488B0548340000    mov rax,[rel 0x13d43040]
+13D3FBF8  4889DF            mov rdi,rbx
+13D3FBFB  4883C408          add rsp,0x8
+13D3FBFF  5B                pop rbx
+13D3FC00  5D                pop rbp
+13D3FC01  FFA0A0000000      jmp qword near [rax+0xa0]
+13D3FC07  90                nop

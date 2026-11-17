@@ -1,0 +1,21 @@
+13D40750  B8010000E0        mov eax,0xe0000001
+13D40755  81FE0A4001E0      cmp esi,0xe001400a
+13D4075B  752F              jnz 0x13d4078c
+13D4075D  55                push rbp
+13D4075E  4889E5            mov rbp,rsp
+13D40761  53                push rbx
+13D40762  50                push rax
+13D40763  4889CB            mov rbx,rcx
+13D40766  488B07            mov rax,[rdi]
+13D40769  FF9080060000      call qword near [rax+0x680]
+13D4076F  488B0D92280000    mov rcx,[rel 0x13d43008]
+13D40776  488B31            mov rsi,[rcx]
+13D40779  4889C7            mov rdi,rax
+13D4077C  E8FDF82CEC        call 0x1007e
+13D40781  488903            mov [rbx],rax
+13D40784  31C0              xor eax,eax
+13D40786  4883C408          add rsp,0x8
+13D4078A  5B                pop rbx
+13D4078B  5D                pop rbp
+13D4078C  C3                retq
+13D4078D  90                nop

@@ -1,0 +1,19 @@
+13D41C00  55                push rbp
+13D41C01  4889E5            mov rbp,rsp
+13D41C04  4C89C8            mov rax,r9
+13D41C07  4D89C1            mov r9,r8
+13D41C0A  4989C8            mov r8,rcx
+13D41C0D  4889D1            mov rcx,rdx
+13D41C10  89F2              mov edx,esi
+13D41C12  4D85C0            test r8,r8
+13D41C15  490F44C8          cmovz rcx,r8
+13D41C19  4885C0            test rax,rax
+13D41C1C  4C0F44C8          cmovz r9,rax
+13D41C20  BE02000000        mov esi,0x2
+13D41C25  6A00              push qword 0x0
+13D41C27  50                push rax
+13D41C28  E883EBFFFF        call 0x13d407b0
+13D41C2D  4883C410          add rsp,0x10
+13D41C31  5D                pop rbp
+13D41C32  C3                retq
+13D41C33  90                nop

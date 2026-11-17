@@ -1,0 +1,51 @@
+13D3FAEE  55                push rbp
+13D3FAEF  4889E5            mov rbp,rsp
+13D3FAF2  4157              push r15
+13D3FAF4  4156              push r14
+13D3FAF6  53                push rbx
+13D3FAF7  50                push rax
+13D3FAF8  4989F7            mov r15,rsi
+13D3FAFB  4889FB            mov rbx,rdi
+13D3FAFE  488BBFE0000000    mov rdi,[rdi+0xe0]
+13D3FB05  E8E60B2DEC        call 0x106f0
+13D3FB0A  488B052F350000    mov rax,[rel 0x13d43040]
+13D3FB11  4889DF            mov rdi,rbx
+13D3FB14  4C89FE            mov rsi,r15
+13D3FB17  FF90D0050000      call qword near [rax+0x5d0]
+13D3FB1D  4189C6            mov r14d,eax
+13D3FB20  488D0541490000    lea rax,[rel 0x13d44468]
+13D3FB27  488B30            mov rsi,[rax]
+13D3FB2A  4C89FF            mov rdi,r15
+13D3FB2D  E84C052DEC        call 0x1007e
+13D3FB32  488983D8000000    mov [rbx+0xd8],rax
+13D3FB39  488BBBE0000000    mov rdi,[rbx+0xe0]
+13D3FB40  E8B10B2DEC        call 0x106f6
+13D3FB45  488BBBD8000000    mov rdi,[rbx+0xd8]
+13D3FB4C  4885FF            test rdi,rdi
+13D3FB4F  7440              jz 0x13d3fb91
+13D3FB51  488D9330010000    lea rdx,[rbx+0x130]
+13D3FB58  BE80000000        mov esi,0x80
+13D3FB5D  31C9              xor ecx,ecx
+13D3FB5F  E82A0C0000        call 0x13d4078e
+13D3FB64  F6833001000001    test byte [rbx+0x130],0x1
+13D3FB6B  743E              jz 0x13d3fbab
+13D3FB6D  488BBBD8000000    mov rdi,[rbx+0xd8]
+13D3FB74  488D93F0000000    lea rdx,[rbx+0xf0]
+13D3FB7B  B940000000        mov ecx,0x40
+13D3FB80  BE81000000        mov esi,0x81
+13D3FB85  E852200000        call 0x13d41bdc
+13D3FB8A  3DBC0200E0        cmp eax,0xe00002bc
+13D3FB8F  751A              jnz 0x13d3fbab
+13D3FB91  488BBBE0000000    mov rdi,[rbx+0xe0]
+13D3FB98  E84D0B2DEC        call 0x106ea
+13D3FB9D  48C783E000000000  mov qword [rbx+0xe0],0x0
+         -000000
+13D3FBA8  4531F6            xor r14d,r14d
+13D3FBAB  4489F0            mov eax,r14d
+13D3FBAE  4883C408          add rsp,0x8
+13D3FBB2  5B                pop rbx
+13D3FBB3  415E              pop r14
+13D3FBB5  415F              pop r15
+13D3FBB7  5D                pop rbp
+13D3FBB8  C3                retq
+13D3FBB9  90                nop
